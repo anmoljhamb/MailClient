@@ -43,6 +43,7 @@ function LoginForm({
                             type="password"
                             placeholder="Enter your password"
                             value={password}
+                            autoComplete="current-password"
                             onChange={(e: ChangeEvent<HTMLInputElement>) => {
                                 setPassword(e.target.value);
                             }}
