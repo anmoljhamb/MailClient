@@ -2,7 +2,11 @@ import http from "http";
 import { Server } from "socket.io";
 import app from "./app";
 import nodemailer from "nodemailer";
-import { MailOptionsInterface, SMTPMapsInterface } from "./types";
+import {
+    AuthDetailsInterface,
+    MailOptionsInterface,
+    SMTPMapsInterface,
+} from "./types";
 
 const PORT = process.env.PORT || 8080;
 const server = http.createServer(app);
@@ -12,6 +16,7 @@ const io = new Server(server, {
     },
 });
 const smtpTransports: SMTPMapsInterface = {};
+const authDetails: AuthDetailsInterface = {};
 
 io.use((socket, next) => {
     const username = socket.handshake.auth.username;
@@ -41,6 +46,12 @@ io.on("connection", (socket) => {
                     },
                 });
                 const verified = await smtpTransports[socket.id].verify();
+                if (verified) {
+                    authDetails[socket.id] = {
+                        email,
+                        password,
+                    };
+                }
                 socket.emit("verified", { verified });
             } catch (error) {
                 console.log("error");

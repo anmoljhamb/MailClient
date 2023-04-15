@@ -11,3 +11,10 @@ export interface MailOptionsInterface {
     cc: string;
     bcc: string;
 }
+
+export interface AuthDetailsInterface {
+    [key: string]: {
+        email: string;
+        password: string;
+    };
+}
