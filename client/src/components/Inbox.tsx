@@ -5,6 +5,7 @@ import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 
 interface PropsInterface {
     mails: ParsedMail[];
+    stepCount: number;
     mailsNumber: number;
     lowerRange: number;
     setLowerRange(arg0: number): void;
@@ -15,6 +16,7 @@ interface PropsInterface {
 const Inbox = ({
     mails,
     mailsNumber,
+    stepCount,
     lowerRange,
     setLowerRange,
     upperRange,
@@ -40,13 +42,29 @@ const Inbox = ({
                         </Row>
                         <Row className="d-flex justify-content-center">
                             <Col className="d-flex justify-content-center">
-                                <Button variant="outline-secondary">
+                                <Button
+                                    variant="secondary"
+                                    disabled={lowerRange - stepCount < 0}
+                                    onClick={() => {
+                                        setUpperRange(upperRange - stepCount);
+                                        setLowerRange(lowerRange - stepCount);
+                                    }}
+                                >
                                     <GrFormPrevious />
                                 </Button>
                             </Col>
 
                             <Col className="d-flex justify-content-center">
-                                <Button variant="outline-secondary">
+                                <Button
+                                    variant="secondary"
+                                    onClick={() => {
+                                        setUpperRange(upperRange + stepCount);
+                                        setLowerRange(lowerRange + stepCount);
+                                    }}
+                                    disabled={
+                                        upperRange + stepCount > mailsNumber
+                                    }
+                                >
                                     <GrFormNext />
                                 </Button>
                             </Col>

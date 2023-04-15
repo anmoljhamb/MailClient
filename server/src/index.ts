@@ -135,7 +135,7 @@ io.on("connection", (socket) => {
             socket.emit("mailsNumber", box.messages.total);
 
             const f = imap.seq.fetch(
-                `${box.messages.total - (upperRange - lowerRange)}:${
+                `${box.messages.total - upperRange}:${
                     box.messages.total - lowerRange
                 }`,
                 {
