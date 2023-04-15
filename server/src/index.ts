@@ -132,6 +132,8 @@ io.on("connection", (socket) => {
         imap.openBox("INBOX", true, (err, box) => {
             if (err) throw err;
 
+            socket.emit("mailsNumber", box.messages.total);
+
             const f = imap.seq.fetch(
                 `${box.messages.total - (upperRange - lowerRange)}:${
                     box.messages.total - lowerRange

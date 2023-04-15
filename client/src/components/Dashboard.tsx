@@ -1,4 +1,4 @@
-import { ComposeNew } from "./";
+import { ComposeNew, Inbox } from "./";
 import React, {
     ChangeEvent,
     FormEvent,
@@ -31,8 +31,10 @@ const Dashboard = () => {
     const [message, setMessage] = useState<string>("");
     const [addNew, setAddNew] = useState<boolean>(false);
     const [sending, setSending] = useState<boolean>(false);
+    const [mails, setMails] = useState<ParsedMail[]>([]);
     const [lowerRange, setLowerRange] = useState<number>(0);
     const [upperRange, setUpperRange] = useState<number>(5);
+    const [mailsNumber, setMailsNumber] = useState<number>(5);
 
     const { socketRef } = useContext(SocketContext) as SocketContextInterface;
     const socket = socketRef.current as SocketInterface;
@@ -63,7 +65,11 @@ const Dashboard = () => {
         socket.emit("fetchMails", { lowerRange, upperRange });
 
         socket.on("fetchedMails", (mails: ParsedMail[]) => {
-            console.log(mails);
+            setMails(mails);
+        });
+
+        socket.on("mailsNumber", (number: number) => {
+            setMailsNumber(number);
         });
 
         return () => {
@@ -84,6 +90,16 @@ const Dashboard = () => {
             >
                 <GrAdd />
             </button>
+            <Inbox
+                {...{
+                    mails,
+                    lowerRange,
+                    setLowerRange,
+                    upperRange,
+                    setUpperRange,
+                    mailsNumber,
+                }}
+            />
             {message.length > 0 && (
                 <Toast
                     onClose={() => setMessage("")}
