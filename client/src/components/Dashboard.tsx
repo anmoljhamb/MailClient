@@ -20,6 +20,7 @@ import {
 import { GrAdd } from "react-icons/gr";
 import { SocketContext } from "../contexts/Socket";
 import { SocketContextInterface, SocketInterface } from "../types";
+import { ParsedMail } from "mailparser";
 
 const Dashboard = () => {
     const [toEmail, setToEmail] = useState<string>("");
@@ -30,6 +31,8 @@ const Dashboard = () => {
     const [message, setMessage] = useState<string>("");
     const [addNew, setAddNew] = useState<boolean>(false);
     const [sending, setSending] = useState<boolean>(false);
+    const [lowerRange, setLowerRange] = useState<number>(0);
+    const [upperRange, setUpperRange] = useState<number>(5);
 
     const { socketRef } = useContext(SocketContext) as SocketContextInterface;
     const socket = socketRef.current as SocketInterface;
@@ -54,6 +57,12 @@ const Dashboard = () => {
             setSending(false);
             setMessage("Email Sent!");
             // todo clear every other values.
+        });
+
+        socket.emit("fetchMails", { lowerRange, upperRange });
+
+        socket.on("fetchedMails", (mails: ParsedMail[]) => {
+            console.log(mails);
         });
 
         return () => {

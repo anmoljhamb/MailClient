@@ -19,10 +19,6 @@ function App() {
             setLoggedIn(verified as boolean);
             sessionStorage.setItem("email", email);
 
-            if (verified) {
-                socket.emit("fetchMails");
-            }
-
             setProcessing(false);
         });
 

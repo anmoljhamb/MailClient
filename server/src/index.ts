@@ -3,7 +3,7 @@ import { Server } from "socket.io";
 import app from "./app";
 import nodemailer from "nodemailer";
 import Imap from "imap";
-import { simpleParser } from "mailparser";
+import { ParsedMail, simpleParser } from "mailparser";
 import {
     AuthDetailsInterface,
     ImapsInterface,
@@ -78,60 +78,75 @@ io.on("connection", (socket) => {
             );
     });
 
-    socket.on("fetchMails", () => {
-        const imapConfig = {
-            user: authDetails[socket.id].email,
-            password: authDetails[socket.id].password,
-            host: "imap.gmail.com",
-            port: 993,
-            tls: true,
-            tlsOptions: {
-                rejectUnauthorized: false,
-            },
-            authTimeout: 3000,
-        };
+    socket.on(
+        "fetchMails",
+        ({
+            lowerRange,
+            upperRange,
+        }: {
+            lowerRange: number;
+            upperRange: number;
+        }) => {
+            console.log(`fetchMails, (${lowerRange}, ${upperRange})`);
 
-        const imap = new Imap(imapConfig);
+            const imapConfig = {
+                user: authDetails[socket.id].email,
+                password: authDetails[socket.id].password,
+                host: "imap.gmail.com",
+                port: 993,
+                tls: true,
+                tlsOptions: {
+                    rejectUnauthorized: false,
+                },
+                authTimeout: 3000,
+            };
 
-        imap.on("ready", () => {
-            imap.openBox("INBOX", true, (err, box) => {
-                if (err) throw err;
-                console.log("imap server ready.");
+            const imap = new Imap(imapConfig);
+
+            imap.on("ready", () => {
+                imap.openBox("INBOX", true, (err, box) => {
+                    if (err) throw err;
+                    console.log("imap server ready.");
+                });
+                _getEmails(imap, lowerRange, upperRange);
             });
-            _getEmails(imap);
-        });
 
-        imap.on("mail", (number: number) => {
-            console.log(`Got ${number} new mails. Fetching ...`);
-            _getEmails(imap);
-        });
+            imap.on("mail", (number: number) => {
+                console.log(`Got ${number} new mails. Fetching ...`);
+                _getEmails(imap, lowerRange, upperRange);
+            });
 
-        imap.once("error", (err: any) => {
-            console.log(err);
-        });
+            imap.once("error", (err: any) => {
+                console.log(err);
+            });
 
-        imap.once("end", () => {
-            console.log("Connection ended");
-        });
+            imap.once("end", () => {
+                console.log("Connection ended");
+            });
 
-        imap.connect();
-    });
+            imap.connect();
+        }
+    );
 
-    function _getEmails(imap: Imap) {
+    function _getEmails(imap: Imap, lowerRange: number, upperRange: number) {
         imap.openBox("INBOX", true, (err, box) => {
             if (err) throw err;
 
             const f = imap.seq.fetch(
-                `${box.messages.total - NUMBER}:${box.messages.total}`,
+                `${box.messages.total - (upperRange - lowerRange)}:${
+                    box.messages.total - lowerRange
+                }`,
                 {
                     bodies: "",
                 }
             );
 
+            const parsedMails: ParsedMail[] = [];
+
             f.on("message", (msg) => {
                 msg.on("body", (stream) => {
                     simpleParser(stream, (err, parsed) => {
-                        socket.emit("gotMail", parsed);
+                        parsedMails.push(parsed);
                     });
                 });
             });
@@ -142,7 +157,7 @@ io.on("connection", (socket) => {
 
             f.once("end", () => {
                 console.log("Done fetching all messages!");
-                // imap.end();
+                socket.emit("fetchedMails", parsedMails);
             });
         });
     }
