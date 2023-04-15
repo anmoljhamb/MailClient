@@ -111,9 +111,16 @@ io.on("connection", (socket) => {
                 // _getEmails(imap, lowerRange, upperRange);
             });
 
+            let prevNumber = 0;
+
             imap.on("mail", (number: number) => {
-                console.log(`Got ${number} new mails. Fetching ...`);
-                _getEmails(imap, lowerRange, upperRange);
+                imap.openBox("INBOX", true, (err, box) => {
+                    if (err) throw err;
+                });
+                if (prevNumber !== number) {
+                    console.log(`Got ${number} new mails. Fetching ...`);
+                    _getEmails(imap, lowerRange, upperRange);
+                }
             });
 
             imap.once("error", (err: any) => {
@@ -132,23 +139,19 @@ io.on("connection", (socket) => {
         imap.openBox("INBOX", true, (err, box) => {
             if (err) throw err;
 
-            socket.emit("mailsNumber", box.messages.total);
-
-            const f = imap.seq.fetch(
-                `${box.messages.total - upperRange}:${
-                    box.messages.total - lowerRange
-                }`,
-                {
-                    bodies: "",
-                }
-            );
+            const f = imap.seq.fetch(`${box.messages.total - upperRange}:*`, {
+                bodies: "",
+            });
 
             const parsedMails: ParsedMail[] = [];
+            let count = 0;
 
             f.on("message", (msg) => {
                 msg.on("body", (stream) => {
                     simpleParser(stream, (err, parsed) => {
+                        if (err) console.log(err);
                         parsedMails.push(parsed);
+                        count++;
                     });
                 });
             });
@@ -157,15 +160,14 @@ io.on("connection", (socket) => {
                 return Promise.reject(ex);
             });
 
-            f.once("end", () => {
+            f.on("end", () => {
                 console.log("Done fetching all messages!");
                 socket.emit("fetchedMails", parsedMails);
+                console.log(`fetched ${count} mails.`);
+                socket.emit("mailsNumber", box.messages.total);
             });
         });
     }
-    // socket.onAny((event, ...args) => {
-    //     console.log(event, args);
-    // });
 });
 
 server.listen(PORT, () => {
