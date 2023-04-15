@@ -16,6 +16,7 @@ function App() {
     useEffect(() => {
         socket.on("verified", ({ verified }) => {
             setLoggedIn(verified as boolean);
+            sessionStorage.setItem("email", email);
         });
 
         return () => {

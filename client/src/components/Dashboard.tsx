@@ -22,7 +22,12 @@ const Dashboard = () => {
 
     const handleOnSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        socket.emit("sendMail", { to: toEmail, subject, text });
+        socket.emit("sendMail", {
+            to: toEmail,
+            subject,
+            text,
+            from: sessionStorage.getItem("email"),
+        });
     };
 
     return (

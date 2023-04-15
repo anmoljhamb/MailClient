@@ -51,14 +51,15 @@ io.on("connection", (socket) => {
 
     socket.on("sendMail", (mailOptions: MailOptionsInterface) => {
         console.log(mailOptions);
-        smtpTransports[socket.id].sendMail(
-            { ...mailOptions, from: "anmol.jhamb.21cse@bmu.edu.in" },
-            (error, info) => {
-                if (error) {
-                    socket.emit("sentMail", error);
-                } else socket.emit("sentMail", info);
-            }
-        );
+        if (smtpTransports[socket.id])
+            smtpTransports[socket.id].sendMail(
+                { ...mailOptions },
+                (error, info) => {
+                    if (error) {
+                        socket.emit("sentMail", error);
+                    } else socket.emit("sentMail", info);
+                }
+            );
     });
 
     // socket.onAny((event, ...args) => {
