@@ -1,1588 +1,229 @@
-message server1 ready
-Message #1
-(#1) Parsed header: {}
-Message #2
-(#1) Parsed header: {
-  date: [ 'Sun, 26 Sep 2021 05:46:35 -0700' ],
-  subject: [ 'Get the official Gmail app' ],
-  from: [ 'Gmail Team <mail-noreply@google.com>' ],
-  to: [ 'Anmol Jhamb <anmol.jhamb.21cse@bmu.edu.in>' ]
-}
-(#2) Parsed header: {}
-(#2) Parsed header: {
-  date: [ 'Sun, 26 Sep 2021 05:46:35 -0700' ],
-  subject: [ 'Tips for using your new inbox' ],
-  from: [ 'Gmail Team <mail-noreply@google.com>' ],
-  to: [ 'Anmol Jhamb <anmol.jhamb.21cse@bmu.edu.in>' ]
-}
-Message #3
-(#3) Parsed header: {}
-Message #4
-(#3) Parsed header: {
-  date: [ 'Sun, 26 Sep 2021 12:50:51 GMT' ],
-  subject: [ 'Security alert' ],
-  from: [ 'Google <no-reply@accounts.google.com>' ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#4) Parsed header: {}
-(#4) Parsed header: {
-  date: [ 'Sun, 26 Sep 2021 12:51:04 GMT' ],
-  subject: [ 'Security alert' ],
-  from: [ 'Google <no-reply@accounts.google.com>' ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-Message #5
-(#5) Parsed header: {}
-Message #6
-Message #7
-Message #8
-Message #9
-(#5) Parsed header: {
-  date: [ 'Sun, 26 Sep 2021 12:51:31 GMT' ],
-  subject: [ 'Recovery email verified for your Google Account' ],
-  from: [ 'Google <no-reply@accounts.google.com>' ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#6) Parsed header: {}
-(#6) Parsed header: {
-  date: [ 'Sun, 26 Sep 2021 18:32:54 +0530 (IST)' ],
-  from: [ 'maitri@bmu.edu.in' ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ],
-  subject: [ 'ERP Password Reset Link' ]
-}
-(#7) Parsed header: {}
-(#7) Parsed header: {
-  from: [ 'Anmol Jhamb <mistergameraj@gmail.com>' ],
-  date: [ 'Sun, 26 Sep 2021 13:03:01 +0530' ],
-  subject: [ 'Re: test email' ],
-  to: [ 'Anmol Jhamb <anmol.jhamb.21cse@bmu.edu.in>' ]
-}
-(#8) Parsed header: {}
-(#8) Parsed header: {
-  date: [ 'Sun, 26 Sep 2021 13:24:59 +0000' ],
-  subject: [ 'Verify Your UNiDAYS Account' ],
-  from: [ '"UNiDAYS" <no-reply@myunidays.com>' ],
-  to: [ '<anmol.jhamb.21cse@bmu.edu.in>' ]
-}
-(#9) Parsed header: {}
-Message #10
-Message #11
-(#9) Parsed header: {
-  from: [ 'Program Office SoET <program.office.soet@bmu.edu.in>' ],
-  date: [ 'Mon, 27 Sep 2021 10:58:32 +0530' ],
-  subject: [
-    'Research talk by Dr. Sonai Seenithurai (Taiwan) on 4 October 2021 (SLESGR - 2021 online symposium series)'
-  ],
-  to: [
-    'Btech 2020 Batch Students <btech2020@bmu.edu.in>, Btech 2018 Batch Students <btech2018@bmu.edu.in>, Btech 2019 Batch Students <btech2019@bmu.edu.in>, Btech 2021 Batch Students <btech2021@bmu.edu.in>'
-  ]
-}
-(#10) Parsed header: {}
-(#10) Parsed header: {
-  from: [ '"Registrar`s Office BMU" <registrarofficebmu@bmu.edu.in>' ],
-  date: [ 'Mon, 27 Sep 2021 11:27:38 +0530' ],
-  subject: [
-    'Re: Provide Your Annual Family Income Details: Financial Year 2020-21 (April 2020 to March 2021)'
-  ],
-  to: [ 'Registrar Office <registraroffice@bmu.edu.in>' ]
-}
-Message #12
-Message #13
-Message #14
-(#11) Parsed header: {}
-(#11) Parsed header: {
-  from: [ '"Registrar`s Office BMU" <registrarofficebmu@bmu.edu.in>' ],
-  date: [ 'Mon, 27 Sep 2021 12:16:37 +0530' ],
-  subject: [
-    'Regarding Merit-Cum-Means Haryana Domicile Scholarship (AY: 2021-22)'
-  ],
-  to: [ 'Registrar Office <registraroffice@bmu.edu.in>' ]
-}
-(#12) Parsed header: {}
-(#12) Parsed header: {
-  from: [ 'Propel BMU <propel@bmu.edu.in>' ],
-  date: [ 'Mon, 27 Sep 2021 15:47:31 +0530' ],
-  subject: [
-    'Fwd: Agri Business Incubation centre (ABIC), CCSHAU, Hisar: CALL FOR APPLICATIONS'
-  ],
-  to: [
-    'Student Community <studentcommunity@bmu.edu.in>, somfaculty@bmu.edu.in, solfaculty@bmu.edu.in, soetfaculty@bmu.edu.in, BMU Alumni Community <alumnicommunity@bmu.edu.in>'
-  ]
-}
-(#13) Parsed header: {}
-(#13) Parsed header: {
-  date: [ 'Tue, 28 Sep 2021 07:57:39 +0000' ],
-  subject: [ 'Share request for "BTech CSE 3"' ],
-  from: [
-    '"Prasoon Kumar (via Google Sheets)" <drive-shares-dm-noreply@google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-Message #15
-(#14) Parsed header: {}
-(#14) Parsed header: {
-  from: [ 'Ipr Cell <iprcell@bmu.edu.in>' ],
-  date: [ 'Tue, 28 Sep 2021 15:45:10 +0530' ],
-  subject: [ 'Greetings from IPR cell' ],
-  to: [
-    'studentcommunity@bmu.edu.in, soetfaculty@bmu.edu.in, SOM Faculty <somfaculty@bmu.edu.in>, SoL Faculty <solfaculty@bmu.edu.in>, phd2018@bmu.edu.in, phd2019@bmu.edu.in, phd2020@bmu.edu.in, phd2021@bmu.edu.in'
-  ]
-}
-Message #16
-(#15) Parsed header: {}
-(#15) Parsed header: {
-  from: [ 'Mohit Saxena <mohit.saxena@bmu.edu.in>' ],
-  date: [ 'Wed, 29 Sep 2021 09:39:16 +0530' ],
-  subject: [
-    'Joining Link for Exclusive Webinar for Babson University for BMU Students - Today, 29th Sep. at 4.00 PM'
-  ],
-  to: [ 'BMU CGDC <placements@bmu.edu.in>' ]
-}
-Message #17
-(#16) Parsed header: {}
-(#16) Parsed header: {
-  from: [ 'Library BML Munjal University <library@bmu.edu.in>' ],
-  date: [ 'Wed, 29 Sep 2021 10:56:01 +0530' ],
-  subject: [
-    'Reminder regarding registration- TURNITIN Plagiarism Software Online Session today at 4:00pm.'
-  ],
-  to: [
-    'studentcommunity@bmu.edu.in, somfaculty@bmu.edu.in, soetfaculty@bmu.edu.in, SoL Faculty <solfaculty@bmu.edu.in>'
-  ]
-}
-Message #18
-(#17) Parsed header: {}
-(#17) Parsed header: {
-  from: [ '"Registrar`s Office BMU" <registrarofficebmu@bmu.edu.in>' ],
-  date: [ 'Wed, 29 Sep 2021 14:57:20 +0530' ],
-  subject: [
-    'Re: Regarding Merit-Cum-Means Haryana Domicile Scholarship (AY: 2021-22)'
-  ],
-  to: [ 'Registrar Office <registraroffice@bmu.edu.in>' ]
-}
-Message #19
-(#18) Parsed header: {}
-(#18) Parsed header: {
-  from: [ 'Mohit Saxena <mohit.saxena@bmu.edu.in>' ],
-  date: [ 'Wed, 29 Sep 2021 15:57:09 +0530' ],
-  subject: [
-    'Reminder : Joining Link for Exclusive Webinar for Babson University for BMU Students - Today, 29th Sep. at 4.00 PM'
-  ],
-  to: [ 'BMU CGDC <placements@bmu.edu.in>' ]
-}
-Message #20
-(#19) Parsed header: {}
-(#19) Parsed header: {
-  from: [ 'Veeneta Jamwal <veeneta.jamwal@bmu.edu.in>' ],
-  date: [ 'Wed, 29 Sep 2021 16:13:41 +0530' ],
-  subject: [ 'Urgent Information - BML Munjal University' ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#20) Parsed header: {}
-(#20) Parsed header: {
-  from: [ 'Veeneta Jamwal <veeneta.jamwal@bmu.edu.in>' ],
-  date: [ 'Wed, 29 Sep 2021 16:41:27 +0530' ],
-  subject: [ '2021 Batch Timetable Wef 4th Oct..2021-Section CSE 3' ]
-}
-Message #21
-Message #22
-(#21) Parsed header: {}
-(#21) Parsed header: {
-  from: [ 'Library BML Munjal University <library@bmu.edu.in>' ],
-  date: [ 'Thu, 30 Sep 2021 12:02:54 +0530' ],
-  subject: [ 'Recording - TURNITIN Online session.' ],
-  to: [
-    'studentcommunity@bmu.edu.in, SoL Faculty <solfaculty@bmu.edu.in>, somfaculty@bmu.edu.in, soetfaculty@bmu.edu.in'
-  ]
-}
-(#22) Parsed header: {}
-(#22) Parsed header: {
-  from: [ '"Registrar`s Office BMU" <registrarofficebmu@bmu.edu.in>' ],
-  date: [ 'Thu, 30 Sep 2021 14:09:06 +0530' ],
-  subject: [
-    'Fwd: Regarding Merit-Cum-Means Haryana Domicile Scholarship (AY: 2021-22)'
-  ],
-  to: [ 'Registrar Office <registraroffice@bmu.edu.in>' ]
-}
-Message #23
-Message #24
-(#23) Parsed header: {}
-(#23) Parsed header: {
-  from: [ 'Club Affairs Secretary <clubaffairs.secretary@bmu.edu.in>' ],
-  date: [ 'Thu, 30 Sep 2021 15:27:26 +0530' ],
-  subject: [ 'Re: Announcement | Opportunity to participate in NODWIN PVR cup' ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-Message #25
-(#24) Parsed header: {}
-(#24) Parsed header: {
-  from: [ 'Library BML Munjal University <library@bmu.edu.in>' ],
-  date: [ 'Fri, 1 Oct 2021 12:43:48 +0530' ],
-  subject: [ 'Request for registration for the online session (DELNET )' ],
-  to: [
-    'studentcommunity@bmu.edu.in, SoL Faculty <solfaculty@bmu.edu.in>, somfaculty@bmu.edu.in, soetfaculty@bmu.edu.in'
-  ]
-}
-Message #26
-(#25) Parsed header: {}
-(#25) Parsed header: {
-  from: [ 'BMU CGDC <placements@bmu.edu.in>' ],
-  date: [ 'Fri, 1 Oct 2021 14:16:52 +0530' ],
-  subject: [
-    'Join Mr. Debashish Ghosh, VP & Country HR Head, Berkadia & know about The 5 Elements of a Successful Corporate Career - On 04th Oct. 2021 at 11.00 AM (IST)'
-  ],
-  to: [
-    'Student Community <studentcommunity@bmu.edu.in>, Team BMU University <team@bmu.edu.in>'
-  ]
-}
-Message #27
-(#26) Parsed header: {}
-(#26) Parsed header: {
-  date: [ 'Fri, 01 Oct 2021 08:53:32 +0000' ],
-  subject: [
-    'Invitation: BEEE Class @ Weekly from 9:15am to 10am on Monday (IST) (anmol.jhamb.21cse@bmu.edu.in)'
-  ],
-  from: [ 'Anubhav Agrawal <anubhav.agrawal@bmu.edu.in>' ],
-  to: [
-    'anmol.jhamb.21cse@bmu.edu.in, sanchit.garg.21cse@bmu.edu.in, prakhar.maheshwari.21cse@bmu.edu.in, hemant.21cse@bmu.edu.in, shubham.yadav.21cse@bmu.edu.in, vutti.akshay.21cse@bmu.edu.in, arpit.joshi.21cse@bmu.edu.in, riya.jain.21cse@bmu.edu.in, ritik.data.21cse@bmu.edu.in, kumkum.mittal.21cse@bmu.edu.in, vaibhav.pandey.21cse@bmu.edu.in, dhruv.gupta.21cse@bmu.edu.in, mayank.saraf.21cse@bmu.edu.in, aryan.kamboj.21cse@bmu.edu.in, abhishek.rathore.21cse@bmu.edu.in, runishka.rao.21cse@bmu.edu.in, lakshit.wasan.21cse@bmu.edu.in, gaurav.dayma.21cse@bmu.edu.in, chandan.dhingra.21cse@bmu.edu.in, rituraj.burnwal.21cse@bmu.edu.in, rohan.21cse@bmu.edu.in, srijan.ramnani.21cse@bmu.edu.in, adarsh.wadal.21cse@bmu.edu.in, prasoon.kumar.21cse@bmu.edu.in, yugraj.saini.21cse@bmu.edu.in, parth.kulshreshtha.21cse@bmu.edu.in, tejender.21cse@bmu.edu.in, ashi.jain.21cse@bmu.edu.in, arin.sharma.21cse@bmu.edu.in, aryan.gandotra.21cse@bmu.edu.in, mridul.goyal.21cse@bmu.edu.in, hriday.kapadia.21cse@bmu.edu.in, purmaakhil.saiteja.21cse@bmu.edu.in, korleparaveera.venkatasatyabharadwaj.21cse@bmu.edu.in, ananya.jain.21cse@bmu.edu.in, priyansh.jain.21cse@bmu.edu.in, dyuti.dasmahapatra.21cse@bmu.edu.in, vansh.saini.21cse@bmu.edu.in, muppidimarkandeya.sanjay.21cse@bmu.edu.in, mohammedayan.yezdani.21cse@bmu.edu.in, aman.sharma.21cse@bmu.edu.in, sreeramarama.saimehar.21cse@bmu.edu.in, keshav.sharma.21cse@bmu.edu.in, sanidhya.joshi.21cse@bmu.edu.in, vivek.kumar.21cse@bmu.edu.in, samaksh.gupta.21cse@bmu.edu.in, dineshkumar.yadav.21mec@bmu.edu.in, akshat.manohar.21cse@bmu.edu.in'
-  ]
-}
-Message #28
-(#27) Parsed header: {}
-(#27) Parsed header: {
-  date: [ 'Fri, 01 Oct 2021 08:55:33 +0000' ],
-  subject: [
-    'Invitation: BEEE Class @ Wed Oct 6, 2021 11:15am - 12:45pm (IST) (anmol.jhamb.21cse@bmu.edu.in)'
-  ],
-  from: [ 'Anubhav Agrawal <anubhav.agrawal@bmu.edu.in>' ],
-  to: [
-    'anmol.jhamb.21cse@bmu.edu.in, sanchit.garg.21cse@bmu.edu.in, prakhar.maheshwari.21cse@bmu.edu.in, hemant.21cse@bmu.edu.in, shubham.yadav.21cse@bmu.edu.in, vutti.akshay.21cse@bmu.edu.in, arpit.joshi.21cse@bmu.edu.in, riya.jain.21cse@bmu.edu.in, ritik.data.21cse@bmu.edu.in, kumkum.mittal.21cse@bmu.edu.in, vaibhav.pandey.21cse@bmu.edu.in, dhruv.gupta.21cse@bmu.edu.in, mayank.saraf.21cse@bmu.edu.in, aryan.kamboj.21cse@bmu.edu.in, abhishek.rathore.21cse@bmu.edu.in, runishka.rao.21cse@bmu.edu.in, lakshit.wasan.21cse@bmu.edu.in, gaurav.dayma.21cse@bmu.edu.in, chandan.dhingra.21cse@bmu.edu.in, rituraj.burnwal.21cse@bmu.edu.in, rohan.21cse@bmu.edu.in, srijan.ramnani.21cse@bmu.edu.in, adarsh.wadal.21cse@bmu.edu.in, prasoon.kumar.21cse@bmu.edu.in, yugraj.saini.21cse@bmu.edu.in, parth.kulshreshtha.21cse@bmu.edu.in, tejender.21cse@bmu.edu.in, ashi.jain.21cse@bmu.edu.in, arin.sharma.21cse@bmu.edu.in, aryan.gandotra.21cse@bmu.edu.in, mridul.goyal.21cse@bmu.edu.in, hriday.kapadia.21cse@bmu.edu.in, purmaakhil.saiteja.21cse@bmu.edu.in, korleparaveera.venkatasatyabharadwaj.21cse@bmu.edu.in, ananya.jain.21cse@bmu.edu.in, priyansh.jain.21cse@bmu.edu.in, dyuti.dasmahapatra.21cse@bmu.edu.in, vansh.saini.21cse@bmu.edu.in, muppidimarkandeya.sanjay.21cse@bmu.edu.in, mohammedayan.yezdani.21cse@bmu.edu.in, aman.sharma.21cse@bmu.edu.in, sreeramarama.saimehar.21cse@bmu.edu.in, keshav.sharma.21cse@bmu.edu.in, sanidhya.joshi.21cse@bmu.edu.in, vivek.kumar.21cse@bmu.edu.in, samaksh.gupta.21cse@bmu.edu.in, dineshkumar.yadav.21mec@bmu.edu.in, akshat.manohar.21cse@bmu.edu.in'
-  ]
-}
-(#28) Parsed header: {}
-Message #29
-(#28) Parsed header: {
-  date: [ 'Fri, 01 Oct 2021 10:54:41 -0700' ],
-  subject: [ 'Class invitation: "Mathematics for Engineers-I CSE-3"' ],
-  from: [
-    '"Ranjib Banerjee (Classroom)" <no-reply+1fc8e9cd@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-Message #30
-(#29) Parsed header: {}
-(#29) Parsed header: {
-  from: [ 'Col Mohit Bawa <mohit.bawa@bmu.edu.in>' ],
-  date: [ 'Sat, 2 Oct 2021 12:04:27 +0530' ],
-  subject: [ 'Gateway to BMU 2021 (Main Programme)' ],
-  to: [
-    'Btech 2021 Batch Students <btech2021@bmu.edu.in>, BBA 2021 Batch Students <bba2021@bmu.edu.in>, BBA-MBA- Integrated 2021 Batch Students <bmi2021@bmu.edu.in>, BA Hons 2021 Batch Students <bah2021@bmu.edu.in>, BCom Hons 2021 Batch Students <bch2021@bmu.edu.in>, BA LLB 2021 Batch Students <bll2021@bmu.edu.in>, BBA LLB 2021 Batch Students <bbl2021@bmu.edu.in>'
-  ]
-}
-Message #31
-Message #32
-Message #33
-(#30) Parsed header: {}
-(#30) Parsed header: {
-  from: [ 'Col Mohit Bawa <mohit.bawa@bmu.edu.in>' ],
-  date: [ 'Sat, 2 Oct 2021 12:25:51 +0530' ],
-  subject: [ 'RE: Gateway to BMU 2021 (Main Programme)' ],
-  to: [
-    'Btech 2021 Batch Students <btech2021@bmu.edu.in>, BBA 2021 Batch Students <bba2021@bmu.edu.in>, BBA-MBA- Integrated 2021 Batch Students <bmi2021@bmu.edu.in>, BA Hons 2021 Batch Students <bah2021@bmu.edu.in>, BCom Hons 2021 Batch Students <bch2021@bmu.edu.in>, BA LLB 2021 Batch Students <bll2021@bmu.edu.in>, BBA LLB 2021 Batch Students <bbl2021@bmu.edu.in>'
-  ]
-}
-(#31) Parsed header: {}
-(#31) Parsed header: {
-  date: [ 'Sat, 02 Oct 2021 07:01:15 -0700' ],
-  subject: [ 'Class invitation: "JOE Oct 21-Jan 2022 Batch 3 CSE&ME"' ],
-  from: [
-    '"Surya Prakash (Classroom)" <no-reply+259ae0ae@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#32) Parsed header: {}
-(#32) Parsed header: {
-  from: [ '"Dr. Surya Prakash" <surya.prakash@bmu.edu.in>' ],
-  date: [ 'Sat, 2 Oct 2021 19:38:01 +0530' ],
-  subject: [ 'JOE Class joining information/link' ],
-  to: [
-    'raman.gupta.21ecs@bmu.edu.in, dineshkumar.yadav.21mec@bmu.edu.in, korleparaveera.venkatasatyabharadwaj.21cse@bmu.edu.in, vutti.akshay.21cse@bmu.edu.in, samaksh.gupta.21cse@bmu.edu.in, runishka.rao.21cse@bmu.edu.in, lakshit.wasan.21cse@bmu.edu.in, hriday.kapadia.21cse@bmu.edu.in, priyansh.jain.21cse@bmu.edu.in, arin.sharma.21cse@bmu.edu.in, vaibhav.pandey.21cse@bmu.edu.in, mridul.goyal.21cse@bmu.edu.in, dyuti.dasmahapatra.21cse@bmu.edu.in, kumkum.mittal.21cse@bmu.edu.in, hemant.21cse@bmu.edu.in, adarsh.wadal.21cse@bmu.edu.in, ananya.jain.21cse@bmu.edu.in, abhishek.rathore.21cse@bmu.edu.in, aryan.kamboj.21cse@bmu.edu.in, shubham.yadav.21cse@bmu.edu.in, rohan.21cse@bmu.edu.in, dhruv.gupta.21cse@bmu.edu.in, sanchit.garg.21cse@bmu.edu.in, yugraj.saini.21cse@bmu.edu.in, chandan.dhingra.21cse@bmu.edu.in, aryan.gandotra.21cse@bmu.edu.in, keshav.sharma.21cse@bmu.edu.in, anmol.jhamb.21cse@bmu.edu.in, tejender.21cse@bmu.edu.in, parth.kulshreshtha.21cse@bmu.edu.in, arpit.joshi.21cse@bmu.edu.in, riya.jain.21cse@bmu.edu.in, akshat.manohar.21cse@bmu.edu.in, gaurav.dayma.21cse@bmu.edu.in, muppidimarkandeya.sanjay.21cse@bmu.edu.in, ashi.jain.21cse@bmu.edu.in, prasoon.kumar.21cse@bmu.edu.in, rituraj.burnwal.21cse@bmu.edu.in, purmaakhil.saiteja.21cse@bmu.edu.in, sanidhya.Joshi.21cse@bmu.edu.in, mohammedayan.yezdani.21cse@bmu.edu.in, vivek.kumar.21cse@bmu.edu.in, aman.sharma.21cse@bmu.edu.in, prakhar.maheshwari.21cse@bmu.edu.in, ritik.data.21cse@bmu.edu.in, srijan.ramnani.21cse@bmu.edu.in, mayank.saraf.21cse@bmu.edu.in, sreeramarama.saimehar.21cse@bmu.edu.in, vansh.saini.21cse@bmu.edu.in'
-  ]
-}
-Message #34
-(#33) Parsed header: {}
-(#33) Parsed header: {
-  from: [ 'Veeneta Jamwal <veeneta.jamwal@bmu.edu.in>' ],
-  date: [ 'Sat, 2 Oct 2021 21:31:46 +0530' ],
-  subject: [ '2021 Batch Timetable Wef 4th Oct..2021-Section CSE 3' ]
-}
-Message #35
-(#34) Parsed header: {}
-(#34) Parsed header: {
-  date: [ 'Fri, 01 Oct 2021 08:54:37 +0000' ],
-  subject: [
-    'Invitation: BEEE Class @ Weekly from 12:15pm to 1pm on Tuesday (IST) (anmol.jhamb.21cse@bmu.edu.in)'
-  ],
-  from: [ 'Anubhav Agrawal <anubhav.agrawal@bmu.edu.in>' ],
-  to: [
-    'anmol.jhamb.21cse@bmu.edu.in, sanchit.garg.21cse@bmu.edu.in, prakhar.maheshwari.21cse@bmu.edu.in, hemant.21cse@bmu.edu.in, shubham.yadav.21cse@bmu.edu.in, vutti.akshay.21cse@bmu.edu.in, arpit.joshi.21cse@bmu.edu.in, riya.jain.21cse@bmu.edu.in, ritik.data.21cse@bmu.edu.in, kumkum.mittal.21cse@bmu.edu.in, vaibhav.pandey.21cse@bmu.edu.in, dhruv.gupta.21cse@bmu.edu.in, mayank.saraf.21cse@bmu.edu.in, aryan.kamboj.21cse@bmu.edu.in, abhishek.rathore.21cse@bmu.edu.in, runishka.rao.21cse@bmu.edu.in, lakshit.wasan.21cse@bmu.edu.in, gaurav.dayma.21cse@bmu.edu.in, chandan.dhingra.21cse@bmu.edu.in, rituraj.burnwal.21cse@bmu.edu.in, rohan.21cse@bmu.edu.in, srijan.ramnani.21cse@bmu.edu.in, adarsh.wadal.21cse@bmu.edu.in, prasoon.kumar.21cse@bmu.edu.in, yugraj.saini.21cse@bmu.edu.in, parth.kulshreshtha.21cse@bmu.edu.in, tejender.21cse@bmu.edu.in, ashi.jain.21cse@bmu.edu.in, arin.sharma.21cse@bmu.edu.in, aryan.gandotra.21cse@bmu.edu.in, mridul.goyal.21cse@bmu.edu.in, hriday.kapadia.21cse@bmu.edu.in, purmaakhil.saiteja.21cse@bmu.edu.in, korleparaveera.venkatasatyabharadwaj.21cse@bmu.edu.in, ananya.jain.21cse@bmu.edu.in, priyansh.jain.21cse@bmu.edu.in, dyuti.dasmahapatra.21cse@bmu.edu.in, vansh.saini.21cse@bmu.edu.in, muppidimarkandeya.sanjay.21cse@bmu.edu.in, mohammedayan.yezdani.21cse@bmu.edu.in, aman.sharma.21cse@bmu.edu.in, sreeramarama.saimehar.21cse@bmu.edu.in, keshav.sharma.21cse@bmu.edu.in, sanidhya.joshi.21cse@bmu.edu.in, vivek.kumar.21cse@bmu.edu.in, samaksh.gupta.21cse@bmu.edu.in, dineshkumar.yadav.21mec@bmu.edu.in, akshat.manohar.21cse@bmu.edu.in'
-  ]
-}
-Message #36
-Message #37
-Message #38
-(#35) Parsed header: {}
-(#35) Parsed header: {
-  date: [ 'Sun, 03 Oct 2021 05:56:20 +0000' ],
-  subject: [
-    'Updated invitation: BEEE Class @ Weekly from 11:15am to 12:45pm on Wednesday (IST) (anmol.jhamb.21cse@bmu.edu.in)'
-  ],
-  from: [ 'Anubhav Agrawal <anubhav.agrawal@bmu.edu.in>' ],
-  to: [
-    'anmol.jhamb.21cse@bmu.edu.in, sanchit.garg.21cse@bmu.edu.in, prakhar.maheshwari.21cse@bmu.edu.in, hemant.21cse@bmu.edu.in, shubham.yadav.21cse@bmu.edu.in, vutti.akshay.21cse@bmu.edu.in, arpit.joshi.21cse@bmu.edu.in, riya.jain.21cse@bmu.edu.in, ritik.data.21cse@bmu.edu.in, kumkum.mittal.21cse@bmu.edu.in, vaibhav.pandey.21cse@bmu.edu.in, dhruv.gupta.21cse@bmu.edu.in, mayank.saraf.21cse@bmu.edu.in, aryan.kamboj.21cse@bmu.edu.in, abhishek.rathore.21cse@bmu.edu.in, runishka.rao.21cse@bmu.edu.in, lakshit.wasan.21cse@bmu.edu.in, gaurav.dayma.21cse@bmu.edu.in, chandan.dhingra.21cse@bmu.edu.in, rituraj.burnwal.21cse@bmu.edu.in, rohan.21cse@bmu.edu.in, srijan.ramnani.21cse@bmu.edu.in, adarsh.wadal.21cse@bmu.edu.in, prasoon.kumar.21cse@bmu.edu.in, yugraj.saini.21cse@bmu.edu.in, parth.kulshreshtha.21cse@bmu.edu.in, tejender.21cse@bmu.edu.in, ashi.jain.21cse@bmu.edu.in, arin.sharma.21cse@bmu.edu.in, aryan.gandotra.21cse@bmu.edu.in, mridul.goyal.21cse@bmu.edu.in, hriday.kapadia.21cse@bmu.edu.in, purmaakhil.saiteja.21cse@bmu.edu.in, korleparaveera.venkatasatyabharadwaj.21cse@bmu.edu.in, ananya.jain.21cse@bmu.edu.in, priyansh.jain.21cse@bmu.edu.in, dyuti.dasmahapatra.21cse@bmu.edu.in, vansh.saini.21cse@bmu.edu.in, muppidimarkandeya.sanjay.21cse@bmu.edu.in, mohammedayan.yezdani.21cse@bmu.edu.in, aman.sharma.21cse@bmu.edu.in, sreeramarama.saimehar.21cse@bmu.edu.in, keshav.sharma.21cse@bmu.edu.in, sanidhya.joshi.21cse@bmu.edu.in, vivek.kumar.21cse@bmu.edu.in, samaksh.gupta.21cse@bmu.edu.in, dineshkumar.yadav.21mec@bmu.edu.in, akshat.manohar.21cse@bmu.edu.in, sahil1.21cse@bmu.edu.in, aamirsuhail.khan.21cse@bmu.edu.in, sahil.21cse@bmu.edu.in, kavish.mehta.21cse@bmu.edu.in, vineet.jindal.21cse@bmu.edu.in, vaibhav.jain.21cse@bmu.edu.in, aryan.siddh.21cse@bmu.edu.in, priyanshu.yadav.21cse@bmu.edu.in, khushal.rajoria.21cse@bmu.edu.in, mudipalli.nomesh.21cse@bmu.edu.in, divyanshu.21cse@bmu.edu.in, ayush.aryan.21cse@bmu.edu.in, prashant.sharma.21cse@bmu.edu.in, ridit.jain.21cse@bmu.edu.in'
-  ]
-}
-(#36) Parsed header: {}
-(#36) Parsed header: {
-  from: [ 'Anubhav Agrawal <anubhav.agrawal@bmu.edu.in>' ],
-  date: [ 'Sun, 3 Oct 2021 17:52:49 +0530' ],
-  subject: [ 'Regarding BEEE Class' ],
-  to: [
-    'korleparaveera venkatasatyabharadwaj <korleparaveera.venkatasatyabharadwaj.21cse@bmu.edu.in>, vutti.akshay.21cse@bmu.edu.in, Samaksh Gupta <samaksh.gupta.21cse@bmu.edu.in>, Runishka Rao <runishka.rao.21cse@bmu.edu.in>, lakshit.wasan.21cse@bmu.edu.in, hriday.kapadia.21cse@bmu.edu.in, priyansh.jain.21cse@bmu.edu.in, arin.sharma.21cse@bmu.edu.in, vaibhav.pandey.21cse@bmu.edu.in, mridul.goyal.21cse@bmu.edu.in, dyuti.dasmahapatra.21cse@bmu.edu.in, kumkum.mittal.21cse@bmu.edu.in, hemant.21cse@bmu.edu.in, adarsh.wadal.21cse@bmu.edu.in, ananya.jain.21cse@bmu.edu.in, abhishek.rathore.21cse@bmu.edu.in, aryan.kamboj.21cse@bmu.edu.in, shubham.yadav.21cse@bmu.edu.in, rohan.21cse@bmu.edu.in, dhruv.gupta.21cse@bmu.edu.in, sanchit.garg.21cse@bmu.edu.in, yugraj.saini.21cse@bmu.edu.in, chandan.dhingra.21cse@bmu.edu.in, aryan.gandotra.21cse@bmu.edu.in, keshav.sharma.21cse@bmu.edu.in, anmol.jhamb.21cse@bmu.edu.in, tejender.21cse@bmu.edu.in, parth.kulshreshtha.21cse@bmu.edu.in, arpit.joshi.21cse@bmu.edu.in, riya.jain.21cse@bmu.edu.in, akshat.manohar.21cse@bmu.edu.in, gaurav.dayma.21cse@bmu.edu.in, muppidimarkandeya.sanjay.21cse@bmu.edu.in, ashi.jain.21cse@bmu.edu.in, prasoon.kumar.21cse@bmu.edu.in, rituraj.burnwal.21cse@bmu.edu.in, purmaakhil.saiteja.21cse@bmu.edu.in, sanidhya.Joshi.21cse@bmu.edu.in, mohammedayan.yezdani.21cse@bmu.edu.in, vivek.kumar.21cse@bmu.edu.in, aman.sharma.21cse@bmu.edu.in, prakhar.maheshwari.21cse@bmu.edu.in, ritik.data.21cse@bmu.edu.in, srijan.ramnani.21cse@bmu.edu.in, mayank.saraf.21cse@bmu.edu.in, sreeramarama.saimehar.21cse@bmu.edu.in, vansh.saini.21cse@bmu.edu.in, khushal.rajoria.21cse@bmu.edu.in, aryan.siddh.21cse@bmu.edu.in, priyanshu.yadav.21cse@bmu.edu.in, divyanshu.21cse@bmu.edu.in, sahil.21cse@bmu.edu.in, ridit.jain.21cse@bmu.edu.in, sahil1.21cse@bmu.edu.in, vaibhav.jain.21cse@bmu.edu.in, vineet.jindal.21cse@bmu.edu.in, kavish.mehta.21cse@bmu.edu.in, mudipalli.nomesh.21cse@bmu.edu.in, ayush.aryan.21cse@bmu.edu.in, aamirsuhail.khan.21cse@bmu.edu.in, prashant.sharma.21cse@bmu.edu.in'
-  ]
-}
-(#37) Parsed header: {}
-(#37) Parsed header: {
-  date: [ 'Sun, 03 Oct 2021 20:06:52 -0700' ],
-  subject: [
-    'Class invitation: "Basic Electrical and Electronics Engineering (BEEE) CSE3"'
-  ],
-  from: [
-    '"Anubhav Agrawal (Classroom)" <no-reply+1e807b96@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-Message #39
-(#38) Parsed header: {}
-(#38) Parsed header: {
-  date: [ 'Mon, 04 Oct 2021 05:07:37 +0000' ],
-  subject: [
-    'Invitation: MFE-I Lecture @ Weekly from 11:15am to 12pm on Monday (IST) (anmol.jhamb.21cse@bmu.edu.in)'
-  ],
-  from: [ 'Ranjib Banerjee <ranjib.banerjee@bmu.edu.in>' ],
-  to: [
-    'anmol.jhamb.21cse@bmu.edu.in, sahil1.21cse@bmu.edu.in, aamirsuhail.khan.21cse@bmu.edu.in, sanchit.garg.21cse@bmu.edu.in, prakhar.maheshwari.21cse@bmu.edu.in, sahil.21cse@bmu.edu.in, hemant.21cse@bmu.edu.in, shubham.yadav.21cse@bmu.edu.in, vutti.akshay.21cse@bmu.edu.in, arpit.joshi.21cse@bmu.edu.in, riya.jain.21cse@bmu.edu.in, ritik.data.21cse@bmu.edu.in, kavish.mehta.21cse@bmu.edu.in, kumkum.mittal.21cse@bmu.edu.in, vaibhav.pandey.21cse@bmu.edu.in, dhruv.gupta.21cse@bmu.edu.in, vineet.jindal.21cse@bmu.edu.in, mayank.saraf.21cse@bmu.edu.in, vaibhav.jain.21cse@bmu.edu.in, aryan.kamboj.21cse@bmu.edu.in, abhishek.rathore.21cse@bmu.edu.in, runishka.rao.21cse@bmu.edu.in, lakshit.wasan.21cse@bmu.edu.in, gaurav.dayma.21cse@bmu.edu.in, chandan.dhingra.21cse@bmu.edu.in, rituraj.burnwal.21cse@bmu.edu.in, rohan.21cse@bmu.edu.in, srijan.ramnani.21cse@bmu.edu.in, adarsh.wadal.21cse@bmu.edu.in, prasoon.kumar.21cse@bmu.edu.in, aryan.siddh.21cse@bmu.edu.in, yugraj.saini.21cse@bmu.edu.in, parth.kulshreshtha.21cse@bmu.edu.in, priyanshu.yadav.21cse@bmu.edu.in, tejender.21cse@bmu.edu.in, ashi.jain.21cse@bmu.edu.in, khushal.rajoria.21cse@bmu.edu.in, arin.sharma.21cse@bmu.edu.in, aryan.gandotra.21cse@bmu.edu.in, mridul.goyal.21cse@bmu.edu.in, hriday.kapadia.21cse@bmu.edu.in, purmaakhil.saiteja.21cse@bmu.edu.in, mudipalli.nomesh.21cse@bmu.edu.in, korleparaveera.venkatasatyabharadwaj.21cse@bmu.edu.in, divyanshu.21cse@bmu.edu.in, ananya.jain.21cse@bmu.edu.in, ayush.aryan.21cse@bmu.edu.in, priyansh.jain.21cse@bmu.edu.in, dyuti.dasmahapatra.21cse@bmu.edu.in, vansh.saini.21cse@bmu.edu.in, muppidimarkandeya.sanjay.21cse@bmu.edu.in, mohammedayan.yezdani.21cse@bmu.edu.in, aman.sharma.21cse@bmu.edu.in, sreeramarama.saimehar.21cse@bmu.edu.in, keshav.sharma.21cse@bmu.edu.in, sanidhya.joshi.21cse@bmu.edu.in, vivek.kumar.21cse@bmu.edu.in, samaksh.gupta.21cse@bmu.edu.in, prashant.sharma.21cse@bmu.edu.in, akshat.manohar.21cse@bmu.edu.in, ridit.jain.21cse@bmu.edu.in'
-  ]
-}
-Message #40
-Message #41
-(#39) Parsed header: {}
-(#39) Parsed header: {
-  date: [ 'Mon, 04 Oct 2021 05:09:17 +0000' ],
-  subject: [
-    'Invitation: MFE-I Lecture @ Weekly from 11:15am to 12pm on Tuesday (IST) (anmol.jhamb.21cse@bmu.edu.in)'
-  ],
-  from: [ 'Ranjib Banerjee <ranjib.banerjee@bmu.edu.in>' ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#40) Parsed header: {}
-(#40) Parsed header: {
-  date: [ 'Mon, 04 Oct 2021 05:11:26 +0000' ],
-  subject: [
-    'Invitation: MFE-I Lecture @ Weekly from 3:15pm to 4pm on Thursday (IST) (anmol.jhamb.21cse@bmu.edu.in)'
-  ],
-  from: [ 'Ranjib Banerjee <ranjib.banerjee@bmu.edu.in>' ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-Message #42
-Message #43
-(#41) Parsed header: {}
-(#41) Parsed header: {
-  date: [ 'Mon, 04 Oct 2021 05:13:04 +0000' ],
-  subject: [
-    'Invitation: MFE-I Lecture @ Weekly from 9:15am to 10am on Friday (IST) (anmol.jhamb.21cse@bmu.edu.in)'
-  ],
-  from: [ 'Ranjib Banerjee <ranjib.banerjee@bmu.edu.in>' ],
-  to: [
-    'anmol.jhamb.21cse@bmu.edu.in, sahil1.21cse@bmu.edu.in, aamirsuhail.khan.21cse@bmu.edu.in, sanchit.garg.21cse@bmu.edu.in, prakhar.maheshwari.21cse@bmu.edu.in, sahil.21cse@bmu.edu.in, hemant.21cse@bmu.edu.in, shubham.yadav.21cse@bmu.edu.in, vutti.akshay.21cse@bmu.edu.in, arpit.joshi.21cse@bmu.edu.in, riya.jain.21cse@bmu.edu.in, ritik.data.21cse@bmu.edu.in, kavish.mehta.21cse@bmu.edu.in, kumkum.mittal.21cse@bmu.edu.in, vaibhav.pandey.21cse@bmu.edu.in, dhruv.gupta.21cse@bmu.edu.in, vineet.jindal.21cse@bmu.edu.in, mayank.saraf.21cse@bmu.edu.in, vaibhav.jain.21cse@bmu.edu.in, aryan.kamboj.21cse@bmu.edu.in, abhishek.rathore.21cse@bmu.edu.in, runishka.rao.21cse@bmu.edu.in, lakshit.wasan.21cse@bmu.edu.in, gaurav.dayma.21cse@bmu.edu.in, chandan.dhingra.21cse@bmu.edu.in, rituraj.burnwal.21cse@bmu.edu.in, rohan.21cse@bmu.edu.in, srijan.ramnani.21cse@bmu.edu.in, adarsh.wadal.21cse@bmu.edu.in, prasoon.kumar.21cse@bmu.edu.in, aryan.siddh.21cse@bmu.edu.in, yugraj.saini.21cse@bmu.edu.in, parth.kulshreshtha.21cse@bmu.edu.in, priyanshu.yadav.21cse@bmu.edu.in, tejender.21cse@bmu.edu.in, ashi.jain.21cse@bmu.edu.in, khushal.rajoria.21cse@bmu.edu.in, arin.sharma.21cse@bmu.edu.in, aryan.gandotra.21cse@bmu.edu.in, mridul.goyal.21cse@bmu.edu.in, hriday.kapadia.21cse@bmu.edu.in, purmaakhil.saiteja.21cse@bmu.edu.in, mudipalli.nomesh.21cse@bmu.edu.in, korleparaveera.venkatasatyabharadwaj.21cse@bmu.edu.in, divyanshu.21cse@bmu.edu.in, ananya.jain.21cse@bmu.edu.in, ayush.aryan.21cse@bmu.edu.in, priyansh.jain.21cse@bmu.edu.in, dyuti.dasmahapatra.21cse@bmu.edu.in, vansh.saini.21cse@bmu.edu.in, muppidimarkandeya.sanjay.21cse@bmu.edu.in, mohammedayan.yezdani.21cse@bmu.edu.in, aman.sharma.21cse@bmu.edu.in, sreeramarama.saimehar.21cse@bmu.edu.in, keshav.sharma.21cse@bmu.edu.in, sanidhya.joshi.21cse@bmu.edu.in, vivek.kumar.21cse@bmu.edu.in, samaksh.gupta.21cse@bmu.edu.in, prashant.sharma.21cse@bmu.edu.in, akshat.manohar.21cse@bmu.edu.in, ridit.jain.21cse@bmu.edu.in'
-  ]
-}
-(#42) Parsed header: {}
-(#42) Parsed header: {
-  date: [ 'Mon, 04 Oct 2021 05:14:38 +0000' ],
-  subject: [
-    'Invitation: MFE-I Tutorial @ Weekly from 4:15pm to 5pm on Friday (IST) (anmol.jhamb.21cse@bmu.edu.in)'
-  ],
-  from: [ 'Ranjib Banerjee <ranjib.banerjee@bmu.edu.in>' ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-Message #44
-(#43) Parsed header: {}
-(#43) Parsed header: {
-  from: [ 'Veeneta Jamwal <veeneta.jamwal@bmu.edu.in>' ],
-  date: [ 'Mon, 4 Oct 2021 10:47:51 +0530' ],
-  subject: [
-    'Classes rescheduled from today 4th oct 21 3 pm onwards to 7th Oct 21 due toGateway to BMU 2021 (Main Programme)-'
-  ],
-  to: [ 'Btech 2021 Batch Students <btech2021@bmu.edu.in>' ]
-}
-Message #45
-(#44) Parsed header: {
-  '<!doctype html public "-//w3c//dtd xhtml 1.0 transitional//en" "http': [ '//www.=' ]
-}
-(#44) Parsed header: {
-  date: [ 'Mon, 04 Oct 2021 05:22:13 +0000 (UTC)' ],
-  from: [ 'Zoom <no-reply@zoom.us>' ],
-  subject: [ 'Gateway to BMU-2021 Confirmation' ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-Message #46
-Message #47
-(#45) Parsed header: {}
-(#45) Parsed header: {
-  from: [ 'BMU CGDC <placements@bmu.edu.in>' ],
-  date: [ 'Mon, 4 Oct 2021 10:57:54 +0530' ],
-  subject: [
-    'Reminder : Join Mr. Debashish Ghosh, VP & Country HR Head, Berkadia & know about The 5 Elements of a Successful Corporate Career - On 04th Oct. 2021 at 11.00 AM (IST)'
-  ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-(#46) Parsed header: {}
-(#46) Parsed header: {
-  date: [ 'Sun, 03 Oct 2021 23:12:55 -0700' ],
-  subject: [ 'New announcement: "Dear Students\r\nPlease find the course…"' ],
-  from: [
-    '"Ranjib Banerjee (Classroom)" <no-reply+1fc8e9cd@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-Message #48
-(#47) Parsed header: {}
-(#47) Parsed header: {
-  from: [ '"Grammarly" <info@send.grammarly.com>' ],
-  to: [ '<anmol.jhamb.21cse@bmu.edu.in>' ],
-  subject: [ 'You + Grammarly = Ready for Action' ],
-  date: [ 'Mon, 04 Oct 2021 00:49:45 -0600' ]
-}
-Message #49
-Message #50
-Message #51
-Message #52
-Message #53
-(#48) Parsed header: {}
-(#48) Parsed header: {
-  from: [ 'Mohit Saxena <mohit.saxena@bmu.edu.in>' ],
-  date: [ 'Mon, 4 Oct 2021 12:54:49 +0530' ],
-  subject: [
-    'Invitation to attend The Student Promise Global Webinar on 6th October 2021 at 4.30 PM'
-  ],
-  to: [ 'BMU CGDC <placements@bmu.edu.in>' ]
-}
-(#49) Parsed header: {}
-(#49) Parsed header: {
-  date: [ 'Mon, 04 Oct 2021 01:12:51 -0700' ],
-  subject: [ 'Class invitation: "OOP Using C++ CSE3"' ],
-  from: [
-    '"Nishtha Phutela (Classroom)" <no-reply+4450a639@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#50) Parsed header: {}
-(#50) Parsed header: {
-  from: [ 'Nishtha Phutela <nishtha.phutela@bmu.edu.in>' ],
-  date: [ 'Mon, 4 Oct 2021 13:49:36 +0530' ],
-  subject: [ 'Object Oriented Programming Class Using C++' ],
-  to: [
-    'raman.gupta.21ecs@bmu.edu.in, dineshkumar.yadav.21mec@bmu.edu.in, korleparaveera.venkatasatyabharadwaj.21cse@bmu.edu.in, vutti.akshay.21cse@bmu.edu.in, samaksh.gupta.21cse@bmu.edu.in, Runishka Rao <runishka.rao.21cse@bmu.edu.in>, lakshit.wasan.21cse@bmu.edu.in, hriday.kapadia.21cse@bmu.edu.in, priyansh.jain.21cse@bmu.edu.in, arin.sharma.21cse@bmu.edu.in, vaibhav.pandey.21cse@bmu.edu.in, mridul.goyal.21cse@bmu.edu.in, dyuti.dasmahapatra.21cse@bmu.edu.in, kumkum.mittal.21cse@bmu.edu.in, hemant.21cse@bmu.edu.in, adarsh.wadal.21cse@bmu.edu.in, ananya.jain.21cse@bmu.edu.in, abhishek.rathore.21cse@bmu.edu.in, aryan.kamboj.21cse@bmu.edu.in, shubham.yadav.21cse@bmu.edu.in, rohan.21cse@bmu.edu.in, dhruv.gupta.21cse@bmu.edu.in, sanchit.garg.21cse@bmu.edu.in, yugraj.saini.21cse@bmu.edu.in, chandan.dhingra.21cse@bmu.edu.in, aryan.gandotra.21cse@bmu.edu.in, keshav.sharma.21cse@bmu.edu.in, anmol.jhamb.21cse@bmu.edu.in, tejender.21cse@bmu.edu.in, parth.kulshreshtha.21cse@bmu.edu.in, arpit.joshi.21cse@bmu.edu.in, riya.jain.21cse@bmu.edu.in, akshat.manohar.21cse@bmu.edu.in, gaurav.dayma.21cse@bmu.edu.in, muppidimarkandeya.sanjay.21cse@bmu.edu.in, ashi.jain.21cse@bmu.edu.in, prasoon.kumar.21cse@bmu.edu.in, rituraj.burnwal.21cse@bmu.edu.in, purmaakhil.saiteja.21cse@bmu.edu.in, sanidhya.Joshi.21cse@bmu.edu.in, mohammedayan.yezdani.21cse@bmu.edu.in, vivek.kumar.21cse@bmu.edu.in, aman.sharma.21cse@bmu.edu.in, prakhar.maheshwari.21cse@bmu.edu.in, ritik.data.21cse@bmu.edu.in, srijan.ramnani.21cse@bmu.edu.in, mayank.saraf.21cse@bmu.edu.in, sreeramarama.saimehar.21cse@bmu.edu.in, vansh.saini.21cse@bmu.edu.in, Khushal Rajoria <khushal.rajoria.21cse@bmu.edu.in>, Aryan Siddh <aryan.siddh.21cse@bmu.edu.in>, Priyanshu Yadav <priyanshu.yadav.21cse@bmu.edu.in>, Divyanshu Goyal <divyanshu.goyal.20cse@bmu.edu.in>, Sahil - <sahil.21cse@bmu.edu.in>, Ridit Jain <ridit.jain.21cse@bmu.edu.in>, Sahil1 - <sahil1.21cse@bmu.edu.in>, Vaibhav Jain <vaibhav.jain.21cse@bmu.edu.in>, Vineet Jindal <vineet.jindal.21cse@bmu.edu.in>, Kavish Mehta <kavish.mehta.21cse@bmu.edu.in>, Mudipalli Nomesh <mudipalli.nomesh.21cse@bmu.edu.in>, Ayush Aryan <ayush.aryan.21cse@bmu.edu.in>, AamirSuhail Khan <aamirsuhail.khan.21cse@bmu.edu.in>, Prashant Sharma <prashant.sharma.21cse@bmu.edu.in>'
-  ]
-}
-(#51) Parsed header: {}
-(#51) Parsed header: {
-  date: [ 'Mon, 04 Oct 2021 01:37:33 -0700' ],
-  subject: [ 'New material: "Text Book"' ],
-  from: [
-    '"Nishtha Phutela (Classroom)" <no-reply+4450a639@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#52) Parsed header: {}
-(#52) Parsed header: {
-  from: [ 'Col Mohit Bawa <mohit.bawa@bmu.edu.in>' ],
-  date: [ 'Mon, 4 Oct 2021 14:20:02 +0530' ],
-  subject: [ 'RE: Gateway to BMU 2021 (Main Programme)' ],
-  to: [
-    'Btech 2021 Batch Students <btech2021@bmu.edu.in>, BBA 2021 Batch Students <bba2021@bmu.edu.in>, BBA-MBA- Integrated 2021 Batch Students <bmi2021@bmu.edu.in>, BA Hons 2021 Batch Students <bah2021@bmu.edu.in>, BCom Hons 2021 Batch Students <bch2021@bmu.edu.in>, BA LLB 2021 Batch Students <bll2021@bmu.edu.in>, BBA LLB 2021 Batch Students <bbl2021@bmu.edu.in>'
-  ]
-}
-Message #54
-(#53) Parsed header: {}
-(#53) Parsed header: {
-  from: [ 'Col Mohit Bawa <mohit.bawa@bmu.edu.in>' ],
-  date: [ 'Mon, 4 Oct 2021 14:47:02 +0530' ],
-  subject: [ 'RE: Gateway to BMU 2021 (Main Programme)' ],
-  to: [
-    'Btech 2021 Batch Students <btech2021@bmu.edu.in>, BBA 2021 Batch Students <bba2021@bmu.edu.in>, BBA-MBA- Integrated 2021 Batch Students <bmi2021@bmu.edu.in>, BA Hons 2021 Batch Students <bah2021@bmu.edu.in>, BCom Hons 2021 Batch Students <bch2021@bmu.edu.in>, BA LLB 2021 Batch Students <bll2021@bmu.edu.in>, BBA LLB 2021 Batch Students <bbl2021@bmu.edu.in>'
-  ]
-}
-Message #55
-(#54) Parsed header: {}
-(#54) Parsed header: {
-  from: [ 'Propel BMU <propel@bmu.edu.in>' ],
-  date: [ 'Mon, 4 Oct 2021 15:39:23 +0530' ],
-  subject: [ 'Energy Efficiency Innovation Awards, 2021 (EEIA-2021)' ],
-  to: [
-    'Student Community <studentcommunity@bmu.edu.in>, somfaculty@bmu.edu.in, solfaculty@bmu.edu.in, soetfaculty@bmu.edu.in'
-  ]
-}
-Message #56
-Message #57
-(#55) Parsed header: {}
-(#55) Parsed header: {
-  from: [ 'Col Mohit Bawa <mohit.bawa@bmu.edu.in>' ],
-  date: [ 'Mon, 4 Oct 2021 16:56:17 +0530' ],
-  subject: [ 'Student Life Update' ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-(#56) Parsed header: {}
-(#56) Parsed header: {
-  date: [ 'Mon, 04 Oct 2021 11:41:05 +0000' ],
-  subject: [
-    'Spreadsheet shared with you: "Vaccination Status of 2021 Batch Students"'
-  ],
-  from: [ '"Col Mohit Bawa (via Google Sheets)" <mohit.bawa@bmu.edu.in>' ],
-  to: [ 'btech2021@bmu.edu.in' ]
-}
-Message #58
-Message #59
-Message #60
-(#57) Parsed header: {}
-(#57) Parsed header: {
-  from: [ 'Club Events <clubevents@bmu.edu.in>' ],
-  date: [ 'Mon, 4 Oct 2021 18:45:17 +0530' ],
-  subject: [ 'Event Update' ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-(#58) Parsed header: {}
-(#58) Parsed header: {
-  date: [ 'Mon, 04 Oct 2021 16:31:32 +0000' ],
-  subject: [ 'Blogathon Submission Portal' ],
-  from: [ 'Google Forms <forms-receipts-noreply@google.com>' ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#59) Parsed header: {}
-(#59) Parsed header: {
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ],
-  date: [ 'Tue, 05 Oct 2021 03:52:46 +0000' ],
-  subject: [ 'Your change email verification code is ynob-tony-rhink-arli' ],
-  from: [ '"Notion" <notify@mail.notion.so>' ]
-}
-Message #61
-(#60) Parsed header: {}
-(#60) Parsed header: {
-  from: [ 'Nishtha Phutela <nishtha.phutela@bmu.edu.in>' ],
-  date: [ 'Tue, 5 Oct 2021 10:10:58 +0530' ],
-  subject: [ 'Re: Object Oriented Programming Class Using C++' ],
-  to: [
-    'Raman Gupta <raman.gupta.21ecs@bmu.edu.in>, Dineshkumar Yadav <dineshkumar.yadav.21mec@bmu.edu.in>, korleparaveera venkatasatyabharadwaj <korleparaveera.venkatasatyabharadwaj.21cse@bmu.edu.in>, Vutti Akshay <vutti.akshay.21cse@bmu.edu.in>, samaksh.gupta.21cse@bmu.edu.in, Runishka Rao <runishka.rao.21cse@bmu.edu.in>, lakshit.wasan.21cse@bmu.edu.in, hriday.kapadia.21cse@bmu.edu.in, priyansh.jain.21cse@bmu.edu.in, arin.sharma.21cse@bmu.edu.in, vaibhav.pandey.21cse@bmu.edu.in, mridul.goyal.21cse@bmu.edu.in, dyuti.dasmahapatra.21cse@bmu.edu.in, kumkum.mittal.21cse@bmu.edu.in, hemant.21cse@bmu.edu.in, adarsh.wadal.21cse@bmu.edu.in, ananya.jain.21cse@bmu.edu.in, abhishek.rathore.21cse@bmu.edu.in, aryan.kamboj.21cse@bmu.edu.in, shubham.yadav.21cse@bmu.edu.in, rohan.21cse@bmu.edu.in, dhruv.gupta.21cse@bmu.edu.in, sanchit.garg.21cse@bmu.edu.in, yugraj.saini.21cse@bmu.edu.in, chandan.dhingra.21cse@bmu.edu.in, aryan.gandotra.21cse@bmu.edu.in, keshav.sharma.21cse@bmu.edu.in, anmol.jhamb.21cse@bmu.edu.in, tejender.21cse@bmu.edu.in, parth.kulshreshtha.21cse@bmu.edu.in, arpit.joshi.21cse@bmu.edu.in, riya.jain.21cse@bmu.edu.in, akshat.manohar.21cse@bmu.edu.in, gaurav.dayma.21cse@bmu.edu.in, muppidimarkandeya.sanjay.21cse@bmu.edu.in, ashi.jain.21cse@bmu.edu.in, prasoon.kumar.21cse@bmu.edu.in, rituraj.burnwal.21cse@bmu.edu.in, purmaakhil.saiteja.21cse@bmu.edu.in, sanidhya.Joshi.21cse@bmu.edu.in, mohammedayan.yezdani.21cse@bmu.edu.in, vivek.kumar.21cse@bmu.edu.in, aman.sharma.21cse@bmu.edu.in, prakhar.maheshwari.21cse@bmu.edu.in, ritik.data.21cse@bmu.edu.in, srijan.ramnani.21cse@bmu.edu.in, mayank.saraf.21cse@bmu.edu.in, sreeramarama.saimehar.21cse@bmu.edu.in, vansh.saini.21cse@bmu.edu.in, Khushal Rajoria <khushal.rajoria.21cse@bmu.edu.in>, Aryan Siddh <aryan.siddh.21cse@bmu.edu.in>, Priyanshu Yadav <priyanshu.yadav.21cse@bmu.edu.in>, Divyanshu Goyal <divyanshu.goyal.20cse@bmu.edu.in>, Sahil - <sahil.21cse@bmu.edu.in>, Ridit Jain <ridit.jain.21cse@bmu.edu.in>, Sahil1 - <sahil1.21cse@bmu.edu.in>, Vaibhav Jain <vaibhav.jain.21cse@bmu.edu.in>, Vineet Jindal <vineet.jindal.21cse@bmu.edu.in>, Kavish Mehta <kavish.mehta.21cse@bmu.edu.in>, Mudipalli Nomesh <mudipalli.nomesh.21cse@bmu.edu.in>, Ayush Aryan <ayush.aryan.21cse@bmu.edu.in>, AamirSuhail Khan <aamirsuhail.khan.21cse@bmu.edu.in>, Prashant Sharma <prashant.sharma.21cse@bmu.edu.in>'
-  ]
-}
-Message #62
-Message #63
-(#61) Parsed header: {}
-(#61) Parsed header: {
-  from: [ 'Veeneta Jamwal <veeneta.jamwal@bmu.edu.in>' ],
-  date: [ 'Tue, 5 Oct 2021 10:19:24 +0530' ],
-  subject: [
-    'RE: Classes rescheduled from today 4th oct 21 3 pm onwards to 7th Oct 21 due toGateway to BMU 2021 (Main Programme)-'
-  ],
-  to: [ 'Btech 2021 Batch Students <btech2021@bmu.edu.in>' ]
-}
-(#62) Parsed header: {}
-(#62) Parsed header: {
-  date: [ 'Mon, 04 Oct 2021 21:50:27 -0700' ],
-  subject: [ 'New announcement: "https://www.youtube.com/watch?v=mhpslN-O…"' ],
-  from: [
-    '"Nishtha Phutela (Classroom)" <no-reply+4450a639@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-Message #64
-Message #65
-Message #66
-(#63) Parsed header: {}
-(#63) Parsed header: {
-  from: [ 'President SCEC <president.scec@bmu.edu.in>' ],
-  date: [ 'Tue, 5 Oct 2021 10:28:27 +0530' ],
-  subject: [ 'Leadership Talks and Comedy Night' ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-(#64) Parsed header: {}
-(#64) Parsed header: {
-  date: [ 'Mon, 04 Oct 2021 22:12:47 -0700' ],
-  subject: [
-    'Class invitation: "Fundamentals of Data Science OCT2021-JAN 2022 CSE3"'
-  ],
-  from: [
-    '"Hirdesh Pharasi (Classroom)" <no-reply+013f0b52@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#65) Parsed header: {}
-(#65) Parsed header: {
-  from: [ 'Hirdesh Pharasi <hirdesh.pharasi@bmu.edu.in>' ],
-  date: [ 'Tue, 5 Oct 2021 10:55:55 +0530' ],
-  subject: [ 'Welcome to Fundamentals of Data Science' ],
-  to: [ 'Hirdesh Pharasi <hirdesh.pharasi@bmu.edu.in>' ]
-}
-Message #67
-Message #68
-Message #69
-(#66) Parsed header: {}
-(#66) Parsed header: {
-  from: [ 'Events Secretary <events.secretary@bmu.edu.in>' ],
-  date: [ 'Tue, 5 Oct 2021 10:56:10 +0530' ],
-  subject: [ "INVITE- BISWAMIL'21 OP Jindal Global University" ],
-  to: [ 'studentcommunity@bmu.edu.in' ]
-}
-(#67) Parsed header: {}
-(#67) Parsed header: {
-  from: [ 'Nishtha Phutela <nishtha.phutela@bmu.edu.in>' ],
-  date: [ 'Tue, 5 Oct 2021 11:27:06 +0530' ],
-  subject: [ 'Re: Some doubts regarding research' ],
-  to: [ 'Anmol Jhamb <anmol.jhamb.21cse@bmu.edu.in>' ]
-}
-(#68) Parsed header: {}
-(#68) Parsed header: {
-  date: [ 'Mon, 04 Oct 2021 23:46:25 -0700' ],
-  subject: [ 'New announcement: "Find the BEEE Hanout attached."' ],
-  from: [
-    '"Anubhav Agrawal (Classroom)" <no-reply+1e807b96@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-Message #70
-Message #71
-(#69) Parsed header: {}
-(#69) Parsed header: {
-  from: [ '"Grammarly" <info@send.grammarly.com>' ],
-  to: [ '<anmol.jhamb.21cse@bmu.edu.in>' ],
-  subject: [ 'Grammarly isn’t just about grammar' ],
-  date: [ 'Tue, 05 Oct 2021 00:49:49 -0600' ]
-}
-(#70) Parsed header: {
-  '<!doctype html public "-//w3c//dtd xhtml 1.0 transitional//en" "http': [ '//www.=' ]
-}
-(#70) Parsed header: {
-  date: [ 'Tue, 05 Oct 2021 07:47:28 +0000 (UTC)' ],
-  from: [ 'Zoom <no-reply@zoom.us>' ],
-  subject: [ 'Gateway to BMU-2021 Confirmation' ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-Message #72
-(#71) Parsed header: {}
-(#71) Parsed header: {
-  from: [ 'Anmol Jhamb <mistergameraj@gmail.com>' ],
-  date: [ 'Tue, 5 Oct 2021 13:23:08 +0530' ],
-  subject: [ 'Adobe Scan 05-Oct-2021.pdf' ],
-  to: [ 'Anmol Jhamb <anmol.jhamb.21cse@bmu.edu.in>' ]
-}
-Message #73
-Message #74
-Message #75
-Message #76
-Message #77
-Message #78
-(#72) Parsed header: {}
-(#72) Parsed header: {
-  from: [ 'Col Mohit Bawa <mohit.bawa@bmu.edu.in>' ],
-  date: [ 'Tue, 5 Oct 2021 15:19:55 +0530' ],
-  subject: [ 'RE: Gateway to BMU 2021 (Main Programme)' ],
-  to: [
-    'Btech 2021 Batch Students <btech2021@bmu.edu.in>, BBA 2021 Batch Students <bba2021@bmu.edu.in>, BBA-MBA- Integrated 2021 Batch Students <bmi2021@bmu.edu.in>, BA Hons 2021 Batch Students <bah2021@bmu.edu.in>, BCom Hons 2021 Batch Students <bch2021@bmu.edu.in>, BA LLB 2021 Batch Students <bll2021@bmu.edu.in>, BBA LLB 2021 Batch Students <bbl2021@bmu.edu.in>'
-  ]
-}
-(#73) Parsed header: {}
-(#73) Parsed header: {
-  from: [ 'Col Mohit Bawa <mohit.bawa@bmu.edu.in>' ],
-  date: [ 'Tue, 5 Oct 2021 16:35:26 +0530' ],
-  subject: [ 'RE: Leadership Talks and Comedy Night' ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-(#74) Parsed header: {
-  '<!doctype html public "-//w3c//dtd xhtml 1.0 transitional//en" "http': [ '//www.=' ]
-}
-(#74) Parsed header: {
-  date: [ 'Tue, 05 Oct 2021 11:21:49 +0000 (UTC)' ],
-  from: [ 'Zoom <no-reply@zoom.us>' ],
-  subject: [ 'Gateway to BMU-2021 Confirmation' ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#75) Parsed header: {}
-(#75) Parsed header: {
-  from: [ 'Sharad Sharma <sharad.sharma@bmu.edu.in>' ],
-  date: [ 'Wed, 6 Oct 2021 10:09:59 +0530' ],
-  subject: [
-    'Fwd: Requirement of Personal Details for Student University ID Card Preparation'
-  ],
-  to: [ 'Registrar Office <registraroffice@bmu.edu.in>' ]
-}
-(#76) Parsed header: {}
-(#76) Parsed header: {
-  date: [ 'Tue, 05 Oct 2021 23:02:46 -0700' ],
-  subject: [ 'New announcement: "Dear All,\r\nPlz start thinking about the…"' ],
-  from: [
-    '"Surya Prakash (Classroom)" <no-reply+259ae0ae@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#77) Parsed header: {}
-(#77) Parsed header: {
-  from: [ 'Nishtha Phutela <nishtha.phutela@bmu.edu.in>' ],
-  date: [ 'Wed, 6 Oct 2021 12:09:31 +0530' ],
-  subject: [ 'Re: Some doubts regarding research' ],
-  to: [ 'Anmol Jhamb <anmol.jhamb.21cse@bmu.edu.in>' ]
-}
-Message #79
-Message #80
-Message #81
-(#78) Parsed header: {}
-(#78) Parsed header: {
-  from: [ '"Grammarly" <info@send.grammarly.com>' ],
-  to: [ '<anmol.jhamb.21cse@bmu.edu.in>' ],
-  subject: [ 'Get the most out of your Grammarly account' ],
-  date: [ 'Wed, 06 Oct 2021 00:49:58 -0600' ]
-}
-(#79) Parsed header: {}
-(#79) Parsed header: {
-  from: [ 'Nishtha Phutela <nishtha.phutela@bmu.edu.in>' ],
-  date: [ 'Wed, 6 Oct 2021 13:01:10 +0530' ],
-  subject: [ 'Re: Some doubts regarding research' ],
-  to: [ 'Anmol Jhamb <anmol.jhamb.21cse@bmu.edu.in>' ]
-}
-(#80) Parsed header: {}
-(#80) Parsed header: {
-  date: [ 'Wed, 06 Oct 2021 00:34:12 -0700' ],
-  subject: [
-    'Happening now: Nishtha Phutela is inviting you to a video meeting'
-  ],
-  from: [
-    '"Nishtha Phutela (via Google Meet)" <meetings-noreply@google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-Message #82
-Message #83
-Message #84
-Message #85
-(#81) Parsed header: {}
-(#81) Parsed header: {
-  from: [ 'Events Secretary <events.secretary@bmu.edu.in>' ],
-  date: [ 'Wed, 6 Oct 2021 13:04:14 +0530' ],
-  subject: [ "Re: INVITE- BISWAMIL'21 OP Jindal Global University" ],
-  to: [ 'studentcommunity@bmu.edu.in' ]
-}
-(#82) Parsed header: {}
-(#82) Parsed header: {
-  date: [ 'Wed, 06 Oct 2021 01:14:34 -0700' ],
-  subject: [ 'Class invitation: "COMS III"' ],
-  from: [
-    '"Nandita Choudhury (Classroom)" <no-reply+d7dacca3@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#83) Parsed header: {
-  '<!doctype html public "-//w3c//dtd xhtml 1.0 transitional//en" "http': [ '//www.=' ]
-}
-(#83) Parsed header: {
-  date: [ 'Wed, 06 Oct 2021 08:46:03 +0000 (UTC)' ],
-  from: [ 'Zoom <no-reply@zoom.us>' ],
-  subject: [ 'Gateway to BMU-2021 Confirmation' ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#84) Parsed header: {}
-(#84) Parsed header: {
-  from: [ 'Col Mohit Bawa <mohit.bawa@bmu.edu.in>' ],
-  date: [ 'Wed, 6 Oct 2021 15:05:19 +0530' ],
-  subject: [ 'RE: Leadership Talks and Comedy Night' ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-Message #86
-(#85) Parsed header: {}
-(#85) Parsed header: {
-  from: [ 'Library BML Munjal University <library@bmu.edu.in>' ],
-  date: [ 'Wed, 6 Oct 2021 15:13:48 +0530' ],
-  subject: [ 'Reminder to attend the DELNET Webinar' ],
-  to: [
-    'studentcommunity@bmu.edu.in, somfaculty@bmu.edu.in, soetfaculty@bmu.edu.in, SoL Faculty <solfaculty@bmu.edu.in>'
-  ]
-}
-Message #87
-(#86) Parsed header: {}
-(#86) Parsed header: {
-  from: [ 'Col Mohit Bawa <mohit.bawa@bmu.edu.in>' ],
-  date: [ 'Wed, 6 Oct 2021 15:53:19 +0530' ],
-  subject: [ 'RE: Gateway to BMU 2021 (Main Programme)' ],
-  to: [
-    'Btech 2021 Batch Students <btech2021@bmu.edu.in>, BBA 2021 Batch Students <bba2021@bmu.edu.in>, BBA-MBA- Integrated 2021 Batch Students <bmi2021@bmu.edu.in>, BA Hons 2021 Batch Students <bah2021@bmu.edu.in>, BCom Hons 2021 Batch Students <bch2021@bmu.edu.in>, BA LLB 2021 Batch Students <bll2021@bmu.edu.in>, BBA LLB 2021 Batch Students <bbl2021@bmu.edu.in>'
-  ]
-}
-Message #88
-Message #89
-(#87) Parsed header: {}
-(#87) Parsed header: {
-  from: [ 'Mohit Saxena <mohit.saxena@bmu.edu.in>' ],
-  date: [ 'Wed, 6 Oct 2021 16:43:08 +0530' ],
-  subject: [
-    'LIVE WEBINAR | How to get into top management programs without work-ex'
-  ],
-  to: [ 'BMU CGDC <placements@bmu.edu.in>' ]
-}
-(#88) Parsed header: {
-  '<!doctype html public "-//w3c//dtd xhtml 1.0 transitional//en" "http': [ '//www.=' ]
-}
-(#88) Parsed header: {
-  date: [ 'Wed, 06 Oct 2021 11:28:20 +0000 (UTC)' ],
-  from: [ 'Zoom <no-reply@zoom.us>' ],
-  subject: [ 'Gateway to BMU-2021 Confirmation' ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-Message #90
-Message #91
-(#89) Parsed header: {}
-(#89) Parsed header: {
-  from: [ 'Veeneta Jamwal <veeneta.jamwal@bmu.edu.in>' ],
-  date: [ 'Wed, 6 Oct 2021 17:41:10 +0530' ],
-  subject: [
-    'Session with Prof. Anirban Chakroborty, Dean, SoET on 8th Oct 2021 at 5 pm'
-  ],
-  to: [ 'Btech 2021 Batch Students <btech2021@bmu.edu.in>' ]
-}
-(#90) Parsed header: {}
-(#90) Parsed header: {
-  from: [ 'President SCEC <president.scec@bmu.edu.in>' ],
-  date: [ 'Wed, 6 Oct 2021 19:30:57 +0530' ],
-  subject: [ 'Re: Leadership Talks and Comedy Night' ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-Message #92
-Message #93
-(#91) Parsed header: {}
-(#91) Parsed header: {
-  from: [ 'Kumkum Mittal <kumkum.mittal.21cse@bmu.edu.in>' ],
-  date: [ 'Wed, 6 Oct 2021 23:33:12 +0530' ],
-  subject: [ 'Fwd: 2021 Batch Timetable Wef 4th Oct..2021-Section CSE 3' ],
-  to: [ 'Anmol Jhamb <anmol.jhamb.21cse@bmu.edu.in>' ]
-}
-(#92) Parsed header: {}
-(#92) Parsed header: {
-  date: [ 'Wed, 06 Oct 2021 23:04:13 -0700' ],
-  subject: [ 'New announcement: "Dear All,\nTodays lab is from 4:00 PM.…"' ],
-  from: [
-    '"Surya Prakash (Classroom)" <no-reply+259ae0ae@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-Message #94
-Message #95
-Message #96
-Message #97
-Message #98
-(#93) Parsed header: {}
-(#93) Parsed header: {
-  from: [ 'Col Mohit Bawa <mohit.bawa@bmu.edu.in>' ],
-  date: [ 'Thu, 7 Oct 2021 12:45:51 +0530' ],
-  subject: [ 'World Mental Health Day' ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-(#94) Parsed header: {}
-(#94) Parsed header: {
-  from: [ 'Library BML Munjal University <library@bmu.edu.in>' ],
-  date: [ 'Thu, 7 Oct 2021 15:24:39 +0530' ],
-  subject: [ 'Recording - DELNET Session' ],
-  to: [
-    'studentcommunity@bmu.edu.in, SoL Faculty <solfaculty@bmu.edu.in>, somfaculty@bmu.edu.in, soetfaculty@bmu.edu.in'
-  ]
-}
-(#95) Parsed header: {}
-(#95) Parsed header: {
-  date: [ 'Thu, 07 Oct 2021 04:10:40 -0700' ],
-  subject: [ 'New announcement: "Still I am at the class link ... those…"' ],
-  from: [
-    '"Surya Prakash (Classroom)" <no-reply+259ae0ae@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#96) Parsed header: {}
-(#96) Parsed header: {
-  from: [ 'Riya Jain <riya.jain.21cse@bmu.edu.in>' ],
-  date: [ 'Thu, 7 Oct 2021 17:01:47 +0530' ],
-  subject: [ 'Re: Hey!' ],
-  to: [ 'Anmol Jhamb <anmol.jhamb.21cse@bmu.edu.in>' ]
-}
-(#97) Parsed header: {}
-(#97) Parsed header: {
-  date: [ 'Thu, 07 Oct 2021 05:20:01 -0700' ],
-  subject: [ 'New announcement: "Dear Students\r\nPlease find the Tutorial…"' ],
-  from: [
-    '"Ranjib Banerjee (Classroom)" <no-reply+1fc8e9cd@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-Message #99
-Message #100
-Message #101
-(#98) Parsed header: {}
-(#98) Parsed header: {
-  from: [ 'Club Affairs Secretary <clubaffairs.secretary@bmu.edu.in>' ],
-  date: [ 'Thu, 7 Oct 2021 19:01:02 +0530' ],
-  subject: [ 'Fwd: Hackathon Announcement (ACM)' ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-(#99) Parsed header: {}
-(#99) Parsed header: {
-  from: [ 'Club Events <clubevents@bmu.edu.in>' ],
-  date: [ 'Thu, 7 Oct 2021 22:38:51 +0530' ],
-  subject: [ 'Event Updates' ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-(#100) Parsed header: {}
-(#100) Parsed header: {
-  date: [ 'Thu, 07 Oct 2021 21:45:12 -0700' ],
-  subject: [ 'New announcement: "Hi Students!!\r\nWelcome to the course on…"' ],
-  from: [
-    '"Nandita Choudhury (Classroom)" <no-reply+d7dacca3@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-Message #102
-(#101) Parsed header: {}
-(#101) Parsed header: {
-  from: [ 'Adnan Hussain <adnan.hussain@bmu.edu.in>' ],
-  date: [ 'Fri, 8 Oct 2021 10:39:41 +0530' ],
-  subject: [ 'Selection of Co-curricular course | 2021 UG Batch' ],
-  to: [
-    'BA LLB 2021 Batch Students <bll2021@bmu.edu.in>, BBA LLB 2021 Batch Students <bbl2021@bmu.edu.in>, BBA 2021 Batch Students <bba2021@bmu.edu.in>, BBA-MBA- Integrated 2021 Batch Students <bmi2021@bmu.edu.in>, Btech 2021 Batch Students <btech2021@bmu.edu.in>, BCom Hons 2021 Batch Students <bch2021@bmu.edu.in>, Shanmukha Shashank Bodduluri <bshanmukha.shashank.21bah@bmu.edu.in>, Suryapratap Chaudhary <suryapratap.chaudhary.21bah@bmu.edu.in>'
-  ]
-}
-Message #103
-(#102) Parsed header: {}
-(#102) Parsed header: {
-  from: [ 'Veeneta Jamwal <veeneta.jamwal@bmu.edu.in>' ],
-  date: [ 'Fri, 8 Oct 2021 11:05:51 +0530' ],
-  subject: [
-    'RE: Session with Prof. Anirban Chakroborty, Dean, SoET on 12th Oct 2021 at 5 pm (Todays Interaction rescheduled)'
-  ],
-  to: [ 'Btech 2021 Batch Students <btech2021@bmu.edu.in>' ]
-}
-Message #104
-Message #105
-Message #106
-Message #107
-(#103) Parsed header: {}
-(#103) Parsed header: {
-  from: [ 'Col Mohit Bawa <mohit.bawa@bmu.edu.in>' ],
-  date: [ 'Fri, 8 Oct 2021 11:58:30 +0530' ],
-  subject: [ 'Advisory by Dr Jaspal Bhatia' ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-(#104) Parsed header: {}
-(#104) Parsed header: {
-  date: [ 'Fri, 08 Oct 2021 00:21:46 -0700' ],
-  subject: [
-    'New announcement: "Dear Students,\r\n\r\n\r\nPlease log in from…"'
-  ],
-  from: [
-    '"Nishtha Phutela (Classroom)" <no-reply+4450a639@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#105) Parsed header: {}
-(#105) Parsed header: {
-  from: [ 'Events Secretary <events.secretary@bmu.edu.in>' ],
-  date: [ 'Fri, 8 Oct 2021 15:58:23 +0530' ],
-  subject: [
-    'BEE inviting nominations for Energy Efficiency and Innovation Awards 2021'
-  ],
-  to: [ 'studentcommunity@bmu.edu.in' ]
-}
-(#106) Parsed header: {}
-(#106) Parsed header: {
-  date: [ 'Fri, 08 Oct 2021 03:56:33 -0700' ],
-  subject: [ 'New assignment: "Tut#1"' ],
-  from: [
-    '"Ranjib Banerjee (Classroom)" <no-reply+1fc8e9cd@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-Message #108
-Message #109
-Message #110
-(#107) Parsed header: {}
-(#107) Parsed header: {
-  date: [ 'Fri, 08 Oct 2021 13:36:38 +0000 (UTC)' ],
-  from: [ 'Tinkercad <no-reply@autodesk.com>' ],
-  subject: [ 'Welcome to Tinkercad!' ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#108) Parsed header: {}
-(#108) Parsed header: {
-  date: [ 'Fri, 08 Oct 2021 15:32:38 +0000' ],
-  subject: [ 'ARDUINO 101-FEEDBACK FORM' ],
-  from: [ 'Google Forms <forms-receipts-noreply@google.com>' ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#109) Parsed header: {}
-(#109) Parsed header: {
-  from: [ 'Dean Research <deanresearch@bmu.edu.in>' ],
-  date: [ 'Fri, 8 Oct 2021 21:16:06 +0530' ],
-  subject: [ 'Greetings from Dean Research Office' ],
-  to: [
-    'SOET Faculty <soetfaculty@bmu.edu.in>, SOM Faculty <somfaculty@bml.edu.in>, Student Community <studentcommunity@bmu.edu.in>, SoL Faculty <solfaculty@bmu.edu.in>'
-  ]
-}
-Message #111
-Message #112
-Message #113
-(#110) Parsed header: {}
-(#110) Parsed header: {
-  from: [ '"Grammarly" <info@send.grammarly.com>' ],
-  to: [ '<anmol.jhamb.21cse@bmu.edu.in>' ],
-  subject: [ 'What Exactly Is Grammarly Premium?' ],
-  date: [ 'Fri, 08 Oct 2021 10:35:55 -0600' ]
-}
-(#111) Parsed header: {}
-(#111) Parsed header: {
-  from: [ 'President SCEC <president.scec@bmu.edu.in>' ],
-  date: [ 'Sat, 9 Oct 2021 10:50:37 +0530' ],
-  subject: [ 'Invitation | Student Yearbook 2020-21 Unveiling Ceremony' ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-(#112) Parsed header: {}
-(#112) Parsed header: {
-  from: [ 'Sharad Sharma <sharad.sharma@bmu.edu.in>' ],
-  date: [ 'Sat, 9 Oct 2021 11:34:47 +0530' ],
-  subject: [
-    'Fwd: Requirement of Personal Details for Student University ID Card Preparation'
-  ],
-  to: [ 'Registrar Office <registraroffice@bmu.edu.in>' ]
-}
-Message #114
-Message #115
-(#113) Parsed header: {}
-(#113) Parsed header: {
-  from: [ 'Sharad Sharma <sharad.sharma@bmu.edu.in>' ],
-  date: [ 'Sat, 9 Oct 2021 19:23:49 +0530' ],
-  subject: [ 'Fwd: Updation of Personal Details in Maitri Portal' ],
-  to: [ 'Registrar Office <registraroffice@bmu.edu.in>' ]
-}
-(#114) Parsed header: {}
-(#114) Parsed header: {
-  date: [ 'Sat, 09 Oct 2021 15:32:35 +0000' ],
-  subject: [ 'ARDUINO 101-FEEDBACK FORM' ],
-  from: [ 'Google Forms <forms-receipts-noreply@google.com>' ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-Message #116
-Message #117
-Message #118
-(#115) Parsed header: {}
-(#115) Parsed header: {
-  from: [ '"Grammarly" <info@send.grammarly.com>' ],
-  to: [ '<anmol.jhamb.21cse@bmu.edu.in>' ],
-  subject: [ 'Write like a pro. Here’s 40% Off Grammarly Premium!' ],
-  date: [ 'Sun, 10 Oct 2021 10:38:24 -0600' ]
-}
-(#116) Parsed header: {}
-(#116) Parsed header: {
-  date: [ 'Sun, 10 Oct 2021 17:43:38 +0000' ],
-  subject: [ "Meet recording status from 'RIQCNMVHMO' on Oct 10, 2021" ],
-  from: [ 'meet-recordings-noreply@google.com' ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#117) Parsed header: {}
-(#117) Parsed header: {
-  date: [ 'Sun, 10 Oct 2021 17:57:15 +0000' ],
-  subject: [ 'riq-cnmv-hmo (2021-10-10 at 09:32 GMT-7)' ],
-  from: [ 'meet-recordings-noreply@google.com' ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-Message #119
-Message #120
-Message #121
-Message #122
-Message #123
-(#118) Parsed header: {}
-(#118) Parsed header: {
-  from: [ 'Veeneta Jamwal <veeneta.jamwal@bmu.edu.in>' ],
-  date: [ 'Mon, 11 Oct 2021 09:58:40 +0530' ],
-  subject: [
-    'Research talk by Prof. Monica Lira Cantu (Spain) on 11 October 2021 (SLESGR - 2021 online symposium series)'
-  ],
-  to: [
-    'Btech 2021 Batch Students <btech2021@bmu.edu.in>, Btech 2020 Batch Students <btech2020@bmu.edu.in>, Btech 2019 Batch Students <btech2019@bmu.edu.in>, Btech 2018 Batch Students <btech2018@bmu.edu.in>'
-  ]
-}
-(#119) Parsed header: {}
-(#119) Parsed header: {
-  date: [ 'Mon, 11 Oct 2021 04:58:19 +0000' ],
-  subject: [ 'EC details' ],
-  from: [ 'Google Forms <forms-receipts-noreply@google.com>' ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#120) Parsed header: {}
-(#120) Parsed header: {
-  date: [ 'Sun, 10 Oct 2021 22:55:07 -0700' ],
-  subject: [ 'New announcement: "Dear Students\r\nPlease find below the…"' ],
-  from: [
-    '"Ranjib Banerjee (Classroom)" <no-reply+1fc8e9cd@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#121) Parsed header: {}
-(#121) Parsed header: {
-  date: [ 'Sun, 10 Oct 2021 22:56:34 -0700' ],
-  subject: [ 'New announcement: "Dear Students\r\nPlease find below the PPT…"' ],
-  from: [
-    '"Ranjib Banerjee (Classroom)" <no-reply+1fc8e9cd@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#122) Parsed header: {}
-(#122) Parsed header: {
-  date: [ 'Mon, 11 Oct 2021 00:54:48 -0700' ],
-  subject: [ 'New material: "Introduction to C++ Part I"' ],
-  from: [
-    '"Nishtha Phutela (Classroom)" <no-reply+4450a639@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-Message #124
-(#123) Parsed header: {}
-(#123) Parsed header: {
-  from: [ 'Club Affairs Secretary <clubaffairs.secretary@bmu.edu.in>' ],
-  date: [ 'Mon, 11 Oct 2021 14:40:57 +0530' ],
-  subject: [ 'Re: Hackathon Announcement (ACM)' ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-Message #125
-Message #126
-Message #127
-Message #128
-Message #129
-Message #130
-(#124) Parsed header: {}
-(#124) Parsed header: {
-  from: [ '"Registrar`s Office BMU" <registrarofficebmu@bmu.edu.in>' ],
-  date: [ 'Mon, 11 Oct 2021 15:14:10 +0530' ],
-  subject: [ 'Scholarship & Financial Aid Policy for B.Tech 2021 Batch' ],
-  to: [
-    'Dean SOET <dean.soet@bmu.edu.in>, Abhay Sharma <abhay.sharma@bmu.edu.in>, Naveen Parasar <naveen.parasar@bmu.edu.in>, Hansa Sachdeva <hansa.sachdeva@bmu.edu.in>, Shuchika Vinayak <shuchika.vinayak@bmu.edu.in>, Accounts Department <accounts@bmu.edu.in>, Program Office SoET <program.office.soet@bmu.edu.in>, Registrar Office <registraroffice@bmu.edu.in>'
-  ]
-}
-(#125) Parsed header: {}
-(#125) Parsed header: {
-  from: [ '"Registrar`s Office BMU" <registrarofficebmu@bmu.edu.in>' ],
-  date: [ 'Mon, 11 Oct 2021 15:36:36 +0530' ],
-  subject: [ 'Re: Scholarship & Financial Aid Policy for B.Tech 2021 Batch' ],
-  to: [ 'Anmol Jhamb <anmol.jhamb.21cse@bmu.edu.in>' ]
-}
-(#126) Parsed header: {}
-(#126) Parsed header: {
-  date: [ 'Mon, 11 Oct 2021 04:45:03 -0700' ],
-  subject: [ 'New announcement: "Dear Students, \nPlease read ch3 from…"' ],
-  from: [
-    '"Nishtha Phutela (Classroom)" <no-reply+4450a639@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#127) Parsed header: {}
-(#127) Parsed header: {
-  from: [ 'Club Events <clubevents@bmu.edu.in>' ],
-  date: [ 'Mon, 11 Oct 2021 20:08:09 +0530' ],
-  subject: [ 'Event Update' ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-(#128) Parsed header: {}
-(#128) Parsed header: {
-  from: [ 'Club Events <clubevents@bmu.edu.in>' ],
-  date: [ 'Mon, 11 Oct 2021 20:32:25 +0530' ],
-  subject: [ 'Re: Event Update' ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-(#129) Parsed header: {}
-(#129) Parsed header: {
-  date: [ 'Mon, 11 Oct 2021 17:51:28 +0000' ],
-  subject: [ 'Form shared with you: "EC details"' ],
-  from: [
-    '"BMU Robotics Club (via Google Forms)" <drive-shares-dm-noreply@google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-Message #131
-Message #132
-Message #133
-Message #134
-(#130) Parsed header: {}
-(#130) Parsed header: {
-  date: [ 'Mon, 11 Oct 2021 20:05:34 +0000' ],
-  subject: [
-    'Item shared with you: "Screenshot_20210929-144328 - Kanika Sharma.png"'
-  ],
-  from: [
-    '"BMU Robotics Club (via Google Drive)" <drive-shares-dm-noreply@google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#131) Parsed header: {}
-(#131) Parsed header: {
-  date: [ 'Mon, 11 Oct 2021 20:06:25 +0000' ],
-  subject: [ 'Item shared with you: "passport - Chandrakanth Kondeti.jpg"' ],
-  from: [
-    '"BMU Robotics Club (via Google Drive)" <drive-shares-dm-noreply@google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#132) Parsed header: {}
-(#132) Parsed header: {
-  date: [ 'Mon, 11 Oct 2021 21:50:24 -0700' ],
-  subject: [ 'New assignment: "Gantt Chart Submission "' ],
-  from: [
-    '"Surya Prakash (Classroom)" <no-reply+259ae0ae@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#133) Parsed header: {}
-(#133) Parsed header: {
-  date: [ 'Mon, 11 Oct 2021 21:52:51 -0700' ],
-  subject: [ 'New material: "Project Management by Dr Surya "' ],
-  from: [
-    '"Surya Prakash (Classroom)" <no-reply+259ae0ae@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-Message #135
-Message #136
-Message #137
-Message #138
-(#134) Parsed header: {}
-(#134) Parsed header: {
-  from: [ 'ACIC BMU <acic@bmu.edu.in>' ],
-  date: [ 'Tue, 12 Oct 2021 12:00:00 +0530' ],
-  subject: [
-    'Register Now for the Foundation Program For Aspiring Entrepreneurs (FPAE)'
-  ],
-  to: [
-    'Student Community <studentcommunity@bmu.edu.in>, SOM Faculty <somfaculty@bmu.edu.in>, SoL Faculty <solfaculty@bmu.edu.in>, SOET Faculty <soetfaculty@bmu.edu.in>'
-  ]
-}
-(#135) Parsed header: {}
-(#135) Parsed header: {
-  from: [ 'President SCEC <president.scec@bmu.edu.in>' ],
-  date: [ 'Tue, 12 Oct 2021 12:20:05 +0530' ],
-  subject: [ 'Orientation Feedback' ],
-  to: [
-    'Btech 2021 Batch Students <btech2021@bmu.edu.in>, BA LLB 2021 Batch Students <bll2021@bmu.edu.in>, BA Hons 2021 Batch Students <bah2021@bmu.edu.in>, BBA LLB 2020 Batch Students <bbl2020@bmu.edu.in>, BBA 2021 Batch Students <bba2021@bmu.edu.in>, BCom Hons 2021 Batch Students <bch2021@bmu.edu.in>, BBA-MBA- Integrated 2021 Batch Students <bmi2021@bmu.edu.in>'
-  ]
-}
-(#136) Parsed header: {}
-(#136) Parsed header: {
-  date: [ 'Tue, 12 Oct 2021 00:48:03 -0700' ],
-  subject: [
-    'New announcement: "The link to the PM class recording-\r\n\r\n…"'
-  ],
-  from: [
-    '"Surya Prakash (Classroom)" <no-reply+259ae0ae@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#137) Parsed header: {}
-(#137) Parsed header: {
-  date: [ 'Tue, 12 Oct 2021 00:48:27 -0700' ],
-  subject: [ 'New announcement: "Dear Students, Find the ppt attached…"' ],
-  from: [
-    '"Anubhav Agrawal (Classroom)" <no-reply+1e807b96@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-Message #139
-Message #140
-Message #141
-(#138) Parsed header: {}
-(#138) Parsed header: {
-  from: [ 'Veeneta Jamwal <veeneta.jamwal@bmu.edu.in>' ],
-  date: [ 'Tue, 12 Oct 2021 13:21:51 +0530' ],
-  subject: [
-    'RE: Session with Prof. Anirban Chakroborty, Dean, SoET on 12th Oct 2021 at 5 pm (Todays Interaction rescheduled)'
-  ],
-  to: [ 'Btech 2021 Batch Students <btech2021@bmu.edu.in>' ]
-}
-(#139) Parsed header: {}
-(#139) Parsed header: {
-  from: [ '"Registrar`s Office BMU" <registrarofficebmu@bmu.edu.in>' ],
-  date: [ 'Tue, 12 Oct 2021 14:28:36 +0530' ],
-  subject: [
-    'Re: Regarding Merit-Cum-Means Haryana Domicile Scholarship (AY: 2021-22)'
-  ],
-  to: [ 'Registrar Office <registraroffice@bmu.edu.in>' ]
-}
-(#140) Parsed header: {}
-(#140) Parsed header: {
-  from: [ 'Club Affairs Secretary <clubaffairs.secretary@bmu.edu.in>' ],
-  date: [ 'Tue, 12 Oct 2021 15:31:03 +0530' ],
-  subject: [ 'Nominations for HackBMU OC' ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-Message #142
-Message #143
-Message #144
-(#141) Parsed header: {}
-(#141) Parsed header: {
-  from: [ 'Veeneta Jamwal <veeneta.jamwal@bmu.edu.in>' ],
-  date: [ 'Tue, 12 Oct 2021 17:05:52 +0530' ],
-  subject: [
-    'RE: Session with Prof. Anirban Chakroborty, Dean, SoET on 12th Oct 2021 at 5 pm (Todays Interaction rescheduled)'
-  ],
-  to: [ 'Btech 2021 Batch Students <btech2021@bmu.edu.in>' ]
-}
-(#142) Parsed header: {}
-(#142) Parsed header: {
-  from: [ 'President SCEC <president.scec@bmu.edu.in>' ],
-  date: [ 'Tue, 12 Oct 2021 17:11:17 +0530' ],
-  subject: [ 'Re: Invitation | Student Yearbook 2020-21 Unveiling Ceremony' ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-(#143) Parsed header: {}
-(#143) Parsed header: {
-  from: [ 'President SCEC <president.scec@bmu.edu.in>' ],
-  date: [ 'Tue, 12 Oct 2021 18:14:13 +0530' ],
-  subject: [ 'Student Yearbook 2020-21' ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-Message #145
-Message #146
-Message #147
-Message #148
-Message #149
-(#144) Parsed header: {}
-(#144) Parsed header: {
-  from: [ '"Grammarly" <info@send.grammarly.com>' ],
-  to: [ '<anmol.jhamb.21cse@bmu.edu.in>' ],
-  subject: [ 'Last Chance: 40% Off a Grammarly Premium Upgrade' ],
-  date: [ 'Tue, 12 Oct 2021 10:40:19 -0600' ]
-}
-(#145) Parsed header: {}
-(#145) Parsed header: {
-  from: [ 'Club Affairs Secretary <clubaffairs.secretary@bmu.edu.in>' ],
-  date: [ 'Wed, 13 Oct 2021 13:04:27 +0530' ],
-  subject: [ 'Club Introductions & Whatsapp Links' ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-(#146) Parsed header: {}
-(#146) Parsed header: {
-  date: [ 'Wed, 13 Oct 2021 00:36:13 -0700' ],
-  subject: [ 'New announcement: "Dear Students, Find the ppt attached…"' ],
-  from: [
-    '"Anubhav Agrawal (Classroom)" <no-reply+1e807b96@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#147) Parsed header: {}
-(#147) Parsed header: {
-  from: [ 'Club Events <clubevents@bmu.edu.in>' ],
-  date: [ 'Wed, 13 Oct 2021 13:26:51 +0530' ],
-  subject: [ 'ANNOUNCEMENT | Robotics Winter of Code | FLAGSHIP EVENT' ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-(#148) Parsed header: {}
-(#148) Parsed header: {
-  date: [ 'Wed, 13 Oct 2021 23:46:55 -0700' ],
-  subject: [
-    'New announcement: "Dear All,\r\n\r\n\r\nTry the following programs…"'
-  ],
-  from: [
-    '"Nishtha Phutela (Classroom)" <no-reply+4450a639@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-Message #150
-(#149) Parsed header: {}
-(#149) Parsed header: {
-  from: [ 'Library BML Munjal University <library@bmu.edu.in>' ],
-  date: [ 'Thu, 14 Oct 2021 12:55:37 +0530' ],
-  subject: [ 'World Students Day Invitation (15th October 2021)' ],
-  to: [ 'studentcommunity@bmu.edu.in' ]
-}
-Message #151
-Message #152
-Message #153
-(#150) Parsed header: {}
-(#150) Parsed header: {
-  from: [ 'Propel BMU <propel@bmu.edu.in>' ],
-  date: [ 'Thu, 14 Oct 2021 15:00:00 +0530' ],
-  subject: [ "Register Now | World's First AI based Entrepreneurship Game" ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-(#151) Parsed header: {}
-(#151) Parsed header: {
-  date: [ 'Thu, 14 Oct 2021 03:40:41 -0700' ],
-  subject: [ 'New announcement: "https://forms.gle/DhPhU4jmbV4CXU1H9\n…"' ],
-  from: [
-    '"Surya Prakash (Classroom)" <no-reply+259ae0ae@classroom.google.com>'
-  ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#152) Parsed header: {}
-(#152) Parsed header: {
-  from: [ 'Ishan Raje <ishan.raje.21cse@bmu.edu.in>' ],
-  date: [ 'Thu, 14 Oct 2021 17:29:02 +0530' ],
-  subject: [ '' ],
-  to: [ 'Anmol Jhamb <anmol.jhamb.21cse@bmu.edu.in>' ]
-}
-Message #154
-(#153) Parsed header: {}
-(#153) Parsed header: {
-  from: [ 'ACIC BMU <acic@bmu.edu.in>' ],
-  date: [ 'Thu, 14 Oct 2021 18:00:00 +0530' ],
-  subject: [
-    'Opportunity for Aspiring Entrepreneurs - Register Now for the Foundation Program for Aspiring Entrepreneurs (FPAE)'
-  ],
-  to: [
-    'Student Community <studentcommunity@bmu.edu.in>, SOM Faculty <somfaculty@bmu.edu.in>, SoL Faculty <solfaculty@bmu.edu.in>, SOET Faculty <soetfaculty@bmu.edu.in>'
-  ]
-}
-Message #155
-(#154) Parsed header: {}
-(#154) Parsed header: {
-  from: [ 'Club Affairs Secretary <clubaffairs.secretary@bmu.edu.in>' ],
-  date: [ 'Thu, 14 Oct 2021 18:14:15 +0530' ],
-  subject: [ 'ANNOUNCEMENT | State Level Camp Nomination | NSS' ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-Message #156
-(#155) Parsed header: {}
-(#155) Parsed header: {
-  from: [ 'Club Events <clubevents@bmu.edu.in>' ],
-  date: [ 'Thu, 14 Oct 2021 19:06:38 +0530' ],
-  subject: [ 'Event Updates' ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-Message #157
-(#156) Parsed header: {}
-(#156) Parsed header: {
-  from: [ 'Club Affairs Secretary <clubaffairs.secretary@bmu.edu.in>' ],
-  date: [ 'Thu, 14 Oct 2021 22:37:52 +0530' ],
-  subject: [ 'Nominations for Student Talks OC | Club Sierra' ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-Message #158
-(#157) Parsed header: {}
-(#157) Parsed header: {
-  from: [ 'Club Events <clubevents@bmu.edu.in>' ],
-  date: [ 'Fri, 15 Oct 2021 17:54:46 +0530' ],
-  subject: [ 'Re: ANNOUNCEMENT | Robotics Winter of Code | FLAGSHIP EVENT' ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-Message #159
-Message #160
-Message #161
-Message #162
-Message #163
-(#158) Parsed header: {}
-(#158) Parsed header: {
-  from: [ 'Club Affairs Secretary <clubaffairs.secretary@bmu.edu.in>' ],
-  date: [ 'Fri, 15 Oct 2021 18:20:43 +0530' ],
-  subject: [
-    'ANNOUNCEMENT | FREE IUCEE Course for students on Sustainability | Register before Oct 20 seats limited'
-  ],
-  to: [ 'Student Community <studentcommunity@bmu.edu.in>' ]
-}
-(#159) Parsed header: {
-  '<b>email': [
-    "helpline@antiragging.in</b><br /><br />Dear JHAMB ANMOL<br/><br/>1.=\tYour Anti Ragging Undertaking Reference no. is: 3028393<br/>2.\tPlease forward= this e mail, via e mail, to the concerned person in your college and your= parents also. Copy that e mail to: antiragging.askt@gmail.com<br/>3.\tThe= concerned person in your college can see the list of all students of your= college who have submitted their Undertakings on the following link.<br/><br/><b><a= href=3D'https://www.antiragging.in/Site/show_affidavit_summary1.aspx?id=3D3028393&source=3DAntiragging&code=3DU-0735'>Click= here to get the list of Undertaking/Affidavits of your college</a></b><br/><br/>Dear= Parents,<br/><b><a href=3D'https://www.antiragging.in/Site/parentconfirmationlink.aspx?id=3D3028393&source=3DAntiragging&code=3DBML= MUNJAL UNIVERSITY&pnam=3DMR. AALOK JHAMB&st=3DJHAMB ANMOL'>Please Click= here to file your child/ward's Undertaking/Affidavit.</a></b><br><br/>4.=\tThank you for filing your Undertaking/Affidavit Online. We appreciate your= contribution towards saving our environment. <br/><br/>PLEASE<br/>a)\tDo= not respond to this mail.<br/>b)\tIf you have made any mistakes please do= not write or call us for any correction.  You can fill ON LINE Undertaking= as many times as you like.<br/>c)\tCall us on 1800 180 55 22 whenever you= need our help. <br/><b> Enjoy your life in College. Don't let any body= destroy it.</b><br/> <br/>Best wishes <br/>Anti Ragging Cell<br/>helpline@antiragging.in<br/>Toll= Free Number - 1800 180 5522</b><br/><a href=3D'https://www.facebook.com/antiragging.in'>Like= us on Facebook </a> to remain updated on the latest happenings.<br/><b>Please= do not print this email unless it is absolutely necessary, Save Paper,= Save Trees.</b>"
-  ]
-}
-(#159) Parsed header: {
-  from: [ 'info@antiragging.info' ],
-  to: [ 'ANMOL.JHAMB.21CSE@BMU.EDU.IN' ],
-  date: [ '15 Oct 2021 21:51:49 +0530' ],
-  subject: [
-    'SUB: Reference No. 3028393 -Online Anti Ragging undertaking received confirmation'
-  ]
-}
-(#160) Parsed header: {
-  '<b>email': [
-    "helpline@antiragging.in</b><br /><br />Dear JHAMB ANMOL<br/><br/>1.=\tYour Anti Ragging Undertaking Reference no. is: 3028393<br/>2.\tPlease forward= this e mail, via e mail, to the concerned person in your college and your= parents also. Copy that e mail to: antiragging.askt@gmail.com<br/>3.\tThe= concerned person in your college can see the list of all students of your= college who have submitted their Undertakings on the following link.<br/><br/><b><a= href=3D'https://www.antiragging.in/Site/show_affidavit_summary1.aspx?id=3D3028393&source=3DAntiragging&code=3DU-0735'>Click= here to get the list of Undertaking/Affidavits of your college</a></b><br/><br/>Dear= Parents,<br/><b><a href=3D'https://www.antiragging.in/Site/parentconfirmationlink.aspx?id=3D3028393&source=3DAntiragging&code=3DBML= MUNJAL UNIVERSITY&pnam=3DMR. AALOK JHAMB&st=3DJHAMB ANMOL'>Please Click= here to file your child/ward's Undertaking/Affidavit.</a></b><br><br/>4.=\tThank you for filing your Undertaking/Affidavit Online. We appreciate your= contribution towards saving our environment. <br/><br/>PLEASE<br/>a)\tDo= not respond to this mail.<br/>b)\tIf you have made any mistakes please do= not write or call us for any correction.  You can fill ON LINE Undertaking= as many times as you like.<br/>c)\tCall us on 1800 180 55 22 whenever you= need our help. <br/><b> Enjoy your life in College. Don't let any body= destroy it.</b><br/> <br/>Best wishes <br/>Anti Ragging Cell<br/>helpline@antiragging.in<br/>Toll= Free Number - 1800 180 5522</b><br/><a href=3D'https://www.facebook.com/antiragging.in'>Like= us on Facebook </a> to remain updated on the latest happenings.<br/><b>Please= do not print this email unless it is absolutely necessary, Save Paper,= Save Trees.</b>"
-  ]
-}
-(#160) Parsed header: {
-  from: [ 'info@antiragging.info' ],
-  to: [ 'ANMOL.JHAMB.21CSE@BMU.EDU.IN' ],
-  date: [ '15 Oct 2021 21:55:22 +0530' ],
-  subject: [
-    'SUB: Reference No. 3028393 -Online Anti Ragging undertaking received confirmation'
-  ]
-}
-(#161) Parsed header: {
-  '<b>email': [
-    "helpline@antiragging.in</b><br /><br />Dear ANMOL JHAMB<br/><br/>1.=\tYour Anti Ragging Undertaking Reference no. is: 3028409<br/>2.\tPlease forward= this e mail, via e mail, to the concerned person in your college and your= parents also. Copy that e mail to: antiragging.askt@gmail.com<br/>3.\tThe= concerned person in your college can see the list of all students of your= college who have submitted their Undertakings on the following link.<br/><br/><b><a= href=3D'https://www.antiragging.in/Site/show_affidavit_summary1.aspx?id=3D3028409&source=3DAntiragging&code=3DU-0735'>Click= here to get the list of Undertaking/Affidavits of your college</a></b><br/><br/>Dear= Parents,<br/><b><a href=3D'https://www.antiragging.in/Site/parentconfirmationlink.aspx?id=3D3028409&source=3DAntiragging&code=3DBML= MUNJAL UNIVERSITY&pnam=3DMR. AALOK JHAMB&st=3DANMOL JHAMB'>Please Click= here to file your child/ward's Undertaking/Affidavit.</a></b><br><br/>4.=\tThank you for filing your Undertaking/Affidavit Online. We appreciate your= contribution towards saving our environment. <br/><br/>PLEASE<br/>a)\tDo= not respond to this mail.<br/>b)\tIf you have made any mistakes please do= not write or call us for any correction.  You can fill ON LINE Undertaking= as many times as you like.<br/>c)\tCall us on 1800 180 55 22 whenever you= need our help. <br/><b> Enjoy your life in College. Don't let any body= destroy it.</b><br/> <br/>Best wishes <br/>Anti Ragging Cell<br/>helpline@antiragging.in<br/>Toll= Free Number - 1800 180 5522</b><br/><a href=3D'https://www.facebook.com/antiragging.in'>Like= us on Facebook </a> to remain updated on the latest happenings.<br/><b>Please= do not print this email unless it is absolutely necessary, Save Paper,= Save Trees.</b>"
-  ]
-}
-(#161) Parsed header: {
-  from: [ 'info@antiragging.info' ],
-  to: [ 'ANMOL.JHAMB.21CSE@BMU.EDU.IN' ],
-  date: [ '15 Oct 2021 21:58:02 +0530' ],
-  subject: [
-    'SUB: Reference No. 3028409 -Online Anti Ragging undertaking received confirmation'
-  ]
-}
-(#162) Parsed header: {
-  '<b>email': [
-    "helpline@antiragging.in</b><br /><br />Dear ANMOL JHAMB<br/><br/>1.=\tYour Anti Ragging Undertaking Reference no. is: 3028409<br/>2.\tPlease forward= this e mail, via e mail, to the concerned person in your college and your= parents also. Copy that e mail to: antiragging.askt@gmail.com<br/>3.\tThe= concerned person in your college can see the list of all students of your= college who have submitted their Undertakings on the following link.<br/><br/><b><a= href=3D'https://www.antiragging.in/Site/show_affidavit_summary1.aspx?id=3D3028409&source=3DAntiragging&code=3DU-0735'>Click= here to get the list of Undertaking/Affidavits of your college</a></b><br/><br/>Dear= Parents,<br/><b><a href=3D'https://www.antiragging.in/Site/parentconfirmationlink.aspx?id=3D3028409&source=3DAntiragging&code=3DBML= MUNJAL UNIVERSITY&pnam=3DMR. AALOK JHAMB&st=3DANMOL JHAMB'>Please Click= here to file your child/ward's Undertaking/Affidavit.</a></b><br/>4.\tThank= you for filing your Undertaking/Affidavit Online. We appreciate your contribution= towards saving our environment. <br/><br/>PLEASE<br/>a)\tDo not respond= to this mail.<br/>b)\tIf you have made any mistakes please do not write= or call us for any correction.  You can fill ON LINE Undertaking as many= times as you like.<br/>c)\tCall us on 1800 180 55 22 whenever you need our= help. <br/><b> Enjoy your life in College. Don't let any body destroy it.</b><br/>= <br/>Best wishes <br/>Anti Ragging Cell<br/>helpline@antiragging.in<br/>Toll= Free Number - 1800 180 5522</b><br/><a href=3D'https://www.facebook.com/antiragging.in'>Like= us on Facebook </a> to remain updated on the latest happenings.<br/><b>Please= do not print this email unless it is absolutely necessary, Save Paper,= Save Trees.</b>"
-  ]
-}
-(#162) Parsed header: {
-  from: [ 'info@antiragging.info' ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ],
-  date: [ '15 Oct 2021 21:59:21 +0530' ],
-  subject: [
-    'SUB: Reference No. 3028409 -Online Anti Ragging undertaking received confirmation'
-  ]
-}
-(#163) Parsed header: {}
-Message #164
-Message #165
-(#163) Parsed header: {
-  from: [ 'Rishabh Jain <rishabh.jain.19bb@bmu.edu.in>' ],
-  date: [ 'Sat, 16 Oct 2021 12:01:02 +0530' ],
-  subject: [ 'Chess Tournament Whatsapp group' ],
-  to: [
-    'Sanskaar Kushwaha <sanskaar.kushwaha.21cse@bmu.edu.in>, udaya.kirangonuguntla.20cse@bmu.edu.in, Nipun Agarwal <nipun.agarwal.20cse@bmu.edu.in>, arpit.joshi.21cse@bmu.edu.in, abhimanyu.gulati.21cse@bmu.edu.in, kanika.sharma.21cse@bmu.edu.in, Atharva Shakya <atharva.shakya.20cse@bmu.edu.in>, Dheeraj Mehlawat <dheeraj.mehlawat.20cse@bmu.edu.in>, anmol.jhamb.21cse@bmu.edu.in, shahkinnari.ketan.21cse@bmu.edu.in, anoushka.srivastava.21cse@bmu.edu.in, sri.sivasatyavenkatedupuganti.20cse@bmu.edu.in, Abhik Ahuja <abhik.ahuja.20cse@bmu.edu.in>, manthena.lohithvarma.18cse@bmu.edu.in, guptasanskar19@gmail.com, ayush.yadav.20cse@bmu.edu.in, abhay.21cse@bmu.edu.in, aditya.choudhary.21cse@bmu.edu.in, samaksh.gupta.21cse@bmu.edu.in, aryan.kamboj.21cse@bmu.edu.in, ekansh.sharma.21cse@bmu.edu.in, soilderflancy123@gmail.com, mridul.goyal.21cse@bmu.edu.in, dhruv.gupta.21cse@bmu.edu.in, Tedlapalli Krishna <tedlapalli.krishna.19cs@bmu.edu.in>, dakshkumar2801@gmail.com'
-  ]
-}
-(#164) Parsed header: {}
-(#164) Parsed header: {
-  from: [ 'anoushka srivastava <anoushka.srivastava.21cse@bmu.edu.in>' ],
-  date: [ 'Sat, 16 Oct 2021 12:22:53 +0530' ],
-  subject: [ 'Re: Chess Tournament Whatsapp group' ],
-  to: [ 'Rishabh Jain <rishabh.jain.19bb@bmu.edu.in>' ]
-}
-Message #166
-Message #167
-(#165) Parsed header: {}
-(#165) Parsed header: {
-  date: [ 'Sat, 16 Oct 2021 07:58:54 +0000' ],
-  subject: [ 'HackBMU 5.0 OC Nominations' ],
-  from: [ 'Google Forms <forms-receipts-noreply@google.com>' ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ]
-}
-(#166) Parsed header: {
-  "hello <a href='https": [
-    "//auth.geeksforgeeks.org/user/c4exoyn2c4ifbl2hl2m8k6gj90k8mzwr8jqp66i0/'>c4exoyn2c4ifbl2hl2m8k6gj90k8mzwr8jqp66i0</a>,<br/><br/>Please click below to confirm your email<br/><br/>https://auth.geeksforgeeks.org/confirmEmail.php?c=axrfl2ob&e=anmol.jhamb.21cse%40bmu.edu.in&to=https://www.geeksforgeeks.org/<br/><br/>If you did not ask to confirm your email, please ignore this message.<br/><br/>\t\t\t\t\t Thank You,<br/>          <a href='https://www.geeksforgeeks.org'>GeeksforGeeks</a> & <a href='https://practice.geeksforgeeks.org'>Practice</a><br/>"
-  ]
-}
-(#166) Parsed header: {
-  date: [ 'Sat, 16 Oct 2021 08:10:10 +0000' ],
-  from: [ 'no-reply@geeksforgeeks.org' ],
-  to: [ 'anmol.jhamb.21cse@bmu.edu.in' ],
-  subject: [ 'GeeksforGeeks - Confirm Email Address' ]
-}
+Done fetching all messages!
+{
+  attachments: [],
+  headers: Map(22) {
+    'delivered-to' => {
+      value: [Array],
+      html: '<span class="mp_address_group"><a href="mailto:anmol.jhamb.21cse@bmu.edu.in" class="mp_address_email">anmol.jhamb.21cse@bmu.edu.in</a></span>',
+      text: 'anmol.jhamb.21cse@bmu.edu.in'
+    },
+    'received' => [
+      'by 2002:a05:7010:e246:b0:344:9ea3:9565 with SMTP id ls6csp1123942mdb; Sat, 15 Apr 2023 10:00:50 -0700 (PDT)',
+      'from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41]) by mx.google.com with SMTPS id k18-20020a05612202d200b004406212ba6csor1394960vki.76.2023.04.15.10.00.50 for <anmol.jhamb.21cse@bmu.edu.in> (Google Transport Security); Sat, 15 Apr 2023 10:00:50 -0700 (PDT)'
+    ],
+    'x-received' => [
+      'by 2002:a1f:6a87:0:b0:43f:c8ee:62e9 with SMTP id f129-20020a1f6a87000000b0043fc8ee62e9mr2975080vkc.15.1681578050536; Sat, 15 Apr 2023 10:00:50 -0700 (PDT)',
+      'by 2002:a05:6122:21a9:b0:401:7625:e9e3 with SMTP id j41-20020a05612221a900b004017625e9e3mr11438141vkd.1.1681578049932; Sat, 15 Apr 2023 10:00:49 -0700 (PDT)'
+    ],
+    'arc-seal' => 'i=1; a=rsa-sha256; t=1681578050; cv=none; d=google.com; s=arc-20160816; b=BgbYQYQWGfdk+jnTYtKJXAzovPe2ci07fIr33BjxnHctMIJfEZfSm9K38ISJjqcd3Z pQTaO5Me5j1frBDgdLkEgmiqZaSbN1qcYUZyWyKxX260LlsJHSf5YzuJnqdtI4iyfcDX ww/V31unhLEBv94cqmL6srJmNO57W0vIyhspyhe56H2QAEv/UtWcz5NOAuu67RUOMYow h+y6zvN1nXfwjcrwVsmG+aRBpZ8lTxCjpROt1Yfc0mIO1odwymHx7pSITUOGSTjXQAYD h3scvh6GOV16t0PbEC6QhRqNMe75kIMKu8+307pfQfi01tZI9X6NeJpJam+MLOV3fsRa bfxA==',
+    'arc-message-signature' => 'i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816; h=to:subject:message-id:date:from:in-reply-to:references:mime-version :dkim-signature; bh=pvrwOUPIlfkYE2Wd8aoXh/KlAl37Xc3C5RLEMTH8Hz4=; b=eAH6+IpE2JmWeUCq/mBGOzCwOzNTW4GUwPXxIETJkUfhKbMYMpDqrLdKO7UAGh9VrN 4D+0K+yGSgVvEvJ58eX8P1tu4ojYDYEw9/q/GYa8HvIFF7Vzjd/lM9mOgrD8OGsq5ciU x1+JFnO2OY6a9QwzLzOyQw98UOqdd59zwDmvHaPxA6+K20nRAaIV34Um7QDX1bdl4A7X R+T96DS2Y7WuHpZ7C+iH6OpbZ348/yy6ndnzIe2NkFoz3KLtFYeuFLS3Qcq3Gp0w2SDf 2e25p/qrbhz1ykBks36ItSAgyf40FmfFCc1bstGp1iwdeB0OqBjaSCk+f7WoumMsdwrP q2Pw==',
+    'arc-authentication-results' => 'i=1; mx.google.com; dkim=pass header.i=@gmail.com header.s=20221208 header.b=mLm+fQO4; spf=pass (google.com: domain of talktoanmolj@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=talktoanmolj@gmail.com; dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com',
+    'return-path' => {
+      value: [Array],
+      html: '<span class="mp_address_group"><a href="mailto:talktoanmolj@gmail.com" class="mp_address_email">talktoanmolj@gmail.com</a></span>',
+      text: 'talktoanmolj@gmail.com'
+    },
+    'received-spf' => 'pass (google.com: domain of talktoanmolj@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;',
+    'authentication-results' => 'mx.google.com; dkim=pass header.i=@gmail.com header.s=20221208 header.b=mLm+fQO4; spf=pass (google.com: domain of talktoanmolj@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=talktoanmolj@gmail.com; dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com',
+    'dkim-signature' => { value: 'v=1', params: [Object] },
+    'x-google-dkim-signature' => 'v=1; a=rsa-sha256; c=relaxed/relaxed; d=1e100.net; s=20221208; t=1681578050; x=1684170050; h=to:subject:message-id:date:from:in-reply-to:references:mime-version :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to; bh=pvrwOUPIlfkYE2Wd8aoXh/KlAl37Xc3C5RLEMTH8Hz4=; b=ItMVsO+2b+/1zYEAPXtLa77Y8SW55pU54w8izezBN0wsBTcohLGO1tW6DRgl7c/vcO ob7VGa2YlVmYKi5M7c2guQS9C4CWEY9UR/v+A0PjT0uGQC81RvbXShmz6CLhKt9FeCVJ ynUZnEQnNxM1rh1t+qsX1/ls93eaU3K7OZV8szxs72g/Ctvb2xTGOjdZm1gOTCICZwe0 zpRJv3wFVuCIKTQhNEMsIX0upY9P38CNjOPTp/aX0twRt60f3TkshZ2xL9ddD6m+8j4O bTAiXwK5MUeTXcYepR6uhuNbAOQVEmOcMvG0PrYuOaaaYQbzVo9kMhzNIj/mbYIKyqVO OuLg==',
+    'x-gm-message-state' => 'AAQBX9fVnrz/A5fwP2egfdk23kBlfttIfVtlCgdGIflV1QNipDz+RxbW LWTzg+exdZPuWc1qKfCgj6lGDTFBwgt8p456HWjwleTXKjE=',
+    'x-google-smtp-source' => 'AKy350boDINdmu4q/sk1kXSYt+WAGF99Qwbzv6EC77P91W5DpzmXDWh6MQ7rYHpQzGDrAH7Tp5/gB5UruRCmptHLk6g=',
+    'mime-version' => '1.0',
+    'references' => [
+      '<31b4103c-0c40-2ed2-d1e9-37510a2d17ee@localhost>',
+      '<CABH6yQRTuszh5CQBhHk-9zHwEmAp6CbXmsX82m2LiGBP97OQPA@mail.gmail.com>',
+      '<CABH6yQSmD0PzJFWtdZ6dz9yNKFwTmPKFYmVagQi1EAXMBS87=w@mail.gmail.com>'
+    ],
+    'in-reply-to' => '<CABH6yQSmD0PzJFWtdZ6dz9yNKFwTmPKFYmVagQi1EAXMBS87=w@mail.gmail.com>',
+    'from' => {
+      value: [Array],
+      html: '<span class="mp_address_group"><span class="mp_address_name">Anmol Jhamb</span> &lt;<a href="mailto:talktoanmolj@gmail.com" class="mp_address_email">talktoanmolj@gmail.com</a>&gt;</span>',
+      text: 'Anmol Jhamb <talktoanmolj@gmail.com>'
+    },
+    'date' => 2023-04-15T17:00:38.000Z,
+    'message-id' => '<CABH6yQReTi_tqCmWOh6z63CTTn73sNmqFDq-me7vRE1XSBAPJQ@mail.gmail.com>',
+    'subject' => 'Re: catchung up',
+    'to' => {
+      value: [Array],
+      html: '<span class="mp_address_group"><a href="mailto:anmol.jhamb.21cse@bmu.edu.in" class="mp_address_email">anmol.jhamb.21cse@bmu.edu.in</a></span>',
+      text: 'anmol.jhamb.21cse@bmu.edu.in'
+    },
+    'content-type' => { value: 'multipart/alternative', params: [Object] }
+  },
+  headerLines: [
+    {
+      key: 'delivered-to',
+      line: 'Delivered-To: anmol.jhamb.21cse@bmu.edu.in'
+    },
+    {
+      key: 'received',
+      line: 'Received: by 2002:a05:7010:e246:b0:344:9ea3:9565 with SMTP id ls6csp1123942mdb;\r\n' +
+        '        Sat, 15 Apr 2023 10:00:50 -0700 (PDT)'
+    },
+    {
+      key: 'x-received',
+      line: 'X-Received: by 2002:a1f:6a87:0:b0:43f:c8ee:62e9 with SMTP id f129-20020a1f6a87000000b0043fc8ee62e9mr2975080vkc.15.1681578050536;\r\n' +
+        '        Sat, 15 Apr 2023 10:00:50 -0700 (PDT)'
+    },
+    {
+      key: 'arc-seal',
+      line: 'ARC-Seal: i=1; a=rsa-sha256; t=1681578050; cv=none;\r\n' +
+        '        d=google.com; s=arc-20160816;\r\n' +
+        '        b=BgbYQYQWGfdk+jnTYtKJXAzovPe2ci07fIr33BjxnHctMIJfEZfSm9K38ISJjqcd3Z\r\n' +
+        '         pQTaO5Me5j1frBDgdLkEgmiqZaSbN1qcYUZyWyKxX260LlsJHSf5YzuJnqdtI4iyfcDX\r\n' +
+        '         ww/V31unhLEBv94cqmL6srJmNO57W0vIyhspyhe56H2QAEv/UtWcz5NOAuu67RUOMYow\r\n' +
+        '         h+y6zvN1nXfwjcrwVsmG+aRBpZ8lTxCjpROt1Yfc0mIO1odwymHx7pSITUOGSTjXQAYD\r\n' +
+        '         h3scvh6GOV16t0PbEC6QhRqNMe75kIMKu8+307pfQfi01tZI9X6NeJpJam+MLOV3fsRa\r\n' +
+        '         bfxA=='
+    },
+    {
+      key: 'arc-message-signature',
+      line: 'ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;\r\n' +
+        '        h=to:subject:message-id:date:from:in-reply-to:references:mime-version\r\n' +
+        '         :dkim-signature;\r\n' +
+        '        bh=pvrwOUPIlfkYE2Wd8aoXh/KlAl37Xc3C5RLEMTH8Hz4=;\r\n' +
+        '        b=eAH6+IpE2JmWeUCq/mBGOzCwOzNTW4GUwPXxIETJkUfhKbMYMpDqrLdKO7UAGh9VrN\r\n' +
+        '         4D+0K+yGSgVvEvJ58eX8P1tu4ojYDYEw9/q/GYa8HvIFF7Vzjd/lM9mOgrD8OGsq5ciU\r\n' +
+        '         x1+JFnO2OY6a9QwzLzOyQw98UOqdd59zwDmvHaPxA6+K20nRAaIV34Um7QDX1bdl4A7X\r\n' +
+        '         R+T96DS2Y7WuHpZ7C+iH6OpbZ348/yy6ndnzIe2NkFoz3KLtFYeuFLS3Qcq3Gp0w2SDf\r\n' +
+        '         2e25p/qrbhz1ykBks36ItSAgyf40FmfFCc1bstGp1iwdeB0OqBjaSCk+f7WoumMsdwrP\r\n' +
+        '         q2Pw=='
+    },
+    {
+      key: 'arc-authentication-results',
+      line: 'ARC-Authentication-Results: i=1; mx.google.com;\r\n' +
+        '       dkim=pass header.i=@gmail.com header.s=20221208 header.b=mLm+fQO4;\r\n' +
+        '       spf=pass (google.com: domain of talktoanmolj@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=talktoanmolj@gmail.com;\r\n' +
+        '       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com'
+    },
+    {
+      key: 'return-path',
+      line: 'Return-Path: <talktoanmolj@gmail.com>'
+    },
+    {
+      key: 'received',
+      line: 'Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])\r\n' +
+        '        by mx.google.com with SMTPS id k18-20020a05612202d200b004406212ba6csor1394960vki.76.2023.04.15.10.00.50\r\n' +
+        '        for <anmol.jhamb.21cse@bmu.edu.in>\r\n' +
+        '        (Google Transport Security);\r\n' +
+        '        Sat, 15 Apr 2023 10:00:50 -0700 (PDT)'
+    },
+    {
+      key: 'received-spf',
+      line: 'Received-SPF: pass (google.com: domain of talktoanmolj@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;'
+    },
+    {
+      key: 'authentication-results',
+      line: 'Authentication-Results: mx.google.com;\r\n' +
+        '       dkim=pass header.i=@gmail.com header.s=20221208 header.b=mLm+fQO4;\r\n' +
+        '       spf=pass (google.com: domain of talktoanmolj@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=talktoanmolj@gmail.com;\r\n' +
+        '       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com'
+    },
+    {
+      key: 'dkim-signature',
+      line: 'DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n' +
+        '        d=gmail.com; s=20221208; t=1681578050; x=1684170050;\r\n' +
+        '        h=to:subject:message-id:date:from:in-reply-to:references:mime-version\r\n' +
+        '         :from:to:cc:subject:date:message-id:reply-to;\r\n' +
+        '        bh=pvrwOUPIlfkYE2Wd8aoXh/KlAl37Xc3C5RLEMTH8Hz4=;\r\n' +
+        '        b=mLm+fQO4MmlQn0epr24G0lYyVPSw4EW7nfQWwxr8wjKwSTr2F6Mim7rQSGUK8r5TO/\r\n' +
+        '         qHwCW3u9IICzpDeUk+93+Uqcag9ciaXrnIXu4Oh4fvARQm8Y7WDLHlI1l80ALFE4Nd+e\r\n' +
+        '         qLahGFdcqCn4cMfIUw2hxLNqqrS8R4mP7sBQxLirDJ8WTFMlStYkhWKd7AewXnxvVMxU\r\n' +
+        '         TJPkS8DM24fd1Rx+DzWKrdUtuKlFYnzgeR6n4jQn4KHnMH8DUnRQynGVtnDzZvAsoIFz\r\n' +
+        '         msTN05BrflEx1F4bRwkyhjRcmmoo4ImP/OgTFZF5haTfdy67na5x2Ln8ovpz27WqwTAb\r\n' +
+        '         2IXQ=='
+    },
+    {
+      key: 'x-google-dkim-signature',
+      line: 'X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;\r\n' +
+        '        d=1e100.net; s=20221208; t=1681578050; x=1684170050;\r\n' +
+        '        h=to:subject:message-id:date:from:in-reply-to:references:mime-version\r\n' +
+        '         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;\r\n' +
+        '        bh=pvrwOUPIlfkYE2Wd8aoXh/KlAl37Xc3C5RLEMTH8Hz4=;\r\n' +
+        '        b=ItMVsO+2b+/1zYEAPXtLa77Y8SW55pU54w8izezBN0wsBTcohLGO1tW6DRgl7c/vcO\r\n' +
+        '         ob7VGa2YlVmYKi5M7c2guQS9C4CWEY9UR/v+A0PjT0uGQC81RvbXShmz6CLhKt9FeCVJ\r\n' +
+        '         ynUZnEQnNxM1rh1t+qsX1/ls93eaU3K7OZV8szxs72g/Ctvb2xTGOjdZm1gOTCICZwe0\r\n' +
+        '         zpRJv3wFVuCIKTQhNEMsIX0upY9P38CNjOPTp/aX0twRt60f3TkshZ2xL9ddD6m+8j4O\r\n' +
+        '         bTAiXwK5MUeTXcYepR6uhuNbAOQVEmOcMvG0PrYuOaaaYQbzVo9kMhzNIj/mbYIKyqVO\r\n' +
+        '         OuLg=='
+    },
+    {
+      key: 'x-gm-message-state',
+      line: 'X-Gm-Message-State: AAQBX9fVnrz/A5fwP2egfdk23kBlfttIfVtlCgdGIflV1QNipDz+RxbW\r\n' +
+        '\tLWTzg+exdZPuWc1qKfCgj6lGDTFBwgt8p456HWjwleTXKjE='
+    },
+    {
+      key: 'x-google-smtp-source',
+      line: 'X-Google-Smtp-Source: AKy350boDINdmu4q/sk1kXSYt+WAGF99Qwbzv6EC77P91W5DpzmXDWh6MQ7rYHpQzGDrAH7Tp5/gB5UruRCmptHLk6g='
+    },
+    {
+      key: 'x-received',
+      line: 'X-Received: by 2002:a05:6122:21a9:b0:401:7625:e9e3 with SMTP id\r\n' +
+        ' j41-20020a05612221a900b004017625e9e3mr11438141vkd.1.1681578049932; Sat, 15\r\n' +
+        ' Apr 2023 10:00:49 -0700 (PDT)'
+    },
+    { key: 'mime-version', line: 'MIME-Version: 1.0' },
+    {
+      key: 'references',
+      line: 'References: <31b4103c-0c40-2ed2-d1e9-37510a2d17ee@localhost>\r\n' +
+        ' <CABH6yQRTuszh5CQBhHk-9zHwEmAp6CbXmsX82m2LiGBP97OQPA@mail.gmail.com> <CABH6yQSmD0PzJFWtdZ6dz9yNKFwTmPKFYmVagQi1EAXMBS87=w@mail.gmail.com>'
+    },
+    {
+      key: 'in-reply-to',
+      line: 'In-Reply-To: <CABH6yQSmD0PzJFWtdZ6dz9yNKFwTmPKFYmVagQi1EAXMBS87=w@mail.gmail.com>'
+    },
+    { key: 'from', line: 'From: Anmol Jhamb <talktoanmolj@gmail.com>' },
+    { key: 'date', line: 'Date: Sat, 15 Apr 2023 22:30:38 +0530' },
+    {
+      key: 'message-id',
+      line: 'Message-ID: <CABH6yQReTi_tqCmWOh6z63CTTn73sNmqFDq-me7vRE1XSBAPJQ@mail.gmail.com>'
+    },
+    { key: 'subject', line: 'Subject: Re: catchung up' },
+    { key: 'to', line: 'To: anmol.jhamb.21cse@bmu.edu.in' },
+    {
+      key: 'content-type',
+      line: 'Content-Type: multipart/alternative; boundary="0000000000005410c505f962e642"'
+    }
+  ],
+  html: '<div dir="auto">Wohooooo?????????</div><br><div class="gmail_quote"><div dir="ltr" class="gmail_attr">On Sat, 15 Apr, 2023, 22:14 Anmol Jhamb, &lt;<a href="mailto:talktoanmolj@gmail.com">talktoanmolj@gmail.com</a>&gt; wrote:<br></div><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div dir="auto">Yi</div><br><div class="gmail_quote"><div dir="ltr" class="gmail_attr">On Sat, 15 Apr, 2023, 22:11 Anmol Jhamb, &lt;<a href="mailto:talktoanmolj@gmail.com" target="_blank" rel="noreferrer">talktoanmolj@gmail.com</a>&gt;wrote:<br></div><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex"><div dir="auto">Ok</div><br><div class="gmail_quote"><div dir="ltr" class="gmail_attr">On Sat, 15 Apr, 2023, 21:15 , &lt;<a href="mailto:anmol.jhamb.21cse@bmu.edu.in" rel="noreferrer noreferrer" target="_blank">anmol.jhamb.21cse@bmu.edu.in</a>&gt; wrote:<br></div><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">so hey man, it has been a while since we have gotten the chance to talk<br>\n' +
+    '</blockquote></div>\n' +
+    '</blockquote></div>\n' +
+    '</blockquote></div>\n',
+  text: 'Wohooooo?????????\n' +
+    '\n' +
+    'On Sat, 15 Apr, 2023, 22:14 Anmol Jhamb, <talktoanmolj@gmail.com> wrote:\n' +
+    '\n' +
+    '> Yi\n' +
+    '>\n' +
+    '> On Sat, 15 Apr, 2023, 22:11 Anmol Jhamb, <talktoanmolj@gmail.com> wrote:\n' +
+    '>\n' +
+    '>> Ok\n' +
+    '>>\n' +
+    '>> On Sat, 15 Apr, 2023, 21:15 , <anmol.jhamb.21cse@bmu.edu.in> wrote:\n' +
+    '>>\n' +
+    '>>> so hey man, it has been a while since we have gotten the chance to talk\n' +
+    '>>>\n' +
+    '>>\n',
+  textAsHtml: '<p>Wohooooo?????????</p><p>On Sat, 15 Apr, 2023, 22:14 Anmol Jhamb, &lt;<a href="mailto:talktoanmolj@gmail.com">talktoanmolj@gmail.com</a>&gt; wrote:</p><p>&gt; Yi<br/>&gt;<br/>&gt; On Sat, 15 Apr, 2023, 22:11 Anmol Jhamb, &lt;<a href="mailto:talktoanmolj@gmail.com">talktoanmolj@gmail.com</a>&gt; wrote:<br/>&gt;<br/>&gt;&gt; Ok<br/>&gt;&gt;<br/>&gt;&gt; On Sat, 15 Apr, 2023, 21:15 , &lt;<a href="mailto:anmol.jhamb.21cse@bmu.edu.in">anmol.jhamb.21cse@bmu.edu.in</a>&gt; wrote:<br/>&gt;&gt;<br/>&gt;&gt;&gt; so hey man, it has been a while since we have gotten the chance to talk<br/>&gt;&gt;&gt;<br/>&gt;&gt;</p>',
+  subject: 'Re: catchung up',
+  references: [
+    '<31b4103c-0c40-2ed2-d1e9-37510a2d17ee@localhost>',
+    '<CABH6yQRTuszh5CQBhHk-9zHwEmAp6CbXmsX82m2LiGBP97OQPA@mail.gmail.com>',
+    '<CABH6yQSmD0PzJFWtdZ6dz9yNKFwTmPKFYmVagQi1EAXMBS87=w@mail.gmail.com>'
+  ],
+  date: 2023-04-15T17:00:38.000Z,
+  to: {
+    value: [ [Object] ],
+    html: '<span class="mp_address_group"><a href="mailto:anmol.jhamb.21cse@bmu.edu.in" class="mp_address_email">anmol.jhamb.21cse@bmu.edu.in</a></span>',
+    text: 'anmol.jhamb.21cse@bmu.edu.in'
+  },
+  from: {
+    value: [ [Object] ],
+    html: '<span class="mp_address_group"><span class="mp_address_name">Anmol Jhamb</span> &lt;<a href="mailto:talktoanmolj@gmail.com" class="mp_address_email">talktoanmolj@gmail.com</a>&gt;</span>',
+    text: 'Anmol Jhamb <talktoanmolj@gmail.com>'
+  },
+  messageId: '<CABH6yQReTi_tqCmWOh6z63CTTn73sNmqFDq-me7vRE1XSBAPJQ@mail.gmail.com>',
+  inReplyTo: '<CABH6yQSmD0PzJFWtdZ6dz9yNKFwTmPKFYmVagQi1EAXMBS87=w@mail.gmail.com>'
+}
+Connection ended
