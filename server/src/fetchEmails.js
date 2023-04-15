@@ -1,16 +1,20 @@
 const Imap = require("imap"),
     inspect = require("util").inspect;
 
-const myMail = "@gmail.com";
-const myPwd = "***";
+const myMail = "anmol.jhamb.21cse@bmu.edu.in";
+const myPwd = "";
 
 let getEmailFromInbox = (mailServer) => {
     mailServer.openBox("INBOX", true, function (err, box) {
         if (err) throw err;
 
-        let f = mailServer.seq.fetch("1:*", {
-            bodies: "HEADER.FIELDS (FROM TO SUBJECT DATE)",
-            struct: true,
+        // let f = mailServer.seq.fetch("1:*", {
+        //     bodies: ["HEADER.FIELDS (FROM TO SUBJECT DATE)", "TEXT"],
+        //     struct: true,
+        // });
+
+        let f = mailServer.seq.fetch(box.messages.total - 5 + ":*", {
+            bodies: ["HEADER.FIELDS (FROM TO SUBJECT DATE)", "TEXT"],
         });
 
         f.on("message", function (msg, seqno) {
@@ -79,7 +83,7 @@ let mailServer1 = new Imap({
 }).once("error", function (err) {
     console.log("Source Server Error:- ", err);
 });
-mailServer1.once("ready", function () {
+mailServer1.on("ready", function () {
     mailServer1.openBox("INBOX", true, function (err, box) {
         if (err) throw err;
         console.log("message", "server1 ready");
@@ -91,6 +95,11 @@ mailServer1.once("ready", function () {
     //createLabel(mailServer1, "demo-label1");
     //deleteLabel(mailServer1, "demo-label1");
     //getMailboxStatusByName(mailServer1, "INBOX");
+});
+
+mailServer1.on("mail", (number) => {
+    console.log("got new mail! fetching top 5 again.");
+    getEmailFromInbox(mailServer1);
 });
 
 mailServer1.connect();
