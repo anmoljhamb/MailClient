@@ -8,4 +8,6 @@ export interface MailOptionsInterface {
     to: string;
     subject: string;
     text: string;
+    cc: string;
+    bcc: string;
 }

@@ -15,6 +15,8 @@ import { SocketContextInterface, SocketInterface } from "../types";
 const Dashboard = () => {
     const [toEmail, setToEmail] = useState<string>("");
     const [subject, setSubject] = useState<string>("");
+    const [cc, setCc] = useState<string>("");
+    const [bcc, setBcc] = useState<string>("");
     const [text, setText] = useState<string>("");
     const [addNew, setAddNew] = useState<boolean>(false);
     const { socketRef } = useContext(SocketContext) as SocketContextInterface;
@@ -27,6 +29,8 @@ const Dashboard = () => {
             subject,
             text,
             from: sessionStorage.getItem("email"),
+            cc,
+            bcc,
         });
     };
 
@@ -68,6 +72,33 @@ const Dashboard = () => {
                                             e: ChangeEvent<HTMLInputElement>
                                         ) => {
                                             setToEmail(e.target.value);
+                                        }}
+                                    />
+                                </Form.FloatingLabel>
+                                <Form.FloatingLabel label="CC" className="my-2">
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="CC"
+                                        value={cc}
+                                        onChange={(
+                                            e: ChangeEvent<HTMLInputElement>
+                                        ) => {
+                                            setCc(e.target.value);
+                                        }}
+                                    />
+                                </Form.FloatingLabel>
+                                <Form.FloatingLabel
+                                    label="BCC"
+                                    className="my-2"
+                                >
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="BCC"
+                                        value={bcc}
+                                        onChange={(
+                                            e: ChangeEvent<HTMLInputElement>
+                                        ) => {
+                                            setBcc(e.target.value);
                                         }}
                                     />
                                 </Form.FloatingLabel>
