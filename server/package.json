@@ -20,10 +20,13 @@
         "@types/morgan": "^1.9.4",
         "@types/node": "^18.15.11",
         "@types/socket.io": "^3.0.2",
+        "concurrently": "^8.0.1",
+        "nodemon": "^2.0.22",
         "typescript": "^5.0.4"
     },
     "scripts": {
         "start": "tsc && node dist/index.js",
-        "build": "tsc"
+        "build": "tsc",
+        "dev": "concurrently -k \"tsc --watch\" \"nodemon ./dist/index -e js,env\""
     }
 }
