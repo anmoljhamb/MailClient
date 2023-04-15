@@ -1,6 +1,8 @@
 import http from "http";
 import { Server } from "socket.io";
 import app from "./app";
+import nodemailer from "nodemailer";
+import { SMTPMapsInterface } from "./types";
 
 const PORT = process.env.PORT || 8080;
 const server = http.createServer(app);
@@ -9,6 +11,7 @@ const io = new Server(server, {
         origin: "*",
     },
 });
+const smtpTransports: SMTPMapsInterface = {};
 
 io.use((socket, next) => {
     const username = socket.handshake.auth.username;
@@ -25,8 +28,22 @@ io.on("connection", (socket) => {
 
     socket.on(
         "verify",
-        ({ email, password }: { email: string; password: string }) => {
+        async ({ email, password }: { email: string; password: string }) => {
             console.log("verify email and password.");
+            try {
+                smtpTransports[socket.id] = nodemailer.createTransport({
+                    service: "gmail", // sets automatically host, port and connection security settings
+                    auth: {
+                        user: email,
+                        pass: password,
+                    },
+                });
+                const verified = await smtpTransports[socket.id].verify();
+                socket.emit("verified", { verified });
+            } catch (error) {
+                console.log("error");
+                socket.emit("verified", { verified: false });
+            }
         }
     );
 

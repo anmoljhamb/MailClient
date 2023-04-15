@@ -16,7 +16,7 @@ const SocketProvider = ({ children }: PropsInterface) => {
         socket.on("disconnect", () => {
             setConnected(false);
             setTimeout(() => {
-                console.log("socket disconnected. Connecting again.");
+                console.log("Socket connecting again.");
                 socket.connect();
             }, 1000);
         });
