@@ -1,4 +1,11 @@
-import React, { ChangeEvent, FormEvent, useContext, useState } from "react";
+import { ComposeNew } from "./";
+import React, {
+    ChangeEvent,
+    FormEvent,
+    useContext,
+    useEffect,
+    useState,
+} from "react";
 import {
     Container,
     Row,
@@ -7,6 +14,7 @@ import {
     Form,
     Button,
     FloatingLabel,
+    Spinner,
 } from "react-bootstrap";
 import { GrAdd } from "react-icons/gr";
 import { SocketContext } from "../contexts/Socket";
@@ -18,12 +26,16 @@ const Dashboard = () => {
     const [cc, setCc] = useState<string>("");
     const [bcc, setBcc] = useState<string>("");
     const [text, setText] = useState<string>("");
+    const [message, setMessage] = useState<string>("");
     const [addNew, setAddNew] = useState<boolean>(false);
+    const [sending, setSending] = useState<boolean>(false);
+
     const { socketRef } = useContext(SocketContext) as SocketContextInterface;
     const socket = socketRef.current as SocketInterface;
 
     const handleOnSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        setSending(true);
         socket.emit("sendMail", {
             to: toEmail,
             subject,
@@ -33,6 +45,19 @@ const Dashboard = () => {
             bcc,
         });
     };
+
+    useEffect(() => {
+        socket.on("sentMail", (args) => {
+            console.log(args);
+            setAddNew(false);
+            setSending(false);
+            // todo clear every other values.
+        });
+
+        return () => {
+            socket.off("sentMail");
+        };
+    }, []);
 
     return (
         <>
@@ -45,104 +70,29 @@ const Dashboard = () => {
             >
                 <GrAdd />
             </button>
-            {addNew && (
-                <Container id="composeNew">
-                    <Row>
-                        <Col>
-                            <h2>New Message</h2>
-                        </Col>
-                        <Col className="d-flex justify-content-end">
-                            <CloseButton
-                                onClick={() => {
-                                    setAddNew(false);
-                                }}
-                            />
-                        </Col>
-                    </Row>
-                    <hr />
-                    <Row>
-                        <Row>
-                            <Form onSubmit={handleOnSubmit}>
-                                <Form.FloatingLabel label="To" className="my-2">
-                                    <Form.Control
-                                        type="email"
-                                        placeholder="To"
-                                        value={toEmail}
-                                        onChange={(
-                                            e: ChangeEvent<HTMLInputElement>
-                                        ) => {
-                                            setToEmail(e.target.value);
-                                        }}
-                                    />
-                                </Form.FloatingLabel>
-                                <Form.FloatingLabel label="CC" className="my-2">
-                                    <Form.Control
-                                        type="text"
-                                        placeholder="CC"
-                                        value={cc}
-                                        onChange={(
-                                            e: ChangeEvent<HTMLInputElement>
-                                        ) => {
-                                            setCc(e.target.value);
-                                        }}
-                                    />
-                                </Form.FloatingLabel>
-                                <Form.FloatingLabel
-                                    label="BCC"
-                                    className="my-2"
-                                >
-                                    <Form.Control
-                                        type="text"
-                                        placeholder="BCC"
-                                        value={bcc}
-                                        onChange={(
-                                            e: ChangeEvent<HTMLInputElement>
-                                        ) => {
-                                            setBcc(e.target.value);
-                                        }}
-                                    />
-                                </Form.FloatingLabel>
-                                <Form.FloatingLabel
-                                    label="Subject"
-                                    className="my-2"
-                                >
-                                    <Form.Control
-                                        type="text"
-                                        placeholder="Subject"
-                                        value={subject}
-                                        onChange={(
-                                            e: ChangeEvent<HTMLInputElement>
-                                        ) => {
-                                            setSubject(e.target.value);
-                                        }}
-                                    />
-                                </Form.FloatingLabel>
-                                <Form.FloatingLabel
-                                    controlId="floatingTextarea2"
-                                    label="Text"
-                                >
-                                    <Form.Control
-                                        as="textarea"
-                                        style={{ height: "10rem" }}
-                                        value={text}
-                                        onChange={(
-                                            e: ChangeEvent<HTMLInputElement>
-                                        ) => {
-                                            setText(e.target.value);
-                                        }}
-                                    />
-                                </Form.FloatingLabel>
-                                <Row className="my-2">
-                                    <Col>
-                                        <Button type="submit" variant="primary">
-                                            Send
-                                        </Button>
-                                    </Col>
-                                </Row>
-                            </Form>
-                        </Row>
-                    </Row>
-                </Container>
+            {addNew && sending && (
+                <>
+                    <Container id="sending">
+                        <h2>Sending</h2> <Spinner animation="border" />
+                    </Container>
+                </>
+            )}
+            {addNew && !sending && (
+                <ComposeNew
+                    setAddNew={setAddNew}
+                    handleOnSubmit={handleOnSubmit}
+                    toEmail={toEmail}
+                    setToEmail={setToEmail}
+                    cc={cc}
+                    setCc={setCc}
+                    bcc={bcc}
+                    setBcc={setBcc}
+                    subject={subject}
+                    setSubject={setSubject}
+                    text={text}
+                    setText={setText}
+                    sending={sending}
+                />
             )}
         </>
     );
