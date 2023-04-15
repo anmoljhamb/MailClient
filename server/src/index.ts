@@ -22,6 +22,17 @@ io.on("connection", (socket) => {
     socket.on("disconnect", () => {
         console.log(`${socket.id} disconnected.`);
     });
+
+    socket.on(
+        "verify",
+        ({ email, password }: { email: string; password: string }) => {
+            console.log("verify email and password.");
+        }
+    );
+
+    socket.onAny((event, ...args) => {
+        console.log(event, args);
+    });
 });
 
 server.listen(PORT, () => {
