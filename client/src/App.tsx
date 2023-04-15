@@ -11,13 +11,16 @@ function App() {
     console.log(connected);
 
     useEffect(() => {
+        console.log(socket);
         socket.connect();
     }, []);
 
     return (
         <>
             <div className="container">hello world!</div>
-            <div className="status"></div>
+            <div className="status">
+                {connected ? "connected" : "not connected"}
+            </div>
         </>
     );
 }
