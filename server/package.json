@@ -19,6 +19,11 @@
         "@types/mailparser": "^3.4.0",
         "@types/morgan": "^1.9.4",
         "@types/node": "^18.15.11",
-        "@types/socket.io": "^3.0.2"
+        "@types/socket.io": "^3.0.2",
+        "typescript": "^5.0.4"
+    },
+    "scripts": {
+        "start": "tsc && node dist/index.js",
+        "build": "tsc"
     }
 }
