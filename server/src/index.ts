@@ -2,12 +2,16 @@ import http from "http";
 import { Server } from "socket.io";
 import app from "./app";
 import nodemailer from "nodemailer";
+import Imap from "imap";
+import { simpleParser } from "mailparser";
 import {
     AuthDetailsInterface,
+    ImapsInterface,
     MailOptionsInterface,
     SMTPMapsInterface,
 } from "./types";
 
+const NUMBER = 5;
 const PORT = process.env.PORT || 8080;
 const server = http.createServer(app);
 const io = new Server(server, {
@@ -16,6 +20,7 @@ const io = new Server(server, {
     },
 });
 const smtpTransports: SMTPMapsInterface = {};
+const imaps: ImapsInterface = {};
 const authDetails: AuthDetailsInterface = {};
 
 io.use((socket, next) => {
@@ -74,9 +79,73 @@ io.on("connection", (socket) => {
     });
 
     socket.on("fetchMails", () => {
-        console.log(`fetching mails for the socket id: ${socket.id}`);
+        const imapConfig = {
+            user: authDetails[socket.id].email,
+            password: authDetails[socket.id].password,
+            host: "imap.gmail.com",
+            port: 993,
+            tls: true,
+            tlsOptions: {
+                rejectUnauthorized: false,
+            },
+            authTimeout: 3000,
+        };
+
+        const imap = new Imap(imapConfig);
+
+        imap.on("ready", () => {
+            imap.openBox("INBOX", true, (err, box) => {
+                if (err) throw err;
+                console.log("imap server ready.");
+            });
+            _getEmails(imap);
+        });
+
+        imap.on("mail", (number: number) => {
+            console.log(`Got ${number} new mails. Fetching ...`);
+            _getEmails(imap);
+        });
+
+        imap.once("error", (err: any) => {
+            console.log(err);
+        });
+
+        imap.once("end", () => {
+            console.log("Connection ended");
+        });
+
+        imap.connect();
     });
 
+    function _getEmails(imap: Imap) {
+        imap.openBox("INBOX", true, (err, box) => {
+            if (err) throw err;
+
+            const f = imap.seq.fetch(
+                `${box.messages.total - NUMBER}:${box.messages.total}`,
+                {
+                    bodies: "",
+                }
+            );
+
+            f.on("message", (msg) => {
+                msg.on("body", (stream) => {
+                    simpleParser(stream, (err, parsed) => {
+                        socket.emit("gotMail", parsed);
+                    });
+                });
+            });
+
+            f.once("error", (ex) => {
+                return Promise.reject(ex);
+            });
+
+            f.once("end", () => {
+                console.log("Done fetching all messages!");
+                // imap.end();
+            });
+        });
+    }
     // socket.onAny((event, ...args) => {
     //     console.log(event, args);
     // });
