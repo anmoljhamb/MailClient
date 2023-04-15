@@ -7,6 +7,7 @@ function App() {
     const [email, setEmail] = useState<string>("");
     const [password, setPassword] = useState<string>("");
     const [loggedIn, setLoggedIn] = useState<boolean>(false);
+    const [processing, setProcessing] = useState<boolean>(false);
     const { connected, socketRef } = useContext(
         SocketContext
     ) as SocketContextInterface;
@@ -17,6 +18,10 @@ function App() {
         socket.on("verified", ({ verified }) => {
             setLoggedIn(verified as boolean);
             sessionStorage.setItem("email", email);
+
+            if (verified) {
+                socket.emit("fetchMails");
+            }
         });
 
         return () => {
@@ -30,6 +35,7 @@ function App() {
         e.preventDefault();
         console.log(socket);
         socket.emit("verify", { email, password });
+        setProcessing(true);
     };
 
     if (!loggedIn)
@@ -42,6 +48,7 @@ function App() {
                         setEmail,
                         password,
                         setPassword,
+                        processing,
                     }}
                 />
                 {connected ? "connected" : "not connected"}

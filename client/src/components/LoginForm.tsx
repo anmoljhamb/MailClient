@@ -7,6 +7,7 @@ interface PropsInterface {
     setEmail(arg0: string): void;
     password: string;
     setPassword(arg0: string): void;
+    processing: boolean;
 }
 
 function LoginForm({
@@ -15,6 +16,7 @@ function LoginForm({
     setEmail,
     password,
     setPassword,
+    processing,
 }: PropsInterface) {
     const isDisabled = email.length === 0 && password.length === 0;
 
@@ -52,7 +54,7 @@ function LoginForm({
                     <Button
                         type="submit"
                         variant="secondary w-100"
-                        disabled={isDisabled}
+                        disabled={isDisabled || processing}
                     >
                         Login
                     </Button>

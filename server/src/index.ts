@@ -73,6 +73,10 @@ io.on("connection", (socket) => {
             );
     });
 
+    socket.on("fetchMails", () => {
+        console.log(`fetching mails for the socket id: ${socket.id}`);
+    });
+
     // socket.onAny((event, ...args) => {
     //     console.log(event, args);
     // });
