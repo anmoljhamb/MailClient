@@ -2,7 +2,7 @@ import http from "http";
 import { Server } from "socket.io";
 import app from "./app";
 import nodemailer from "nodemailer";
-import { SMTPMapsInterface } from "./types";
+import { MailOptionsInterface, SMTPMapsInterface } from "./types";
 
 const PORT = process.env.PORT || 8080;
 const server = http.createServer(app);
@@ -24,6 +24,8 @@ io.on("connection", (socket) => {
     console.log(`${socket.id} connected.`);
     socket.on("disconnect", () => {
         console.log(`${socket.id} disconnected.`);
+        if (smtpTransports[socket.id]) smtpTransports[socket.id].close();
+        delete smtpTransports[socket.id];
     });
 
     socket.on(
@@ -47,9 +49,21 @@ io.on("connection", (socket) => {
         }
     );
 
-    socket.onAny((event, ...args) => {
-        console.log(event, args);
+    socket.on("sendMail", (mailOptions: MailOptionsInterface) => {
+        console.log(mailOptions);
+        smtpTransports[socket.id].sendMail(
+            { ...mailOptions, from: "anmol.jhamb.21cse@bmu.edu.in" },
+            (error, info) => {
+                if (error) {
+                    socket.emit("sentMail", error);
+                } else socket.emit("sentMail", info);
+            }
+        );
     });
+
+    // socket.onAny((event, ...args) => {
+    //     console.log(event, args);
+    // });
 });
 
 server.listen(PORT, () => {

@@ -1,3 +1,11 @@
+import { createTransport } from "nodemailer";
+
 export interface SMTPMapsInterface {
-    [key: string]: any;
+    [key: string]: ReturnType<typeof createTransport>;
+}
+
+export interface MailOptionsInterface {
+    to: string;
+    subject: string;
+    text: string;
 }

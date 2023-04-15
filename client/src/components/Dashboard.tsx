@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { ChangeEvent, FormEvent, useContext, useState } from "react";
 import {
     Container,
     Row,
@@ -9,9 +9,21 @@ import {
     FloatingLabel,
 } from "react-bootstrap";
 import { GrAdd } from "react-icons/gr";
+import { SocketContext } from "../contexts/Socket";
+import { SocketContextInterface, SocketInterface } from "../types";
 
 const Dashboard = () => {
+    const [toEmail, setToEmail] = useState<string>("");
+    const [subject, setSubject] = useState<string>("");
+    const [text, setText] = useState<string>("");
     const [addNew, setAddNew] = useState<boolean>(false);
+    const { socketRef } = useContext(SocketContext) as SocketContextInterface;
+    const socket = socketRef.current as SocketInterface;
+
+    const handleOnSubmit = (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        socket.emit("sendMail", { to: toEmail, subject, text });
+    };
 
     return (
         <>
@@ -41,11 +53,17 @@ const Dashboard = () => {
                     <hr />
                     <Row>
                         <Row>
-                            <Form>
+                            <Form onSubmit={handleOnSubmit}>
                                 <Form.FloatingLabel label="To" className="my-2">
                                     <Form.Control
                                         type="email"
                                         placeholder="To"
+                                        value={toEmail}
+                                        onChange={(
+                                            e: ChangeEvent<HTMLInputElement>
+                                        ) => {
+                                            setToEmail(e.target.value);
+                                        }}
                                     />
                                 </Form.FloatingLabel>
                                 <Form.FloatingLabel
@@ -55,20 +73,34 @@ const Dashboard = () => {
                                     <Form.Control
                                         type="text"
                                         placeholder="Subject"
+                                        value={subject}
+                                        onChange={(
+                                            e: ChangeEvent<HTMLInputElement>
+                                        ) => {
+                                            setSubject(e.target.value);
+                                        }}
                                     />
                                 </Form.FloatingLabel>
                                 <Form.FloatingLabel
                                     controlId="floatingTextarea2"
-                                    label="Body"
+                                    label="Text"
                                 >
                                     <Form.Control
                                         as="textarea"
                                         style={{ height: "10rem" }}
+                                        value={text}
+                                        onChange={(
+                                            e: ChangeEvent<HTMLInputElement>
+                                        ) => {
+                                            setText(e.target.value);
+                                        }}
                                     />
                                 </Form.FloatingLabel>
                                 <Row className="my-2">
                                     <Col>
-                                        <Button variant="primary">Send</Button>
+                                        <Button type="submit" variant="primary">
+                                            Send
+                                        </Button>
                                     </Col>
                                 </Row>
                             </Form>
