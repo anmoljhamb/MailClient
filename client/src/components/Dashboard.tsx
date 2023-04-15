@@ -59,6 +59,7 @@ const Dashboard = () => {
             // todo clear every other values.
         });
 
+        console.log("fetching mails");
         socket.emit("fetchMails", { lowerRange, upperRange });
 
         socket.on("fetchedMails", (mails: ParsedMail[]) => {
@@ -67,6 +68,8 @@ const Dashboard = () => {
 
         return () => {
             socket.off("sentMail");
+            socket.off("fethMails");
+            socket.off("fethedMails");
         };
     }, []);
 
