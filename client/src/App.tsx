@@ -22,6 +22,8 @@ function App() {
             if (verified) {
                 socket.emit("fetchMails");
             }
+
+            setProcessing(false);
         });
 
         return () => {
