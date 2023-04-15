@@ -9,9 +9,8 @@
 }
 
 html {
-    font-size: 62.5%;
     @media (-webkit-device-pixel-ratio: 1.25) {
-        font-size: 50%;
+        font-size: 80%;
     }
 }
 
@@ -26,4 +25,9 @@ html {
     background-color: $dark;
     color: $light;
     position: relative;
+    .btn-primary {
+        color: $light !important;
+    }
 }
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
