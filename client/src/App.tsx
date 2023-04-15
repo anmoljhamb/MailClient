@@ -12,14 +12,25 @@ function App() {
 
     useEffect(() => {
         socket.connect();
+    }, [connected]);
+
+    useEffect(() => {
+        socket.on("verify", (...args) => {
+            console.log(args);
+        });
+
+        return () => {
+            socket.off("verify");
+        };
     }, []);
 
     // handlers.
 
     const handleOnSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        console.log(email);
-        console.log(password);
+        socket.emit("verify", { email, password });
+
+        console.log("socket emitting.");
     };
 
     return (
@@ -27,6 +38,7 @@ function App() {
             <LoginForm
                 {...{ handleOnSubmit, email, setEmail, password, setPassword }}
             />
+            {connected ? "connected" : "not connected"}
         </>
     );
 }

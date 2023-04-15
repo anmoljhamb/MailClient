@@ -15,8 +15,10 @@ const SocketProvider = ({ children }: PropsInterface) => {
     useEffect(() => {
         socket.on("disconnect", () => {
             setConnected(false);
-            console.log("socket disconnected. Connecting again.");
-            socket.connect();
+            setTimeout(() => {
+                console.log("socket disconnected. Connecting again.");
+                socket.connect();
+            }, 1000);
         });
 
         socket.on("connect", () => {
