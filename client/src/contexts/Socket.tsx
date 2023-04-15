@@ -34,7 +34,7 @@ const SocketProvider = ({ children }: PropsInterface) => {
     }, []);
 
     return (
-        <SocketContext.Provider value={{ socket }}>
+        <SocketContext.Provider value={{ socket, connected }}>
             {children}
         </SocketContext.Provider>
     );
