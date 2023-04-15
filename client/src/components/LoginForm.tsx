@@ -1,19 +1,22 @@
 import React, { ChangeEvent, FormEvent, useState } from "react";
 import { Button, Container, Form, Row } from "react-bootstrap";
 
-function LoginForm() {
-    const [email, setEmail] = useState<string>("");
-    const [password, setPassword] = useState<string>("");
+interface PropsInterface {
+    handleOnSubmit(e: FormEvent<HTMLFormElement>): void;
+    email: string;
+    setEmail(arg0: string): void;
+    password: string;
+    setPassword(arg0: string): void;
+}
 
+function LoginForm({
+    handleOnSubmit,
+    email,
+    setEmail,
+    password,
+    setPassword,
+}: PropsInterface) {
     const isDisabled = email.length === 0 && password.length === 0;
-
-    // handlers.
-
-    const handleOnSubmit = (e: FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        console.log(email);
-        console.log(password);
-    };
 
     return (
         <Container id="loginForm">
