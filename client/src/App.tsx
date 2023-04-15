@@ -1,4 +1,4 @@
-import { LoginForm } from "./components";
+import { Dashboard, LoginForm } from "./components";
 import { FormEvent, useContext, useEffect, useState } from "react";
 import { SocketContext } from "./contexts/Socket";
 import { SocketContextInterface, SocketInterface } from "./types";
@@ -6,6 +6,7 @@ import { SocketContextInterface, SocketInterface } from "./types";
 function App() {
     const [email, setEmail] = useState<string>("");
     const [password, setPassword] = useState<string>("");
+    const [loggedIn, setLoggedIn] = useState<boolean>(false);
     const { connected, socketRef } = useContext(
         SocketContext
     ) as SocketContextInterface;
@@ -14,7 +15,7 @@ function App() {
 
     useEffect(() => {
         socket.on("verified", ({ verified }) => {
-            console.log(verified);
+            setLoggedIn(verified as boolean);
         });
 
         return () => {
@@ -30,12 +31,24 @@ function App() {
         socket.emit("verify", { email, password });
     };
 
+    if (!loggedIn)
+        return (
+            <>
+                <LoginForm
+                    {...{
+                        handleOnSubmit,
+                        email,
+                        setEmail,
+                        password,
+                        setPassword,
+                    }}
+                />
+                {connected ? "connected" : "not connected"}
+            </>
+        );
     return (
         <>
-            <LoginForm
-                {...{ handleOnSubmit, email, setEmail, password, setPassword }}
-            />
-            {connected ? "connected" : "not connected"}
+            <Dashboard />
         </>
     );
 }
