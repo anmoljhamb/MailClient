@@ -48,6 +48,39 @@ html {
             font-weight: bold;
         }
     }
+    #addNewMail {
+        position: absolute;
+        inset: auto;
+        left: 1rem;
+        bottom: 1rem;
+        font-size: 2.1rem;
+        background-color: $light;
+        padding: 1.5rem;
+        display: grid;
+        place-content: center;
+        place-items: center;
+        transition: $transition;
+        box-shadow: 0px 5px black;
+        &:not(:disabled):hover {
+            cursor: pointer;
+            border-radius: 100%;
+            font-weight: bold;
+        }
+        &:disabled {
+            border-radius: 100%;
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+    }
+    #composeNew {
+        font-size: 1.5rem;
+        position: absolute;
+        inset: auto;
+        right: 5px;
+        bottom: 10px;
+        width: 30rem;
+        border-radius: 10px;
+    }
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
