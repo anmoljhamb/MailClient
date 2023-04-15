@@ -73,7 +73,8 @@ html {
         }
     }
     #composeNew,
-    #sending {
+    #sending,
+    #toast {
         font-size: 1.5rem;
         position: absolute;
         inset: auto;
@@ -90,6 +91,13 @@ html {
         font-size: 1rem;
         h2 {
             font-weight: bold;
+        }
+    }
+    #toast {
+        flex-direction: column;
+        width: 15rem;
+        #toastBody {
+            color: $dark;
         }
     }
 }

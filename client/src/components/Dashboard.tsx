@@ -15,6 +15,7 @@ import {
     Button,
     FloatingLabel,
     Spinner,
+    Toast,
 } from "react-bootstrap";
 import { GrAdd } from "react-icons/gr";
 import { SocketContext } from "../contexts/Socket";
@@ -51,6 +52,7 @@ const Dashboard = () => {
             console.log(args);
             setAddNew(false);
             setSending(false);
+            setMessage("Email Sent!");
             // todo clear every other values.
         });
 
@@ -70,6 +72,20 @@ const Dashboard = () => {
             >
                 <GrAdd />
             </button>
+            {message.length > 0 && (
+                <Toast
+                    onClose={() => setMessage("")}
+                    show={message.length > 0}
+                    delay={3000}
+                    autohide
+                    id="toast"
+                >
+                    <Toast.Header>
+                        <strong className="me-auto">Mail Client</strong>
+                    </Toast.Header>
+                    <Toast.Body id="toastBody">{message}</Toast.Body>
+                </Toast>
+            )}
             {addNew && sending && (
                 <>
                     <Container id="sending">
