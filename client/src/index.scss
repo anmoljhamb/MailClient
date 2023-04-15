@@ -100,6 +100,14 @@ html {
             color: $dark;
         }
     }
+    #mailsContainer {
+        #mails {
+            outline: 1px solid $dark;
+            width: 100%;
+            height: 33rem;
+            overflow-y: auto;
+        }
+    }
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

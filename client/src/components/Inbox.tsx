@@ -2,6 +2,7 @@ import { ParsedMail } from "mailparser";
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { GrFormPrevious, GrFormNext } from "react-icons/gr";
+import Mail from "./Mail";
 
 interface PropsInterface {
     mails: ParsedMail[];
@@ -24,7 +25,7 @@ const Inbox = ({
 }: PropsInterface) => {
     return (
         <>
-            <Container>
+            <Container id="mailsContainer">
                 <Row className="d-flex justify-content-between align-items-center">
                     <Col>
                         <Button variant="primary">Refresh</Button>
@@ -72,6 +73,11 @@ const Inbox = ({
                     </Col>
                 </Row>
                 <hr />
+                <Container id="mails">
+                    {mails.reverse().map((mail, index) => {
+                        return <Mail mail={mail} key={index} />;
+                    })}
+                </Container>
             </Container>
         </>
     );

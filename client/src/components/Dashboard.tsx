@@ -33,8 +33,8 @@ const Dashboard = () => {
     const [sending, setSending] = useState<boolean>(false);
     const [mails, setMails] = useState<ParsedMail[]>([]);
     const [lowerRange, setLowerRange] = useState<number>(0);
-    const [upperRange, setUpperRange] = useState<number>(5);
-    const [mailsNumber, setMailsNumber] = useState<number>(5);
+    const [mailsNumber, setMailsNumber] = useState<number>(20);
+    const [upperRange, setUpperRange] = useState<number>(0 + mailsNumber);
     const [stepCount, setStepCount] = useState<number>(5);
 
     const { socketRef } = useContext(SocketContext) as SocketContextInterface;
