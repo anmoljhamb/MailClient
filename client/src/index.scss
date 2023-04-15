@@ -1,0 +1,29 @@
+@import "./variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dosis", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    @media (-webkit-device-pixel-ratio: 1.25) {
+        font-size: 50%;
+    }
+}
+
+#root {
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark;
+    color: $light;
+    position: relative;
+}
