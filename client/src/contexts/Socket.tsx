@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { SocketContextInterface, SocketInterface } from "../types";
 import { useSocket } from "../hooks";
 
@@ -9,34 +9,44 @@ interface PropsInterface {
 }
 
 const SocketProvider = ({ children }: PropsInterface) => {
-    const socket = useSocket();
-    const [connected, setConnected] = useState<boolean>(socket.connected);
+    const socketRef = useRef<SocketInterface>(useSocket());
+    const socket = socketRef.current;
+
+    const [connected, setConnected] = useState<boolean>(
+        socketRef.current.connected
+    );
 
     useEffect(() => {
-        socket.on("disconnect", () => {
+        if (!connected) {
+            socketRef.current.connect();
+        }
+    }, [connected]);
+
+    useEffect(() => {
+        socketRef.current.on("disconnect", () => {
             setConnected(false);
             setTimeout(() => {
-                console.log("Socket connecting again.");
-                socket.connect();
+                console.log("SocketRef.current connecting again.");
+                socketRef.current.connect();
             }, 1000);
         });
 
-        socket.on("connect", () => {
+        socketRef.current.on("connect", () => {
             setConnected(true);
         });
 
-        socket.onAny((event, ...args) => {
+        socketRef.current.onAny((event, ...args) => {
             console.log(event, ...args);
         });
 
         return () => {
-            socket.off("disconnect");
-            socket.off("connect");
+            socketRef.current.off("disconnect");
+            socketRef.current.off("connect");
         };
     }, []);
 
     return (
-        <SocketContext.Provider value={{ socket, connected }}>
+        <SocketContext.Provider value={{ socket, connected, socketRef }}>
             {children}
         </SocketContext.Provider>
     );
