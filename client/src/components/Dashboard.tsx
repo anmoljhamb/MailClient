@@ -31,11 +31,12 @@ const Dashboard = () => {
     const [message, setMessage] = useState<string>("");
     const [addNew, setAddNew] = useState<boolean>(false);
     const [sending, setSending] = useState<boolean>(false);
+    const [processing, setProcessing] = useState<boolean>(false);
     const [mails, setMails] = useState<ParsedMail[]>([]);
     const [lowerRange, setLowerRange] = useState<number>(0);
+    const [stepCount, setStepCount] = useState<number>(20);
+    const [upperRange, setUpperRange] = useState<number>(0 + stepCount);
     const [mailsNumber, setMailsNumber] = useState<number>(20);
-    const [upperRange, setUpperRange] = useState<number>(0 + mailsNumber);
-    const [stepCount, setStepCount] = useState<number>(5);
 
     const { socketRef } = useContext(SocketContext) as SocketContextInterface;
     const socket = socketRef.current as SocketInterface;
@@ -63,7 +64,9 @@ const Dashboard = () => {
         });
 
         socket.on("fetchedMails", (mails: ParsedMail[]) => {
+            console.log("mails fetched.");
             setMails(mails);
+            setProcessing(false);
         });
 
         socket.on("mailsNumber", (number: number) => {
@@ -80,6 +83,7 @@ const Dashboard = () => {
     useEffect(() => {
         console.log("fetching mails");
         socket.emit("fetchMails", { lowerRange, upperRange });
+        setProcessing(true);
     }, [lowerRange, upperRange]);
 
     return (
@@ -102,6 +106,7 @@ const Dashboard = () => {
                     setUpperRange,
                     mailsNumber,
                     stepCount,
+                    processing,
                 }}
             />
             {message.length > 0 && (

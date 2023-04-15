@@ -4,13 +4,17 @@ import { Col, Row } from "react-bootstrap";
 
 interface PropsInterface {
     mail: ParsedMail;
+    handleOnClick(): void;
 }
 
-const Mail = ({ mail }: PropsInterface) => {
+const Mail = ({ mail, handleOnClick }: PropsInterface) => {
     return (
         <React.Fragment>
-            <Row>
-                <Col xs={2}>{mail.from?.text}</Col>
+            <Row id="mail" className="my-2" onClick={handleOnClick}>
+                <Col xs={2}>{mail.from?.value.at(0)?.name}</Col>
+                <Col>
+                    {mail.subject} - {mail.text}
+                </Col>
             </Row>
         </React.Fragment>
     );
