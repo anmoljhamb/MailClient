@@ -48,8 +48,9 @@ const Inbox = ({
                         <Button
                             variant="primary"
                             onClick={() => {
-                                setLowerRange(0);
+                                setLowerRange(stepCount);
                                 setUpperRange(stepCount);
+                                setTimeout(() => setLowerRange(0));
                             }}
                         >
                             Refresh
