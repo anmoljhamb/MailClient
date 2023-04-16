@@ -65,6 +65,7 @@ const Dashboard = () => {
 
         socket.on("fetchedMails", (mails: ParsedMail[]) => {
             console.log("mails fetched.");
+            mails.reverse();
             setMails(mails);
             setProcessing(false);
         });

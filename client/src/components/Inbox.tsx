@@ -3,6 +3,7 @@ import React from "react";
 import { Button, Col, Container, Row, Spinner } from "react-bootstrap";
 import { GrFormPrevious, GrFormNext } from "react-icons/gr";
 import Mail from "./Mail";
+import OpenedMail from "./OpenedMail";
 
 interface PropsInterface {
     mails: ParsedMail[];
@@ -25,9 +26,16 @@ const Inbox = ({
     setUpperRange,
     processing,
 }: PropsInterface) => {
+    const [modalShow, setModalShow] = React.useState<boolean>(false);
+    const [selectedMail, setSelectedMail] = React.useState<ParsedMail | null>(
+        null
+    );
+
     const handleOnClick = (index: number) => {
         const _util = () => {
             console.log(mails[index]);
+            setModalShow(true);
+            setSelectedMail(mails[index]);
         };
         return _util;
     };
@@ -93,10 +101,17 @@ const Inbox = ({
                     </Col>
                 </Row>
                 <hr />
+                {selectedMail && (
+                    <OpenedMail
+                        show={modalShow}
+                        onHide={() => setModalShow(false)}
+                        mail={selectedMail as ParsedMail}
+                    />
+                )}
                 <Container id="mails">
                     {processing && <Spinner id="spinner" animation="border" />}
                     {!processing &&
-                        mails.reverse().map((mail, index) => {
+                        mails.map((mail, index) => {
                             return (
                                 <Mail
                                     mail={mail}
