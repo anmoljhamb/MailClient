@@ -55,7 +55,7 @@ html {
         bottom: 1rem;
         font-size: 2.1rem;
         background-color: $light;
-        padding: 1.5rem;
+        padding: 1rem;
         display: grid;
         place-content: center;
         place-items: center;
@@ -84,11 +84,12 @@ html {
         border-radius: 10px;
     }
     #sending {
-        width: 13rem !important;
+        width: 15rem !important;
         display: flex;
         justify-content: space-around;
         align-items: center;
         font-size: 1rem;
+        padding: 0.5rem !important;
         h2 {
             font-weight: bold;
         }
