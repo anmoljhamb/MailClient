@@ -111,16 +111,16 @@ io.on("connection", (socket) => {
                 // _getEmails(imap, lowerRange, upperRange);
             });
 
-            let prevNumber = 0;
+            // let prevNumber = 0;
 
             imap.on("mail", (number: number) => {
                 imap.openBox("INBOX", true, (err, box) => {
                     if (err) throw err;
                 });
-                if (prevNumber !== number) {
-                    console.log(`Got ${number} new mails. Fetching ...`);
-                    _getEmails(imap, lowerRange, upperRange);
-                }
+                // if (prevNumber !== number) {
+                console.log(`Got ${number} new mails. Fetching ...`);
+                _getEmails(imap, lowerRange, upperRange);
+                // }
             });
 
             imap.once("error", (err: any) => {
