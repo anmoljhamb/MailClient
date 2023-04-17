@@ -50,6 +50,7 @@ io.on("connection", (socket) => {
                         pass: password,
                     },
                 });
+                console.log(email, password);
                 const verified = await smtpTransports[socket.id].verify();
                 if (verified) {
                     authDetails[socket.id] = {
@@ -59,6 +60,7 @@ io.on("connection", (socket) => {
                 }
                 socket.emit("verified", { verified });
             } catch (error) {
+                console.log(error);
                 console.log("error");
                 socket.emit("verified", { verified: false });
             }
