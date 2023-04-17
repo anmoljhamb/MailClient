@@ -108,7 +108,7 @@ io.on("connection", (socket) => {
             imap.on("ready", () => {
                 imap.openBox("INBOX", true, (err, box) => {
                     if (err) throw err;
-                    console.log("imap server ready.");
+                    console.log("imap server ready. ");
                 });
                 // _getEmails(imap, lowerRange, upperRange);
             });

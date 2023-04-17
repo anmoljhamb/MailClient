@@ -4,6 +4,7 @@ import React, {
     FormEvent,
     useContext,
     useEffect,
+    useRef,
     useState,
 } from "react";
 import {
@@ -19,7 +20,11 @@ import {
 } from "react-bootstrap";
 import { GrAdd } from "react-icons/gr";
 import { SocketContext } from "../contexts/Socket";
-import { SocketContextInterface, SocketInterface } from "../types";
+import {
+    FileRefInterface,
+    SocketContextInterface,
+    SocketInterface,
+} from "../types";
 import { ParsedMail } from "mailparser";
 
 const Dashboard = () => {
@@ -37,6 +42,7 @@ const Dashboard = () => {
     const [stepCount, setStepCount] = useState<number>(20);
     const [upperRange, setUpperRange] = useState<number>(0 + stepCount);
     const [mailsNumber, setMailsNumber] = useState<number>(20);
+    const fileRef = useRef<HTMLInputElement>(null);
 
     const { socketRef } = useContext(SocketContext) as SocketContextInterface;
     const socket = socketRef.current as SocketInterface;
@@ -44,6 +50,17 @@ const Dashboard = () => {
     const handleOnSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setSending(true);
+
+        const attachments: any[] = [];
+        if (fileRef.current?.files) {
+            console.log(fileRef.current.files);
+            if (fileRef.current?.files?.length > 0) {
+                attachments.push({
+                    filename: fileRef.current.files[0].name,
+                    content: fileRef.current.files[0],
+                });
+            }
+        }
         socket.emit("sendMail", {
             to: toEmail,
             subject,
@@ -51,6 +68,7 @@ const Dashboard = () => {
             from: sessionStorage.getItem("email"),
             cc,
             bcc,
+            attachments,
         });
     };
 
@@ -146,6 +164,7 @@ const Dashboard = () => {
                     text={text}
                     setText={setText}
                     sending={sending}
+                    fileRef={fileRef as FileRefInterface}
                 />
             )}
         </>

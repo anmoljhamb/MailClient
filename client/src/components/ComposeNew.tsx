@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FormEvent } from "react";
+import React, { ChangeEvent, FormEvent, useRef } from "react";
 import {
     Container,
     Row,
@@ -7,6 +7,7 @@ import {
     Form,
     Button,
 } from "react-bootstrap";
+import { FileRefInterface } from "../types";
 
 interface PropsInterface {
     setAddNew(arg0: boolean): void;
@@ -22,6 +23,7 @@ interface PropsInterface {
     subject: string;
     setSubject(arg0: string): void;
     sending: boolean;
+    fileRef: FileRefInterface;
 }
 
 function ComposeNew({
@@ -38,6 +40,7 @@ function ComposeNew({
     text,
     setText,
     sending,
+    fileRef,
 }: PropsInterface) {
     return (
         <Container id="composeNew">
@@ -123,6 +126,9 @@ function ComposeNew({
                             />
                         </Form.FloatingLabel>
                         <Row className="my-2">
+                            <Col>
+                                <Form.Control type="file" ref={fileRef} />
+                            </Col>
                             <Col>
                                 <Button
                                     type="submit"

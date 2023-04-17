@@ -15,6 +15,7 @@ export interface MailOptionsInterface {
     text: string;
     cc: string;
     bcc: string;
+    files?: any;
 }
 
 export interface AuthDetailsInterface {
