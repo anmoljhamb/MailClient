@@ -34,7 +34,15 @@ io.on("connection", (socket) => {
     console.log(`${socket.id} connected.`);
     socket.on("disconnect", () => {
         console.log(`${socket.id} disconnected.`);
-        if (smtpTransports[socket.id]) smtpTransports[socket.id].close();
+        if (smtpTransports[socket.id]) {
+            console.log(
+                `closing smtpTransports for the socket id ${socket.id}`
+            );
+            smtpTransports[socket.id].close();
+        }
+        if (imaps[socket.id]) {
+            imaps[socket.id].end();
+        }
         delete smtpTransports[socket.id];
     });
 
@@ -57,6 +65,48 @@ io.on("connection", (socket) => {
                         email,
                         password,
                     };
+                    // todo, add all the listeners for imap here.
+                    const imapConfig = {
+                        user: authDetails[socket.id].email,
+                        password: authDetails[socket.id].password,
+                        host: "imap.gmail.com",
+                        port: 993,
+                        tls: true,
+                        tlsOptions: {
+                            rejectUnauthorized: false,
+                        },
+                        authTimeout: 3000,
+                    };
+
+                    const imap = new Imap(imapConfig);
+                    imaps[socket.id] = imap;
+
+                    imap.on("ready", () => {
+                        imap.openBox("INBOX", true, (err, box) => {
+                            if (err) throw err;
+                            console.log("imap server ready. ");
+                        });
+                    });
+
+                    imap.on("mail", (number: number) => {
+                        imap.openBox("INBOX", true, (err, box) => {
+                            if (err) throw err;
+                        });
+                        console.log(`Got ${number} new mails. Fetching ...`);
+                        _getEmails(imap, 0, 19);
+                    });
+
+                    imap.once("error", (err: any) => {
+                        console.log(err);
+                    });
+
+                    imap.once("end", () => {
+                        console.log(
+                            `IMAPConnection ended for the id ${socket.id}`
+                        );
+                    });
+
+                    imap.connect();
                 }
                 socket.emit("verified", { verified });
             } catch (error) {
@@ -90,50 +140,6 @@ io.on("connection", (socket) => {
             upperRange: number;
         }) => {
             console.log(`fetchMails, (${lowerRange}, ${upperRange})`);
-
-            const imapConfig = {
-                user: authDetails[socket.id].email,
-                password: authDetails[socket.id].password,
-                host: "imap.gmail.com",
-                port: 993,
-                tls: true,
-                tlsOptions: {
-                    rejectUnauthorized: false,
-                },
-                authTimeout: 3000,
-            };
-
-            const imap = new Imap(imapConfig);
-
-            imap.on("ready", () => {
-                imap.openBox("INBOX", true, (err, box) => {
-                    if (err) throw err;
-                    console.log("imap server ready. ");
-                });
-                // _getEmails(imap, lowerRange, upperRange);
-            });
-
-            // let prevNumber = 0;
-
-            imap.on("mail", (number: number) => {
-                imap.openBox("INBOX", true, (err, box) => {
-                    if (err) throw err;
-                });
-                // if (prevNumber !== number) {
-                console.log(`Got ${number} new mails. Fetching ...`);
-                _getEmails(imap, lowerRange, upperRange);
-                // }
-            });
-
-            imap.once("error", (err: any) => {
-                console.log(err);
-            });
-
-            imap.once("end", () => {
-                console.log("Connection ended");
-            });
-
-            imap.connect();
         }
     );
 
