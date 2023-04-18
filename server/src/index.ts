@@ -90,8 +90,14 @@ io.on("connection", (socket) => {
                         imaps[socket.id].openBox("INBOX", true, (err, box) => {
                             if (err) throw err;
                         });
-                        console.log(`Got ${number} new mails. Fetching ...`);
-                        _getEmails(imaps[socket.id], 0, 19);
+                        if (number < 10) {
+                            socket.emit("newEmail");
+                        } else {
+                            console.log(
+                                `Got ${number} new mails. Fetching ...`
+                            );
+                            _getEmails(imaps[socket.id], 0, 19);
+                        }
                     });
 
                     imaps[socket.id].once("error", (err: any) => {

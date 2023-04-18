@@ -121,6 +121,11 @@ const Dashboard = () => {
             setMailsNumber(number);
         });
 
+        socket.on("newEmail", () => {
+            setLowerRange(0);
+            setUpperRange(stepCount);
+        });
+
         return () => {
             socket.off("sentMail");
             socket.off("fethMails");
