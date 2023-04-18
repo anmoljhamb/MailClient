@@ -16,6 +16,8 @@ interface PropsInterface {
     setToEmail(arg0: string): void;
     text: string;
     setText(arg0: string): void;
+    scheduledDate: string;
+    setScheduledDate(arg0: string): void;
     bcc: string;
     setBcc(arg0: string): void;
     cc: string;
@@ -39,6 +41,8 @@ function ComposeNew({
     setSubject,
     text,
     setText,
+    scheduledDate,
+    setScheduledDate,
     sending,
     fileRef,
 }: PropsInterface) {
@@ -57,7 +61,7 @@ function ComposeNew({
                 </Col>
             </Row>
             <hr />
-            <Row>
+            <Row className="justify-content-center">
                 <Row>
                     <Form onSubmit={handleOnSubmit}>
                         <Form.FloatingLabel label="To" className="my-2">
@@ -129,14 +133,38 @@ function ComposeNew({
                             <Col>
                                 <Form.Control type="file" ref={fileRef} />
                             </Col>
+
                             <Col>
                                 <Button
                                     type="submit"
                                     variant="primary"
                                     disabled={sending}
+                                    className="w-100"
                                 >
                                     Send
                                 </Button>
+                            </Col>
+                        </Row>
+                        <Row className="my-2">
+                            <Col>
+                                <Form.Control
+                                    type="datetime-local"
+                                    ref={fileRef}
+                                    value={scheduledDate}
+                                    onChange={(
+                                        e: ChangeEvent<HTMLInputElement>
+                                    ) => {
+                                        setScheduledDate(e.target.value);
+                                    }}
+                                    min={new Date()
+                                        .toISOString()
+                                        .slice(
+                                            0,
+                                            new Date()
+                                                .toISOString()
+                                                .lastIndexOf(":")
+                                        )}
+                                />
                             </Col>
                         </Row>
                     </Form>

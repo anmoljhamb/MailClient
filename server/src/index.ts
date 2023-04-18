@@ -128,6 +128,33 @@ io.on("connection", (socket) => {
             );
     });
 
+    type ScheduleOptions = MailOptionsInterface & { time: string };
+    socket.on("scheduleMail", (mailOptions: ScheduleOptions) => {
+        const currentTime = new Date();
+        const scheduledTime = new Date(mailOptions.time);
+
+        setTimeout(() => {
+            console.log("scheduled for the given time.");
+            if (smtpTransports[socket.id]) {
+                smtpTransports[socket.id].sendMail(
+                    { ...mailOptions },
+                    (error, info) => {
+                        if (error) console.log(error);
+                        console.log(info);
+                        socket.emit("sentMail", info);
+                    }
+                );
+            }
+        }, scheduledTime.getTime() - currentTime.getTime());
+
+        socket.emit(
+            "sentMail",
+            `mail will be sent in ${
+                scheduledTime.getTime() - currentTime.getTime()
+            }`
+        );
+    });
+
     socket.on(
         "fetchMails",
         ({

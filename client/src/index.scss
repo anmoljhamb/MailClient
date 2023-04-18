@@ -83,6 +83,9 @@ html {
         width: 30rem;
         border-radius: 10px;
     }
+    #composeNew {
+        border: 1px solid $dark;
+    }
     #sending {
         width: 15rem !important;
         display: flex;

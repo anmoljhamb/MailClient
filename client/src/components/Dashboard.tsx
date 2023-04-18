@@ -34,6 +34,7 @@ const Dashboard = () => {
     const [bcc, setBcc] = useState<string>("");
     const [text, setText] = useState<string>("");
     const [message, setMessage] = useState<string>("");
+    const [scheduledDate, setScheduledDate] = useState<string>("");
     const [addNew, setAddNew] = useState<boolean>(false);
     const [sending, setSending] = useState<boolean>(false);
     const [processing, setProcessing] = useState<boolean>(false);
@@ -62,15 +63,28 @@ const Dashboard = () => {
                 });
             }
         }
-        socket.emit("sendMail", {
-            to: toEmail,
-            subject,
-            text,
-            from: sessionStorage.getItem("email"),
-            cc,
-            bcc,
-            attachments,
-        });
+
+        if (scheduledDate.length > 0) {
+            socket.emit("scheduleMail", {
+                to: toEmail,
+                subject,
+                text,
+                from: sessionStorage.getItem("email"),
+                cc,
+                bcc,
+                attachments,
+                time: scheduledDate,
+            });
+        } else
+            socket.emit("sendMail", {
+                to: toEmail,
+                subject,
+                text,
+                from: sessionStorage.getItem("email"),
+                cc,
+                bcc,
+                attachments,
+            });
     };
 
     useEffect(() => {
@@ -78,7 +92,12 @@ const Dashboard = () => {
             console.log(args);
             setAddNew(false);
             setSending(false);
-            setMessage("Email Sent!");
+            if (args instanceof Object && "accepted" in args) {
+                setMessage("Email Sent!");
+            } else {
+                setMessage("Mail Scheduled!");
+                setScheduledDate("");
+            }
             // todo clear every other values.
         });
 
@@ -197,6 +216,8 @@ const Dashboard = () => {
                     setText={setText}
                     sending={sending}
                     fileRef={fileRef as FileRefInterface}
+                    scheduledDate={scheduledDate}
+                    setScheduledDate={setScheduledDate}
                 />
             )}
         </>
