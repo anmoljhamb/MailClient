@@ -59,14 +59,12 @@ io.on("connection", (socket) => {
                         pass: password,
                     },
                 });
-                console.log(email, password);
                 const verified = await smtpTransports[socket.id].verify();
                 if (verified) {
                     authDetails[socket.id] = {
                         email,
                         password,
                     };
-                    // todo, add all the listeners for imap here.
                     const imapConfig = {
                         user: authDetails[socket.id].email,
                         password: authDetails[socket.id].password,
@@ -160,15 +158,12 @@ io.on("connection", (socket) => {
             );
 
             const parsedMails: ParsedMail[] = [];
-            let count = 0;
 
             f.on("message", (msg, seq) => {
-                console.log(seq);
                 msg.on("body", (stream) => {
                     simpleParser(stream, (err, parsed) => {
                         if (err) console.log(err);
                         parsedMails.push(parsed);
-                        count++;
 
                         socket.emit("fetchMail", {
                             mail: parsed,
@@ -183,9 +178,7 @@ io.on("connection", (socket) => {
             });
 
             f.on("end", () => {
-                // console.log("Done fetching all messages!");
-                socket.emit("fetchedMails", parsedMails);
-                console.log(`fetched ${count} mails.`);
+                console.log("Done fetching all messages!");
                 socket.emit("mailsNumber", box.messages.total);
             });
         });
