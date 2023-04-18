@@ -141,7 +141,7 @@ io.on("connection", (socket) => {
                     (error, info) => {
                         if (error) console.log(error);
                         console.log(info);
-                        socket.emit("sentMail", info);
+                        socket.emit("sentMail", { scheduled: true });
                     }
                 );
             }

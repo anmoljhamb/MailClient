@@ -92,8 +92,9 @@ const Dashboard = () => {
             console.log(args);
             setAddNew(false);
             setSending(false);
-            if (args instanceof Object && "accepted" in args) {
-                setMessage("Email Sent!");
+            if (args instanceof Object) {
+                if ("accepted" in args) setMessage("Email Sent!");
+                if ("scheduled" in args) setMessage("Scheduled Email Sent!");
             } else {
                 setMessage("Mail Scheduled!");
                 setScheduledDate("");
