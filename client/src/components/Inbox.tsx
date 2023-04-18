@@ -112,6 +112,7 @@ const Inbox = ({
                 <Container id="mails">
                     {processing && <Spinner id="spinner" animation="border" />}
                     {!processing &&
+                        mails.length > 0 &&
                         mails.map((mail, index) => {
                             return (
                                 <Mail

@@ -32,6 +32,7 @@ io.use((socket, next) => {
 
 io.on("connection", (socket) => {
     console.log(`${socket.id} connected.`);
+
     socket.on("disconnect", () => {
         console.log(`${socket.id} disconnected.`);
         if (smtpTransports[socket.id]) {
@@ -78,35 +79,34 @@ io.on("connection", (socket) => {
                         authTimeout: 3000,
                     };
 
-                    const imap = new Imap(imapConfig);
-                    imaps[socket.id] = imap;
+                    imaps[socket.id] = new Imap(imapConfig);
 
-                    imap.on("ready", () => {
-                        imap.openBox("INBOX", true, (err, box) => {
+                    imaps[socket.id].on("ready", () => {
+                        imaps[socket.id].openBox("INBOX", true, (err, box) => {
                             if (err) throw err;
                             console.log("imap server ready. ");
                         });
                     });
 
-                    imap.on("mail", (number: number) => {
-                        imap.openBox("INBOX", true, (err, box) => {
+                    imaps[socket.id].on("mail", (number: number) => {
+                        imaps[socket.id].openBox("INBOX", true, (err, box) => {
                             if (err) throw err;
                         });
                         console.log(`Got ${number} new mails. Fetching ...`);
-                        _getEmails(imap, 0, 19);
+                        _getEmails(imaps[socket.id], 0, 19);
                     });
 
-                    imap.once("error", (err: any) => {
+                    imaps[socket.id].once("error", (err: any) => {
                         console.log(err);
                     });
 
-                    imap.once("end", () => {
+                    imaps[socket.id].once("end", () => {
                         console.log(
                             `IMAPConnection ended for the id ${socket.id}`
                         );
                     });
 
-                    imap.connect();
+                    imaps[socket.id].connect();
                 }
                 socket.emit("verified", { verified });
             } catch (error) {
@@ -140,6 +140,9 @@ io.on("connection", (socket) => {
             upperRange: number;
         }) => {
             console.log(`fetchMails, (${lowerRange}, ${upperRange})`);
+            // console.log(imaps[socket.id].state);
+            if (imaps[socket.id].state === "authenticated")
+                _getEmails(imaps[socket.id], lowerRange, upperRange - 1);
         }
     );
 
@@ -147,19 +150,30 @@ io.on("connection", (socket) => {
         imap.openBox("INBOX", true, (err, box) => {
             if (err) throw err;
 
-            const f = imap.seq.fetch(`${box.messages.total - upperRange}:*`, {
-                bodies: "",
-            });
+            const f = imap.seq.fetch(
+                `${box.messages.total - upperRange}:${
+                    box.messages.total - lowerRange
+                }`,
+                {
+                    bodies: "",
+                }
+            );
 
             const parsedMails: ParsedMail[] = [];
             let count = 0;
 
-            f.on("message", (msg) => {
+            f.on("message", (msg, seq) => {
+                console.log(seq);
                 msg.on("body", (stream) => {
                     simpleParser(stream, (err, parsed) => {
                         if (err) console.log(err);
                         parsedMails.push(parsed);
                         count++;
+
+                        socket.emit("fetchMail", {
+                            mail: parsed,
+                            mailNumber: seq,
+                        });
                     });
                 });
             });
@@ -169,7 +183,7 @@ io.on("connection", (socket) => {
             });
 
             f.on("end", () => {
-                console.log("Done fetching all messages!");
+                // console.log("Done fetching all messages!");
                 socket.emit("fetchedMails", parsedMails);
                 console.log(`fetched ${count} mails.`);
                 socket.emit("mailsNumber", box.messages.total);

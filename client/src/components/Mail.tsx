@@ -8,20 +8,22 @@ interface PropsInterface {
 }
 
 const Mail = ({ mail, handleOnClick }: PropsInterface) => {
-    return (
-        <React.Fragment>
-            <Row id="mail" className="my-2" onClick={handleOnClick}>
-                <Col xs={2} style={{ overflowX: "hidden" }}>
-                    {mail.from?.value.at(0)?.name
-                        ? mail.from?.value.at(0)?.name
-                        : mail.from?.value.at(0)?.address}
-                </Col>
-                <Col>
-                    {mail.subject} - {mail.text}
-                </Col>
-            </Row>
-        </React.Fragment>
-    );
+    if (mail)
+        return (
+            <React.Fragment>
+                <Row id="mail" className="my-2" onClick={handleOnClick}>
+                    <Col xs={2} style={{ overflowX: "hidden" }}>
+                        {mail.from?.value.at(0)?.name
+                            ? mail.from?.value.at(0)?.name
+                            : mail.from?.value.at(0)?.address}
+                    </Col>
+                    <Col>
+                        {mail.subject} - {mail.text}
+                    </Col>
+                </Row>
+            </React.Fragment>
+        );
+    else return <></>;
 };
 
 export default Mail;

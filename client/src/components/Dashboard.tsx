@@ -42,6 +42,7 @@ const Dashboard = () => {
     const [stepCount, setStepCount] = useState<number>(20);
     const [upperRange, setUpperRange] = useState<number>(0 + stepCount);
     const [mailsNumber, setMailsNumber] = useState<number>(20);
+    const [mailsMap, setMailsMap] = useState<{ [key: number]: ParsedMail }>({});
     const fileRef = useRef<HTMLInputElement>(null);
 
     const { socketRef } = useContext(SocketContext) as SocketContextInterface;
@@ -81,12 +82,27 @@ const Dashboard = () => {
             // todo clear every other values.
         });
 
-        socket.on("fetchedMails", (mails: ParsedMail[]) => {
-            console.log("mails fetched.");
-            mails.reverse();
-            setMails(mails);
-            setProcessing(false);
-        });
+        socket.on(
+            "fetchMail",
+            ({
+                mail,
+                mailNumber,
+            }: {
+                mail: ParsedMail;
+                mailNumber: number;
+            }) => {
+                setMailsMap((old) => {
+                    return { ...old, [mailNumber]: mail };
+                });
+            }
+        );
+
+        // socket.on("fetchedMails", (mails: ParsedMail[]) => {
+        //     console.log("mails fetched.");
+        //     mails.reverse();
+        //     setMails(mails);
+
+        // });
 
         socket.on("mailsNumber", (number: number) => {
             setMailsNumber(number);
@@ -98,6 +114,29 @@ const Dashboard = () => {
             socket.off("fethedMails");
         };
     }, []);
+
+    useEffect(() => {
+        if (Object.keys(mailsMap).length === stepCount) {
+            for (
+                let i = mailsNumber - upperRange + 1;
+                i <= mailsNumber - lowerRange;
+                i++
+            ) {
+                setMails((old) => [mailsMap[i], ...old]);
+            }
+            console.log("setMails");
+            setMailsMap({});
+            setProcessing(false);
+        }
+        console.log(`mailsMap.length: ${Object.keys(mailsMap).length}`);
+    }, [mailsMap]);
+
+    useEffect(() => {
+        if (mails.length > 20) {
+            console.log(mails);
+            setMails((old) => old.slice(20));
+        }
+    }, [mails]);
 
     useEffect(() => {
         console.log("fetching mails");
