@@ -54,6 +54,9 @@ const Dashboard = () => {
         setSending(true);
 
         const attachments: any[] = [];
+
+        console.log(fileRef.current?.files);
+
         if (fileRef.current?.files) {
             console.log(fileRef.current.files);
             if (fileRef.current?.files?.length > 0) {
@@ -122,8 +125,10 @@ const Dashboard = () => {
         });
 
         socket.on("newEmail", () => {
-            setLowerRange(0);
-            setUpperRange(stepCount);
+            setTimeout(() => {
+                setLowerRange(0);
+                setUpperRange(stepCount);
+            });
         });
 
         return () => {

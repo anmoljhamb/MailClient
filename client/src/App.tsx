@@ -49,7 +49,7 @@ function App() {
                         processing,
                     }}
                 />
-                {connected ? "connected" : "not connected"}
+                {/* {connected ? "connected" : "not connected"} */}
             </>
         );
     return (

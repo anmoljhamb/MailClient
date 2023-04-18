@@ -149,7 +149,6 @@ function ComposeNew({
                             <Col>
                                 <Form.Control
                                     type="datetime-local"
-                                    ref={fileRef}
                                     value={scheduledDate}
                                     onChange={(
                                         e: ChangeEvent<HTMLInputElement>
