@@ -97,13 +97,6 @@ const Dashboard = () => {
             }
         );
 
-        // socket.on("fetchedMails", (mails: ParsedMail[]) => {
-        //     console.log("mails fetched.");
-        //     mails.reverse();
-        //     setMails(mails);
-
-        // });
-
         socket.on("mailsNumber", (number: number) => {
             setMailsNumber(number);
         });
@@ -132,9 +125,9 @@ const Dashboard = () => {
     }, [mailsMap]);
 
     useEffect(() => {
+        console.log(mails);
         if (mails.length > 20) {
-            console.log(mails);
-            setMails((old) => old.slice(20));
+            setMails((old) => old.slice(0, 20));
         }
     }, [mails]);
 
