@@ -1,13 +1,15 @@
 {
-    "name": "mail_client",
-    "version": "1.0.0",
-    "main": "index.js",
-    "repository": "git@github.com:anmoljhamb/MailClient.git",
-    "author": "Anmol Jhamb <talktoanmol@outlook.com>",
-    "license": "MIT",
-    "scripts": {
-        "depI": "cd client && yarn && cd ../server && yarn && cd ..",
-        "build": "yarn run depI && cd client && yarn run build && mkdir -p ../server/public && rm -rf ../server/public/* && mv dist/* ../server/public && cd ../server && yarn run build",
-        "start": "cd server && yarn start"
-    }
+  "name": "mail_client",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:anmoljhamb/MailClient.git",
+  "author": "Anmol Jhamb <talktoanmol@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "depI": "cd client && yarn && cd ../server && yarn && cd ..",
+    "build-client": "cd client && yarn build",
+    "build-server": "cd server && yarn build",
+    "start-server": "cd server && yarn start",
+    "start-client": "npx serve client/dist"
+  }
 }
